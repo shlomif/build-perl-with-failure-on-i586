@@ -13,17 +13,10 @@
 # Based on the Mageia's perl-5.18.0-1's .src.rpm's .spec.
 
 sh Configure -des \
-  -Dinc_version_list="5.18.0 5.16.3 5.16.3 5.16.2 5.16.2 5.16.1 5.16.1 5.16.0 5.16.0 5.14.2 5.14.1 5.14.0" \
-  -Dcc='/usr/bin/gcc' \
   -Doptimize='-O2' -DDEBUGGING=-g \
--Dmyhostname=localhost -Dperladmin=root@localhost \
- -Dcf_email=root@localhost  \
   -Dperllibs='-lnsl -ldl -lm -lcrypt -lutil -lc -pthread'   \
   -Ud_csh \
   -Duseshrplib \
   -Duseithreads \
-  -Di_db \
-  -Di_ndbm \
-  -Di_gdbm \
 
 
