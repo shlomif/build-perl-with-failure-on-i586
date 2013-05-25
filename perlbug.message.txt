@@ -1,0 +1,143 @@
+Threaded perl-5.18.0 fails the re/pat_rt_report_thr.t test script on
+Mageia Linux 3 i586 (32-bit x86 - NOT x86-64). To reproduce, use Mageia Linux
+3 and either of the following build files:
+
+[QUOTE]
+#!/bin/bash
+
+# This script reproduces a failure at the "make test" stage with perl-5.18.0
+# on i586 Mageia Linux 3 (and Mageia Linux Cauldron).
+#
+# To reproduce do:
+# tar -xvf perl-5.18.0.tar.bz2.
+# cd perl-5.18.0.
+# bash ~/build-perl-on-i586-with-failure/build-perl-with-failure.bash
+# make
+# make test
+
+# Based on the Mageia's perl-5.18.0-1's .src.rpm's .spec.
+
+sh Configure -des \
+  -Doptimize='-O2' -DDEBUGGING=-g \
+  -Dperllibs='-lnsl -ldl -lm -lcrypt -lutil -lc -pthread'   \
+  -Ud_csh \
+  -Duseshrplib \
+  -Duseithreads \
+
+
+[/QUOTE]
+
+[QUOTE]
+#!/bin/bash
+
+# This script reproduces a failure at the "make test" stage with perl-5.18.0
+# on i586 Mageia Linux 3 (and Mageia Linux Cauldron).
+#
+# To reproduce do:
+# tar -xvf perl-5.18.0.tar.bz2.
+# cd perl-5.18.0.
+# bash ~/build-perl-on-i586-with-failure/build-perl-with-failure.bash
+# make
+# make test
+
+# Based on the Mageia's perl-5.18.0-1's .src.rpm's .spec.
+
+sh Configure -des \
+  -Dinc_version_list="5.18.0 5.16.3 5.16.3 5.16.2 5.16.2 5.16.1 5.16.1 5.16.0 5.16.0 5.14.2 5.14.1 5.14.0" \
+  -Dcc='/usr/bin/gcc' \
+  -Doptimize='-O2' -DDEBUGGING=-g \
+-Dmyhostname=localhost -Dperladmin=root@localhost \
+ -Dcf_email=root@localhost  \
+  -Dperllibs='-lnsl -ldl -lm -lcrypt -lutil -lc -pthread'   \
+  -Ud_csh \
+  -Duseshrplib \
+  -Duseithreads \
+  -Di_db \
+  -Di_ndbm \
+  -Di_gdbm \
+
+
+[/QUOTE]
+
+This bug was discovered when building perl-5.18.0 for the Mageia development
+version by Olivier Blin, and more info about reproducing can be found at:
+
+https://github.com/shlomif/build-perl-with-failure-on-i586
+
+The test failures are:
+
+[QUOTE]
+# Failed test 55 - UTF-8 regex matches above 32k; Bug 20020630.002 at re/pat_rt_report.t line 224
+# <utf8 x 32000>; pos = 1
+# Failed test 57 - UTF-8 regex matches above 32k; Bug 20020630.002 at re/pat_rt_report.t line 224
+# <utf8 x 32768>; pos = 1
+# Failed test 59 - UTF-8 regex matches above 32k; Bug 20020630.002 at re/pat_rt_report.t line 224
+# <utf8 x 33000>; pos = 1
+re/pat_rt_report_thr.t .. 
+1..2530
+# running tests in a new thread
+ok 1 - Match UTF-8 char in presence of (??{ }); Bug 20000731.001
+ok 2 - Used to cause a SEGV; Bug 20001021.005
+ok 3 - bug id 20001008.001
+ok 4 - bug id 20001008.001
+ok 5 - bug id 20001008.001
+ok 6 - bug id 20001008.001
+ok 7 - bug id 20001008.001
+ok 8 - bug id 20001008.001
+ok 9 - bug id 20001008.001
+ok 10 - bug id 20001008.001
+ok 11 - HEBREW ACCENT QADMA matched by .*; Bug 20001028.003
+ok 12 - HEBREW ACCENT QADMA matched by .*; Bug 20001028.003
+ok 13 - HEBREW ACCENT QADMA matched by .*; Bug 20001028.003
+ok 14 - HEBREW ACCENT QADMA in replacement; Bug 20001028.003
+ok 15 - HEBREW ACCENT QADMA in replacement; Bug 20001028.003
+ok 16 - Repeated s///; Bug 20001108.001
+ok 17 - Repeated s///; Bug 20001108.001
+ok 18 - s/// on UTF-8 string; Bug 20000517.001
+ok 19 - s/// on UTF-8 string; Bug 20000517.001
+ok 20 - \C and É; Bug 20001230.002
+ok 21 - \C and É; Bug 20001230.002
+ok 22 - Don't dump core; Bug 20010306.008
+ok 23 - /g in scalar context; Bug 20010410.006
+ok 24 - /g in scalar context; Bug 20010410.006
+ok 25 - /g in scalar context; Bug 20010410.006
+ok 26 - /g in scalar context; Bug 20010410.006
+ok 27 - /g in scalar context; Bug 20010410.006
+ok 28 - \012 not in [[:print:]]; Bug 20010619.003
+ok 29 - \011 not in [[:print:]]; Bug 20010619.003
+ok 30 - \014 not in [[:print:]]; Bug 20010619.003
+ok 31 - \015 not in [[:print:]]; Bug 20010619.003
+ok 32 - ' ' in [[:print:]]; Bug 20010619.003
+ok 33 - pos() works with () = m//; Bug 20010814.004
+ok 34 - UTF-8 return values from functions; Bug 20010407.006
+ok 35 - UTF-8 return values from functions; Bug 20010407.006
+ok 36 - UTF-8 return values from functions; Bug 20010407.006
+ok 37 - UTF-8 return values from functions; Bug 20010407.006
+ok 38 - High bit fine
+ok 39 - UTF-8 hash keys and /$/
+ok 40 - UTF-8 hash keys and /$/
+ok 41 - UTF-8 hash keys and /$/
+ok 42 - s///eg [change 13f46d054db22cf4]; Bug 20020124.005
+ok 43 - s///eg [change 13f46d054db22cf4]; Bug 20020124.005
+ok 44 - s///eg [change 13f46d054db22cf4]; Bug 20020124.005
+ok 45 - Correct pmop flags checked when empty pattern; Bug 20020412.005
+ok 46 - Correct pmop flags checked when empty pattern; Bug 20020412.005
+ok 47 - Correct pmop flags checked when empty pattern; Bug 20020412.005
+ok 48 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 49 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 50 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 51 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 52 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 53 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 54 - UTF-8 regex matches above 32k; Bug 20020630.002
+not ok 55 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 56 - UTF-8 regex matches above 32k; Bug 20020630.002
+not ok 57 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 58 - UTF-8 regex matches above 32k; Bug 20020630.002
+not ok 59 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 60 - No panic: end_shift [change 0e933229fa758625]
+[/QUOTE]
+
+Regards,
+
+-- Shlomi Fish
