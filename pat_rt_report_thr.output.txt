@@ -1,0 +1,2578 @@
+# Failed test 55 - UTF-8 regex matches above 32k; Bug 20020630.002 at re/pat_rt_report.t line 224
+# <utf8 x 32000>; pos = 1
+# Failed test 57 - UTF-8 regex matches above 32k; Bug 20020630.002 at re/pat_rt_report.t line 224
+# <utf8 x 32768>; pos = 1
+# Failed test 59 - UTF-8 regex matches above 32k; Bug 20020630.002 at re/pat_rt_report.t line 224
+# <utf8 x 33000>; pos = 1
+re/pat_rt_report_thr.t .. 
+1..2530
+# running tests in a new thread
+ok 1 - Match UTF-8 char in presence of (??{ }); Bug 20000731.001
+ok 2 - Used to cause a SEGV; Bug 20001021.005
+ok 3 - bug id 20001008.001
+ok 4 - bug id 20001008.001
+ok 5 - bug id 20001008.001
+ok 6 - bug id 20001008.001
+ok 7 - bug id 20001008.001
+ok 8 - bug id 20001008.001
+ok 9 - bug id 20001008.001
+ok 10 - bug id 20001008.001
+ok 11 - HEBREW ACCENT QADMA matched by .*; Bug 20001028.003
+ok 12 - HEBREW ACCENT QADMA matched by .*; Bug 20001028.003
+ok 13 - HEBREW ACCENT QADMA matched by .*; Bug 20001028.003
+ok 14 - HEBREW ACCENT QADMA in replacement; Bug 20001028.003
+ok 15 - HEBREW ACCENT QADMA in replacement; Bug 20001028.003
+ok 16 - Repeated s///; Bug 20001108.001
+ok 17 - Repeated s///; Bug 20001108.001
+ok 18 - s/// on UTF-8 string; Bug 20000517.001
+ok 19 - s/// on UTF-8 string; Bug 20000517.001
+ok 20 - \C and É; Bug 20001230.002
+ok 21 - \C and É; Bug 20001230.002
+ok 22 - Don't dump core; Bug 20010306.008
+ok 23 - /g in scalar context; Bug 20010410.006
+ok 24 - /g in scalar context; Bug 20010410.006
+ok 25 - /g in scalar context; Bug 20010410.006
+ok 26 - /g in scalar context; Bug 20010410.006
+ok 27 - /g in scalar context; Bug 20010410.006
+ok 28 - \012 not in [[:print:]]; Bug 20010619.003
+ok 29 - \011 not in [[:print:]]; Bug 20010619.003
+ok 30 - \014 not in [[:print:]]; Bug 20010619.003
+ok 31 - \015 not in [[:print:]]; Bug 20010619.003
+ok 32 - ' ' in [[:print:]]; Bug 20010619.003
+ok 33 - pos() works with () = m//; Bug 20010814.004
+ok 34 - UTF-8 return values from functions; Bug 20010407.006
+ok 35 - UTF-8 return values from functions; Bug 20010407.006
+ok 36 - UTF-8 return values from functions; Bug 20010407.006
+ok 37 - UTF-8 return values from functions; Bug 20010407.006
+ok 38 - High bit fine
+ok 39 - UTF-8 hash keys and /$/
+ok 40 - UTF-8 hash keys and /$/
+ok 41 - UTF-8 hash keys and /$/
+ok 42 - s///eg [change 13f46d054db22cf4]; Bug 20020124.005
+ok 43 - s///eg [change 13f46d054db22cf4]; Bug 20020124.005
+ok 44 - s///eg [change 13f46d054db22cf4]; Bug 20020124.005
+ok 45 - Correct pmop flags checked when empty pattern; Bug 20020412.005
+ok 46 - Correct pmop flags checked when empty pattern; Bug 20020412.005
+ok 47 - Correct pmop flags checked when empty pattern; Bug 20020412.005
+ok 48 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 49 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 50 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 51 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 52 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 53 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 54 - UTF-8 regex matches above 32k; Bug 20020630.002
+not ok 55 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 56 - UTF-8 regex matches above 32k; Bug 20020630.002
+not ok 57 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 58 - UTF-8 regex matches above 32k; Bug 20020630.002
+not ok 59 - UTF-8 regex matches above 32k; Bug 20020630.002
+ok 60 - No panic: end_shift [change 0e933229fa758625]
+ok 61 - match one \C on 1-byte UTF-8; Bug 15763
+ok 62 - match \C{1}; Bug 15763
+ok 63 - match \Cy; Bug 15763
+ok 64 - match \C{1}y; Bug 15763
+ok 65 - don't match two \Cy; Bug 15763
+ok 66 - don't match \C{2}y; Bug 15763
+ok 67 - match one \C on 2-byte UTF-8; Bug 15763
+ok 68 - match \C{1}; Bug 15763
+ok 69 - match two \C; Bug 15763
+ok 70 - match \C{2}; Bug 15763
+ok 71 - match three \C on 2-byte UTF-8 and a byte; Bug 15763
+ok 72 - match \C{3}; Bug 15763
+ok 73 - match two \C; Bug 15763
+ok 74 - match \C{2}; Bug 15763
+ok 75 - don't match three \Cy; Bug 15763
+ok 76 - don't match \C{2}\Cy; Bug 15763
+ok 77 - don't match \C{3}y; Bug 15763
+ok 78 - match one \C on three-byte UTF-8; Bug 15763
+ok 79 - match \C{1}; Bug 15763
+ok 80 - match two \C; Bug 15763
+ok 81 - match \C{2}; Bug 15763
+ok 82 - match three \C; Bug 15763
+ok 83 - match \C{3}; Bug 15763
+ok 84 - match four \C on three-byte UTF-8 and a byte; Bug 15763
+ok 85 - match \C{4}; Bug 15763
+ok 86 - match three \Cy; Bug 15763
+ok 87 - match \C{3}y; Bug 15763
+ok 88 - don't match four \Cy; Bug 15763
+ok 89 - don't match \C{4}y; Bug 15763
+ok 90 - UTF-8 matching; Bug 15397
+ok 91 - UTF-8 matching; Bug 15397
+ok 92 - UTF-8 matching; Bug 15397
+ok 93 - UTF-8 matching; Bug 15397
+ok 94 - UTF-8 matching; Bug 15397
+ok 95 - Neither ()* nor ()*? sets $1 when matched 0 times; Bug 7471
+ok 96 - Neither ()* nor ()*? sets $1 when matched 0 times; Bug 7471
+ok 97 - Caching shouldn't prevent match; Bug 3547
+ok 98 - Caching shouldn't prevent match; Bug 3547
+ok 99 - Caching shouldn't prevent match; Bug 3547
+ok 100 - Caching shouldn't prevent match; Bug 3547
+ok 101 - $1 should keep UTF-8 ness; Bug 18232
+ok 102 - $1 is UTF-8; Bug 18232
+ok 103 - $1 is still UTF-8; Bug 18232
+ok 104 - $1 is not non-UTF-8; Bug 18232
+ok 105 - Optimizer doesn't prematurely reject match; Bug 19767
+ok 106 - Optimizer doesn't prematurely reject match; Bug 19767
+ok 107 - (??{ }) doesn't return stale values; Bug 20683
+ok 108 - (??{ }) doesn't return stale values; Bug 20683
+ok 109 - Markus Kuhn 2003-02-26
+ok 110 - Markus Kuhn 2003-02-26
+ok 111 - Markus Kuhn 2003-02-26
+ok 112 - Markus Kuhn 2003-02-26
+ok 113 - Markus Kuhn 2003-02-26
+ok 114 - (??{ .. }) in split doesn't corrupt its stack; Bug 21411
+ok 115 - (??{ .. }) in split doesn't corrupt its stack; Bug 21411
+ok 116 - nested split
+ok 117 - Parse::RecDescent triggered infinite loop; Bug 17757
+ok 118 - Propagated modifier; standalone; Bug 22354
+ok 119 - Propagated modifier; standalone - with /m; Bug 22354
+ok 120 - Propagated modifier; in subst; Bug 22354
+ok 121 - Propagated modifier; in subst - with /m; Bug 22354
+ok 122 - Propagated modifier; in multiline subst; Bug 22354
+ok 123 - Propagated modifier; in multiline subst - with /m; Bug 22354
+ok 124 - Propagated modifier; in regexp; Bug 22354
+ok 125 - Propagated modifier; in regexp - with /m; Bug 22354
+ok 126 - Propagated modifier; in multiline regexp; Bug 22354
+ok 127 - Propagated modifier; in multiline regexp - with /m; Bug 22354
+ok 128 - Global match sets $`; Bug 19049
+ok 129 - regrepeat() handles UTF-8 EXACT case right; Bug 23769
+ok 130 - regrepeat() handles UTF-8 EXACT case right; Bug 23769
+ok 131 - regrepeat() handles UTF-8 EXACT case right; Bug 23769
+ok 132 - regrepeat() handles UTF-8 EXACT case right (easy variant); Bug 23769
+ok 133 - regrepeat() handles UTF-8 EXACT case right (easy variant); Bug 23769
+ok 134 - regrepeat() handles UTF-8 EXACT case right (easy invariant); Bug 23769
+ok 135 - regrepeat() handles UTF-8 EXACT case right (easy invariant); Bug 23769
+ok 136 - regrepeat() handles UTF-8 EXACT case right (regrepeat variant); Bug 23769
+ok 137 - regrepeat() handles UTF-8 EXACT case right (regrepeat variant); Bug 23769
+ok 138 - regrepeat() handles UTF-8 EXACT case right (regrepeat invariant); Bug 23769
+ok 139 - regrepeat() handles UTF-8 EXACT case right (regrepeat invariant); Bug 23769
+ok 140 - regrepeat() handles UTF-8 EXACT case right (hard variant); Bug 23769
+ok 141 - regrepeat() handles UTF-8 EXACT case right (hard variant); Bug 23769
+ok 142 - regrepeat() handles UTF-8 EXACT case right (hard invariant); Bug 23769
+ok 143 - regrepeat() handles UTF-8 EXACT case right (hard invariant); Bug 23769
+ok 144 - regrepeat() handles UTF-8 EXACT case right (hard invariant); Bug 23769
+ok 145 - regrepeat() handles UTF-8 EXACT case right (hard invariant); Bug 23769
+ok 146 - regrepeat() handles UTF-8 EXACT case right (hard invariant); Bug 23769
+ok 147 - regrepeat() handles UTF-8 EXACT case right (hard invariant); Bug 23769
+ok 148 - Don't match first byte of UTF-8 representation; Bug 23769
+ok 149 - Don't match first byte of UTF-8 representation; Bug 23769
+ok 150 - Don't match first byte of UTF-8 representation; Bug 23769
+ok 151 - Captures can move backwards in string; Bug 25269
+ok 152 - \cA in pattern; Bug 27940
+ok 153 - \cA in character class; Bug 27940
+ok 154 - \cA in character class range; Bug 27940
+ok 155 - \cA in negated character class range; Bug 27940
+ok 156 - \cB in character class range; Bug 27940
+ok 157 - \cC in negated character class range; Bug 27940
+ok 158 - \cA in ??{} pattern; Bug 27940
+ok 159 - \cI in pattern; Bug 27940
+ok 160 - Optional zero-width match at end of string; Bug 28532
+ok 161 - Optional zero-width match at end of string; Bug 28532
+ok 162 - utf8/latin; Bug 36207
+ok 163 - utf8/latin runtime; Bug 36207
+ok 164 - utf8/latin trie; Bug 36207
+ok 165 - utf8/latin trie runtime; Bug 36207
+ok 166 - latin/utf8; Bug 36207
+ok 167 - latin/utf8 trie; Bug 36207
+ok 168 - latin/utf8 runtime; Bug 36207
+ok 169 - latin/utf8 trie runtime; Bug 36207
+ok 170 - Assigning to original string does not corrupt match vars; Bug 37038
+ok 171 - //g match against return value of sub [change e26a497577f3ce7b]
+ok 172 - change e26a497577f3ce7b didn't affect sub calls for some reason
+ok 173 - pos() retained between calls
+ok 174 - pos() retained between calls
+ok 175 - Ill-formed UTF-8 doesn't match NUL in class; Bug 37836
+ok 176 - U+FFFF, parsed as atom; Bug 38293
+ok 177 - U+FFFF backslashed, parsed as atom; Bug 38293
+ok 178 - U+FFFF, parsed in class; Bug 38293
+ok 179 - U+FFFF backslashed, parsed in class; Bug 38293
+ok 180 - U+FFFF, EXACTF; Bug 38293
+ok 181 - U+FFFF, BOUND; Bug 38293
+ok 182 - U+FFFF, NBOUND; Bug 38293
+ok 183 - Pattern matches; Bug 39583
+ok 184 - Empty string; Bug 39583
+ok 185 - $1 is correct size; Bug 39583
+ok 186 - @- should not be interpolated in a pattern; Bug 27940
+ok 187 - @+ should not be interpolated in a pattern; Bug 27940
+ok 188 - @- should not be interpolated in a pattern; Bug 27940
+ok 189 - @+ should not be interpolated in a pattern; Bug 27940
+ok 190 - \c@?; Bug 27940
+ok 191 - \c@*; Bug 27940
+ok 192 - \c@(; Bug 27940
+ok 193 - \c@); Bug 27940
+ok 194 - \c@|; Bug 27940
+ok 195 - @?; Bug 27940
+ok 196 - @*; Bug 27940
+ok 197 - @(; Bug 27940
+ok 198 - @); Bug 27940
+ok 199 - @|; Bug 27940
+ok 200 - The last successful match is bogus; Bug 27940
+ok 201 - Interpolation of @+ in /@{+}/; Bug 27940
+ok 202 - Interpolation of @- in /@{-}/; Bug 27940
+ok 203 - Interpolation of @+ in /@{+}/x; Bug 27940
+ok 204 - Interpolation of @- in /@{-}/x; Bug 27940
+ok 205 - $+{A}; Bug 50496
+ok 206 - $+{B}; Bug 50496
+ok 207 - $+{C}; Bug 50496
+ok 208 - 'foo bar baz' =~ /(?<A>foo)\s+(?<B>bar)?\s+(?<C>baz)/; Bug 50496
+ok 209 - Got 3 keys in %+ via each; Bug 50496
+ok 210 - Got 3 keys in %+ via keys; Bug 50496
+ok 211 - Got expected keys; Bug 50496
+ok 212 - Got expected values; Bug 50496
+ok 213 - lvalue $+ {...} should not throw an exception; Bug 50496
+ok 214 - $+{A}; Bug 50496
+ok 215 - $+{B}; Bug 50496
+ok 216 - $+{C}; Bug 50496
+ok 217 - $+{D}; Bug 50496
+ok 218 - 'foo bar baz' =~ /(?<D>(?<A>foo)\s+(?<B>bar)?\s+(?<C>baz))/; Bug 50496
+ok 219 - Got 4 keys in %+ via each; Bug 50496
+ok 220 - Got 4 keys in %+ via keys; Bug 50496
+ok 221 - Got expected keys; Bug 50496
+ok 222 - Got expected values; Bug 50496
+ok 223 - lvalue $+ {...} should not throw an exception; Bug 50496
+ok 224 - @- should be empty; Bug 36046
+ok 225 - @+ should be empty; Bug 36046
+ok 226 - Should have matched once only; Bug 36046
+ok 227 - /m in precompiled regexp; Bug 40684
+ok 228 - /m in precompiled regexp; Bug 40684
+ok 229 - (?: ... )? should not lose $^R; Bug 36909
+ok 230 - (?: ... )? should not lose $^R; Bug 36909
+ok 231 - (?: ... )? should not lose $^R; Bug 36909
+ok 232 - (?: ... )? should not lose $^R; Bug 36909
+ok 233 - (?: ... )? should not lose $^R; Bug 36909
+ok 234 - (?: ... )? should not lose $^R; Bug 36909
+ok 235 - (?: ... )? should not lose $^R; Bug 36909
+ok 236 - (?: ... )? should not lose $^R; Bug 36909
+ok 237 - (?: ... )? should not lose $^R; Bug 36909
+ok 238 - (?: ... )? should not lose $^R; Bug 36909
+ok 239 - (?: ... )? should not lose $^R; Bug 36909
+ok 240 - (?: ... )? should not lose $^R; Bug 36909
+not ok 241 - Match is linear, not quadratic; Bug 22395 # TODO Should be L+1 not L*(L+3)/2 (L=10)
+# Failed test 241 - Match is linear, not quadratic; Bug 22395 at re/pat_rt_report.t line 813
+#      got "65"
+# expected "11"
+not ok 242 - Match is linear, not quadratic; Bug 22395 # TODO Should be L+1 not L*(L+3)/2 (L=100)
+# Failed test 242 - Match is linear, not quadratic; Bug 22395 at re/pat_rt_report.t line 813
+#      got "5150"
+# expected "101"
+not ok 243 - Match is linear, not quadratic; Bug 22395 # TODO Should be L+1 not L*(L+3)/2 (L=1000)
+# Failed test 243 - Match is linear, not quadratic; Bug 22395 at re/pat_rt_report.t line 813
+#      got "501500"
+# expected "1001"
+ok 244 - @-/@+ should not have undefined values; Bug 22614
+ok 245 - $& set on s///; Bug 18209
+ok 246 - $& set on s///; Bug 18209
+ok 247 - /g pattern shouldn't infinite loop; Bug 6893
+ok 248 - '  ' =~ /([ ]*$)/; Bug 41010
+ok 249 - '  ' =~ /([ ]*$)/m; Bug 41010
+ok 250 - '  ' =~ /([ ]*$)(?(1))/; Bug 41010
+ok 251 - '  ' =~ /([ ]*$)(?(1))/m; Bug 41010
+ok 252 - '  ' =~ /([ ]*$)(|)/; Bug 41010
+ok 253 - '  ' =~ /([ ]*$)(|)/m; Bug 41010
+ok 254 - '  ' =~ /([ ]*$)()?/; Bug 41010
+ok 255 - '  ' =~ /([ ]*$)()?/m; Bug 41010
+ok 256 - '  ' =~ /([ ]+$)/; Bug 41010
+ok 257 - '  ' =~ /([ ]+$)/m; Bug 41010
+ok 258 - '  ' =~ /([ ]+$)(?(1))/; Bug 41010
+ok 259 - '  ' =~ /([ ]+$)(?(1))/m; Bug 41010
+ok 260 - '  ' =~ /([ ]+$)(|)/; Bug 41010
+ok 261 - '  ' =~ /([ ]+$)(|)/m; Bug 41010
+ok 262 - '  ' =~ /([ ]+$)()?/; Bug 41010
+ok 263 - '  ' =~ /([ ]+$)()?/m; Bug 41010
+ok 264 - '  ' =~ /( *$)/; Bug 41010
+ok 265 - '  ' =~ /( *$)/m; Bug 41010
+ok 266 - '  ' =~ /( *$)(?(1))/; Bug 41010
+ok 267 - '  ' =~ /( *$)(?(1))/m; Bug 41010
+ok 268 - '  ' =~ /( *$)(|)/; Bug 41010
+ok 269 - '  ' =~ /( *$)(|)/m; Bug 41010
+ok 270 - '  ' =~ /( *$)()?/; Bug 41010
+ok 271 - '  ' =~ /( *$)()?/m; Bug 41010
+ok 272 - '  ' =~ /( +$)/; Bug 41010
+ok 273 - '  ' =~ /( +$)/m; Bug 41010
+ok 274 - '  ' =~ /( +$)(?(1))/; Bug 41010
+ok 275 - '  ' =~ /( +$)(?(1))/m; Bug 41010
+ok 276 - '  ' =~ /( +$)(|)/; Bug 41010
+ok 277 - '  ' =~ /( +$)(|)/m; Bug 41010
+ok 278 - '  ' =~ /( +$)()?/; Bug 41010
+ok 279 - '  ' =~ /( +$)()?/m; Bug 41010
+ok 280 - '  ' =~ /(( |\t)*$)/; Bug 41010
+ok 281 - '  ' =~ /(( |\t)*$)/m; Bug 41010
+ok 282 - '  ' =~ /(( |\t)*$)(?(1))/; Bug 41010
+ok 283 - '  ' =~ /(( |\t)*$)(?(1))/m; Bug 41010
+ok 284 - '  ' =~ /(( |\t)*$)(|)/; Bug 41010
+ok 285 - '  ' =~ /(( |\t)*$)(|)/m; Bug 41010
+ok 286 - '  ' =~ /(( |\t)*$)()?/; Bug 41010
+ok 287 - '  ' =~ /(( |\t)*$)()?/m; Bug 41010
+ok 288 - '  ' =~ /(( |\t)+$)/; Bug 41010
+ok 289 - '  ' =~ /(( |\t)+$)/m; Bug 41010
+ok 290 - '  ' =~ /(( |\t)+$)(?(1))/; Bug 41010
+ok 291 - '  ' =~ /(( |\t)+$)(?(1))/m; Bug 41010
+ok 292 - '  ' =~ /(( |\t)+$)(|)/; Bug 41010
+ok 293 - '  ' =~ /(( |\t)+$)(|)/m; Bug 41010
+ok 294 - '  ' =~ /(( |\t)+$)()?/; Bug 41010
+ok 295 - '  ' =~ /(( |\t)+$)()?/m; Bug 41010
+ok 296 - '  ' =~ /((?: |\t)*$)/; Bug 41010
+ok 297 - '  ' =~ /((?: |\t)*$)/m; Bug 41010
+ok 298 - '  ' =~ /((?: |\t)*$)(?(1))/; Bug 41010
+ok 299 - '  ' =~ /((?: |\t)*$)(?(1))/m; Bug 41010
+ok 300 - '  ' =~ /((?: |\t)*$)(|)/; Bug 41010
+ok 301 - '  ' =~ /((?: |\t)*$)(|)/m; Bug 41010
+ok 302 - '  ' =~ /((?: |\t)*$)()?/; Bug 41010
+ok 303 - '  ' =~ /((?: |\t)*$)()?/m; Bug 41010
+ok 304 - '  ' =~ /((?: |\t)+$)/; Bug 41010
+ok 305 - '  ' =~ /((?: |\t)+$)/m; Bug 41010
+ok 306 - '  ' =~ /((?: |\t)+$)(?(1))/; Bug 41010
+ok 307 - '  ' =~ /((?: |\t)+$)(?(1))/m; Bug 41010
+ok 308 - '  ' =~ /((?: |\t)+$)(|)/; Bug 41010
+ok 309 - '  ' =~ /((?: |\t)+$)(|)/m; Bug 41010
+ok 310 - '  ' =~ /((?: |\t)+$)()?/; Bug 41010
+ok 311 - '  ' =~ /((?: |\t)+$)()?/m; Bug 41010
+ok 312 - '  ' =~ /([ \t]*$)/; Bug 41010
+ok 313 - '  ' =~ /([ \t]*$)/m; Bug 41010
+ok 314 - '  ' =~ /([ \t]*$)(?(1))/; Bug 41010
+ok 315 - '  ' =~ /([ \t]*$)(?(1))/m; Bug 41010
+ok 316 - '  ' =~ /([ \t]*$)(|)/; Bug 41010
+ok 317 - '  ' =~ /([ \t]*$)(|)/m; Bug 41010
+ok 318 - '  ' =~ /([ \t]*$)()?/; Bug 41010
+ok 319 - '  ' =~ /([ \t]*$)()?/m; Bug 41010
+ok 320 - '  ' =~ /([ \t]+$)/; Bug 41010
+ok 321 - '  ' =~ /([ \t]+$)/m; Bug 41010
+ok 322 - '  ' =~ /([ \t]+$)(?(1))/; Bug 41010
+ok 323 - '  ' =~ /([ \t]+$)(?(1))/m; Bug 41010
+ok 324 - '  ' =~ /([ \t]+$)(|)/; Bug 41010
+ok 325 - '  ' =~ /([ \t]+$)(|)/m; Bug 41010
+ok 326 - '  ' =~ /([ \t]+$)()?/; Bug 41010
+ok 327 - '  ' =~ /([ \t]+$)()?/m; Bug 41010
+ok 328 - '  ' =~ /(\s*$)/; Bug 41010
+ok 329 - '  ' =~ /(\s*$)/m; Bug 41010
+ok 330 - '  ' =~ /(\s*$)(?(1))/; Bug 41010
+ok 331 - '  ' =~ /(\s*$)(?(1))/m; Bug 41010
+ok 332 - '  ' =~ /(\s*$)(|)/; Bug 41010
+ok 333 - '  ' =~ /(\s*$)(|)/m; Bug 41010
+ok 334 - '  ' =~ /(\s*$)()?/; Bug 41010
+ok 335 - '  ' =~ /(\s*$)()?/m; Bug 41010
+ok 336 - '  ' =~ /(\s+$)/; Bug 41010
+ok 337 - '  ' =~ /(\s+$)/m; Bug 41010
+ok 338 - '  ' =~ /(\s+$)(?(1))/; Bug 41010
+ok 339 - '  ' =~ /(\s+$)(?(1))/m; Bug 41010
+ok 340 - '  ' =~ /(\s+$)(|)/; Bug 41010
+ok 341 - '  ' =~ /(\s+$)(|)/m; Bug 41010
+ok 342 - '  ' =~ /(\s+$)()?/; Bug 41010
+ok 343 - '  ' =~ /(\s+$)()?/m; Bug 41010
+ok 344 - '12345' =~ /(\d*$)/; Bug 41010
+ok 345 - '12345' =~ /(\d*$)/m; Bug 41010
+ok 346 - '12345' =~ /(\d*$)(?(1))/; Bug 41010
+ok 347 - '12345' =~ /(\d*$)(?(1))/m; Bug 41010
+ok 348 - '12345' =~ /(\d*$)(|)/; Bug 41010
+ok 349 - '12345' =~ /(\d*$)(|)/m; Bug 41010
+ok 350 - '12345' =~ /(\d*$)()?/; Bug 41010
+ok 351 - '12345' =~ /(\d*$)()?/m; Bug 41010
+ok 352 - '12345' =~ /(\d+$)/; Bug 41010
+ok 353 - '12345' =~ /(\d+$)/m; Bug 41010
+ok 354 - '12345' =~ /(\d+$)(?(1))/; Bug 41010
+ok 355 - '12345' =~ /(\d+$)(?(1))/m; Bug 41010
+ok 356 - '12345' =~ /(\d+$)(|)/; Bug 41010
+ok 357 - '12345' =~ /(\d+$)(|)/m; Bug 41010
+ok 358 - '12345' =~ /(\d+$)()?/; Bug 41010
+ok 359 - '12345' =~ /(\d+$)()?/m; Bug 41010
+ok 360 - '12345' =~ /([1234567890]*$)/; Bug 41010
+ok 361 - '12345' =~ /([1234567890]*$)/m; Bug 41010
+ok 362 - '12345' =~ /([1234567890]*$)(?(1))/; Bug 41010
+ok 363 - '12345' =~ /([1234567890]*$)(?(1))/m; Bug 41010
+ok 364 - '12345' =~ /([1234567890]*$)(|)/; Bug 41010
+ok 365 - '12345' =~ /([1234567890]*$)(|)/m; Bug 41010
+ok 366 - '12345' =~ /([1234567890]*$)()?/; Bug 41010
+ok 367 - '12345' =~ /([1234567890]*$)()?/m; Bug 41010
+ok 368 - '12345' =~ /([1234567890]+$)/; Bug 41010
+ok 369 - '12345' =~ /([1234567890]+$)/m; Bug 41010
+ok 370 - '12345' =~ /([1234567890]+$)(?(1))/; Bug 41010
+ok 371 - '12345' =~ /([1234567890]+$)(?(1))/m; Bug 41010
+ok 372 - '12345' =~ /([1234567890]+$)(|)/; Bug 41010
+ok 373 - '12345' =~ /([1234567890]+$)(|)/m; Bug 41010
+ok 374 - '12345' =~ /([1234567890]+$)()?/; Bug 41010
+ok 375 - '12345' =~ /([1234567890]+$)()?/m; Bug 41010
+ok 376 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])*$)/; Bug 41010
+ok 377 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])*$)/m; Bug 41010
+ok 378 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])*$)(?(1))/; Bug 41010
+ok 379 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])*$)(?(1))/m; Bug 41010
+ok 380 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])*$)(|)/; Bug 41010
+ok 381 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])*$)(|)/m; Bug 41010
+ok 382 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])*$)()?/; Bug 41010
+ok 383 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])*$)()?/m; Bug 41010
+ok 384 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])+$)/; Bug 41010
+ok 385 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])+$)/m; Bug 41010
+ok 386 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])+$)(?(1))/; Bug 41010
+ok 387 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])+$)(?(1))/m; Bug 41010
+ok 388 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])+$)(|)/; Bug 41010
+ok 389 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])+$)(|)/m; Bug 41010
+ok 390 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])+$)()?/; Bug 41010
+ok 391 - '12345' =~ /((1|[23]|4|[56]|[78]|[90])+$)()?/m; Bug 41010
+ok 392 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])*$)/; Bug 41010
+ok 393 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])*$)/m; Bug 41010
+ok 394 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])*$)(?(1))/; Bug 41010
+ok 395 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])*$)(?(1))/m; Bug 41010
+ok 396 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])*$)(|)/; Bug 41010
+ok 397 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])*$)(|)/m; Bug 41010
+ok 398 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])*$)()?/; Bug 41010
+ok 399 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])*$)()?/m; Bug 41010
+ok 400 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])+$)/; Bug 41010
+ok 401 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])+$)/m; Bug 41010
+ok 402 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])+$)(?(1))/; Bug 41010
+ok 403 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])+$)(?(1))/m; Bug 41010
+ok 404 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])+$)(|)/; Bug 41010
+ok 405 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])+$)(|)/m; Bug 41010
+ok 406 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])+$)()?/; Bug 41010
+ok 407 - '12345' =~ /((?:1|[23]|4|[56]|[78]|[90])+$)()?/m; Bug 41010
+ok 408 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)*$)/; Bug 41010
+ok 409 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)*$)/m; Bug 41010
+ok 410 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)*$)(?(1))/; Bug 41010
+ok 411 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)*$)(?(1))/m; Bug 41010
+ok 412 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)*$)(|)/; Bug 41010
+ok 413 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)*$)(|)/m; Bug 41010
+ok 414 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)*$)()?/; Bug 41010
+ok 415 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)*$)()?/m; Bug 41010
+ok 416 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)+$)/; Bug 41010
+ok 417 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)+$)/m; Bug 41010
+ok 418 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)+$)(?(1))/; Bug 41010
+ok 419 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)+$)(?(1))/m; Bug 41010
+ok 420 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)+$)(|)/; Bug 41010
+ok 421 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)+$)(|)/m; Bug 41010
+ok 422 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)+$)()?/; Bug 41010
+ok 423 - '12345' =~ /((1|2|3|4|5|6|7|8|9|0)+$)()?/m; Bug 41010
+ok 424 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)*$)/; Bug 41010
+ok 425 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)*$)/m; Bug 41010
+ok 426 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)*$)(?(1))/; Bug 41010
+ok 427 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)*$)(?(1))/m; Bug 41010
+ok 428 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)*$)(|)/; Bug 41010
+ok 429 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)*$)(|)/m; Bug 41010
+ok 430 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)*$)()?/; Bug 41010
+ok 431 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)*$)()?/m; Bug 41010
+ok 432 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)+$)/; Bug 41010
+ok 433 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)+$)/m; Bug 41010
+ok 434 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)+$)(?(1))/; Bug 41010
+ok 435 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)+$)(?(1))/m; Bug 41010
+ok 436 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)+$)(|)/; Bug 41010
+ok 437 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)+$)(|)/m; Bug 41010
+ok 438 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)+$)()?/; Bug 41010
+ok 439 - '12345' =~ /((?:1|2|3|4|5|6|7|8|9|0)+$)()?/m; Bug 41010
+ok 440 - Upgrade error; Bug 45605
+ok 441 - $c =~ /$c/i : chr (0) : u_str = 0 u_pat = 0; Bug 36207
+ok 442 - $c=~/$c|xyz/i : chr(0) : u_str = 0 u_pat = 0; Bug 36207
+ok 443 - $c =~ /$c/i : chr (0) : u_str = 0 u_pat = 1; Bug 36207
+ok 444 - $c=~/$c|xyz/i : chr(0) : u_str = 0 u_pat = 1; Bug 36207
+ok 445 - $c =~ /$c/i : chr (0) : u_str = 1 u_pat = 0; Bug 36207
+ok 446 - $c=~/$c|xyz/i : chr(0) : u_str = 1 u_pat = 0; Bug 36207
+ok 447 - $c =~ /$c/i : chr (0) : u_str = 1 u_pat = 1; Bug 36207
+ok 448 - $c=~/$c|xyz/i : chr(0) : u_str = 1 u_pat = 1; Bug 36207
+ok 449 - $c =~ /$c/i : chr (1) : u_str = 0 u_pat = 0; Bug 36207
+ok 450 - $c=~/$c|xyz/i : chr(1) : u_str = 0 u_pat = 0; Bug 36207
+ok 451 - $c =~ /$c/i : chr (1) : u_str = 0 u_pat = 1; Bug 36207
+ok 452 - $c=~/$c|xyz/i : chr(1) : u_str = 0 u_pat = 1; Bug 36207
+ok 453 - $c =~ /$c/i : chr (1) : u_str = 1 u_pat = 0; Bug 36207
+ok 454 - $c=~/$c|xyz/i : chr(1) : u_str = 1 u_pat = 0; Bug 36207
+ok 455 - $c =~ /$c/i : chr (1) : u_str = 1 u_pat = 1; Bug 36207
+ok 456 - $c=~/$c|xyz/i : chr(1) : u_str = 1 u_pat = 1; Bug 36207
+ok 457 - $c =~ /$c/i : chr (2) : u_str = 0 u_pat = 0; Bug 36207
+ok 458 - $c=~/$c|xyz/i : chr(2) : u_str = 0 u_pat = 0; Bug 36207
+ok 459 - $c =~ /$c/i : chr (2) : u_str = 0 u_pat = 1; Bug 36207
+ok 460 - $c=~/$c|xyz/i : chr(2) : u_str = 0 u_pat = 1; Bug 36207
+ok 461 - $c =~ /$c/i : chr (2) : u_str = 1 u_pat = 0; Bug 36207
+ok 462 - $c=~/$c|xyz/i : chr(2) : u_str = 1 u_pat = 0; Bug 36207
+ok 463 - $c =~ /$c/i : chr (2) : u_str = 1 u_pat = 1; Bug 36207
+ok 464 - $c=~/$c|xyz/i : chr(2) : u_str = 1 u_pat = 1; Bug 36207
+ok 465 - $c =~ /$c/i : chr (3) : u_str = 0 u_pat = 0; Bug 36207
+ok 466 - $c=~/$c|xyz/i : chr(3) : u_str = 0 u_pat = 0; Bug 36207
+ok 467 - $c =~ /$c/i : chr (3) : u_str = 0 u_pat = 1; Bug 36207
+ok 468 - $c=~/$c|xyz/i : chr(3) : u_str = 0 u_pat = 1; Bug 36207
+ok 469 - $c =~ /$c/i : chr (3) : u_str = 1 u_pat = 0; Bug 36207
+ok 470 - $c=~/$c|xyz/i : chr(3) : u_str = 1 u_pat = 0; Bug 36207
+ok 471 - $c =~ /$c/i : chr (3) : u_str = 1 u_pat = 1; Bug 36207
+ok 472 - $c=~/$c|xyz/i : chr(3) : u_str = 1 u_pat = 1; Bug 36207
+ok 473 - $c =~ /$c/i : chr (4) : u_str = 0 u_pat = 0; Bug 36207
+ok 474 - $c=~/$c|xyz/i : chr(4) : u_str = 0 u_pat = 0; Bug 36207
+ok 475 - $c =~ /$c/i : chr (4) : u_str = 0 u_pat = 1; Bug 36207
+ok 476 - $c=~/$c|xyz/i : chr(4) : u_str = 0 u_pat = 1; Bug 36207
+ok 477 - $c =~ /$c/i : chr (4) : u_str = 1 u_pat = 0; Bug 36207
+ok 478 - $c=~/$c|xyz/i : chr(4) : u_str = 1 u_pat = 0; Bug 36207
+ok 479 - $c =~ /$c/i : chr (4) : u_str = 1 u_pat = 1; Bug 36207
+ok 480 - $c=~/$c|xyz/i : chr(4) : u_str = 1 u_pat = 1; Bug 36207
+ok 481 - $c =~ /$c/i : chr (5) : u_str = 0 u_pat = 0; Bug 36207
+ok 482 - $c=~/$c|xyz/i : chr(5) : u_str = 0 u_pat = 0; Bug 36207
+ok 483 - $c =~ /$c/i : chr (5) : u_str = 0 u_pat = 1; Bug 36207
+ok 484 - $c=~/$c|xyz/i : chr(5) : u_str = 0 u_pat = 1; Bug 36207
+ok 485 - $c =~ /$c/i : chr (5) : u_str = 1 u_pat = 0; Bug 36207
+ok 486 - $c=~/$c|xyz/i : chr(5) : u_str = 1 u_pat = 0; Bug 36207
+ok 487 - $c =~ /$c/i : chr (5) : u_str = 1 u_pat = 1; Bug 36207
+ok 488 - $c=~/$c|xyz/i : chr(5) : u_str = 1 u_pat = 1; Bug 36207
+ok 489 - $c =~ /$c/i : chr (6) : u_str = 0 u_pat = 0; Bug 36207
+ok 490 - $c=~/$c|xyz/i : chr(6) : u_str = 0 u_pat = 0; Bug 36207
+ok 491 - $c =~ /$c/i : chr (6) : u_str = 0 u_pat = 1; Bug 36207
+ok 492 - $c=~/$c|xyz/i : chr(6) : u_str = 0 u_pat = 1; Bug 36207
+ok 493 - $c =~ /$c/i : chr (6) : u_str = 1 u_pat = 0; Bug 36207
+ok 494 - $c=~/$c|xyz/i : chr(6) : u_str = 1 u_pat = 0; Bug 36207
+ok 495 - $c =~ /$c/i : chr (6) : u_str = 1 u_pat = 1; Bug 36207
+ok 496 - $c=~/$c|xyz/i : chr(6) : u_str = 1 u_pat = 1; Bug 36207
+ok 497 - $c =~ /$c/i : chr (7) : u_str = 0 u_pat = 0; Bug 36207
+ok 498 - $c=~/$c|xyz/i : chr(7) : u_str = 0 u_pat = 0; Bug 36207
+ok 499 - $c =~ /$c/i : chr (7) : u_str = 0 u_pat = 1; Bug 36207
+ok 500 - $c=~/$c|xyz/i : chr(7) : u_str = 0 u_pat = 1; Bug 36207
+ok 501 - $c =~ /$c/i : chr (7) : u_str = 1 u_pat = 0; Bug 36207
+ok 502 - $c=~/$c|xyz/i : chr(7) : u_str = 1 u_pat = 0; Bug 36207
+ok 503 - $c =~ /$c/i : chr (7) : u_str = 1 u_pat = 1; Bug 36207
+ok 504 - $c=~/$c|xyz/i : chr(7) : u_str = 1 u_pat = 1; Bug 36207
+ok 505 - $c =~ /$c/i : chr (8) : u_str = 0 u_pat = 0; Bug 36207
+ok 506 - $c=~/$c|xyz/i : chr(8) : u_str = 0 u_pat = 0; Bug 36207
+ok 507 - $c =~ /$c/i : chr (8) : u_str = 0 u_pat = 1; Bug 36207
+ok 508 - $c=~/$c|xyz/i : chr(8) : u_str = 0 u_pat = 1; Bug 36207
+ok 509 - $c =~ /$c/i : chr (8) : u_str = 1 u_pat = 0; Bug 36207
+ok 510 - $c=~/$c|xyz/i : chr(8) : u_str = 1 u_pat = 0; Bug 36207
+ok 511 - $c =~ /$c/i : chr (8) : u_str = 1 u_pat = 1; Bug 36207
+ok 512 - $c=~/$c|xyz/i : chr(8) : u_str = 1 u_pat = 1; Bug 36207
+ok 513 - $c =~ /$c/i : chr (9) : u_str = 0 u_pat = 0; Bug 36207
+ok 514 - $c=~/$c|xyz/i : chr(9) : u_str = 0 u_pat = 0; Bug 36207
+ok 515 - $c =~ /$c/i : chr (9) : u_str = 0 u_pat = 1; Bug 36207
+ok 516 - $c=~/$c|xyz/i : chr(9) : u_str = 0 u_pat = 1; Bug 36207
+ok 517 - $c =~ /$c/i : chr (9) : u_str = 1 u_pat = 0; Bug 36207
+ok 518 - $c=~/$c|xyz/i : chr(9) : u_str = 1 u_pat = 0; Bug 36207
+ok 519 - $c =~ /$c/i : chr (9) : u_str = 1 u_pat = 1; Bug 36207
+ok 520 - $c=~/$c|xyz/i : chr(9) : u_str = 1 u_pat = 1; Bug 36207
+ok 521 - $c =~ /$c/i : chr (10) : u_str = 0 u_pat = 0; Bug 36207
+ok 522 - $c=~/$c|xyz/i : chr(10) : u_str = 0 u_pat = 0; Bug 36207
+ok 523 - $c =~ /$c/i : chr (10) : u_str = 0 u_pat = 1; Bug 36207
+ok 524 - $c=~/$c|xyz/i : chr(10) : u_str = 0 u_pat = 1; Bug 36207
+ok 525 - $c =~ /$c/i : chr (10) : u_str = 1 u_pat = 0; Bug 36207
+ok 526 - $c=~/$c|xyz/i : chr(10) : u_str = 1 u_pat = 0; Bug 36207
+ok 527 - $c =~ /$c/i : chr (10) : u_str = 1 u_pat = 1; Bug 36207
+ok 528 - $c=~/$c|xyz/i : chr(10) : u_str = 1 u_pat = 1; Bug 36207
+ok 529 - $c =~ /$c/i : chr (11) : u_str = 0 u_pat = 0; Bug 36207
+ok 530 - $c=~/$c|xyz/i : chr(11) : u_str = 0 u_pat = 0; Bug 36207
+ok 531 - $c =~ /$c/i : chr (11) : u_str = 0 u_pat = 1; Bug 36207
+ok 532 - $c=~/$c|xyz/i : chr(11) : u_str = 0 u_pat = 1; Bug 36207
+ok 533 - $c =~ /$c/i : chr (11) : u_str = 1 u_pat = 0; Bug 36207
+ok 534 - $c=~/$c|xyz/i : chr(11) : u_str = 1 u_pat = 0; Bug 36207
+ok 535 - $c =~ /$c/i : chr (11) : u_str = 1 u_pat = 1; Bug 36207
+ok 536 - $c=~/$c|xyz/i : chr(11) : u_str = 1 u_pat = 1; Bug 36207
+ok 537 - $c =~ /$c/i : chr (12) : u_str = 0 u_pat = 0; Bug 36207
+ok 538 - $c=~/$c|xyz/i : chr(12) : u_str = 0 u_pat = 0; Bug 36207
+ok 539 - $c =~ /$c/i : chr (12) : u_str = 0 u_pat = 1; Bug 36207
+ok 540 - $c=~/$c|xyz/i : chr(12) : u_str = 0 u_pat = 1; Bug 36207
+ok 541 - $c =~ /$c/i : chr (12) : u_str = 1 u_pat = 0; Bug 36207
+ok 542 - $c=~/$c|xyz/i : chr(12) : u_str = 1 u_pat = 0; Bug 36207
+ok 543 - $c =~ /$c/i : chr (12) : u_str = 1 u_pat = 1; Bug 36207
+ok 544 - $c=~/$c|xyz/i : chr(12) : u_str = 1 u_pat = 1; Bug 36207
+ok 545 - $c =~ /$c/i : chr (13) : u_str = 0 u_pat = 0; Bug 36207
+ok 546 - $c=~/$c|xyz/i : chr(13) : u_str = 0 u_pat = 0; Bug 36207
+ok 547 - $c =~ /$c/i : chr (13) : u_str = 0 u_pat = 1; Bug 36207
+ok 548 - $c=~/$c|xyz/i : chr(13) : u_str = 0 u_pat = 1; Bug 36207
+ok 549 - $c =~ /$c/i : chr (13) : u_str = 1 u_pat = 0; Bug 36207
+ok 550 - $c=~/$c|xyz/i : chr(13) : u_str = 1 u_pat = 0; Bug 36207
+ok 551 - $c =~ /$c/i : chr (13) : u_str = 1 u_pat = 1; Bug 36207
+ok 552 - $c=~/$c|xyz/i : chr(13) : u_str = 1 u_pat = 1; Bug 36207
+ok 553 - $c =~ /$c/i : chr (14) : u_str = 0 u_pat = 0; Bug 36207
+ok 554 - $c=~/$c|xyz/i : chr(14) : u_str = 0 u_pat = 0; Bug 36207
+ok 555 - $c =~ /$c/i : chr (14) : u_str = 0 u_pat = 1; Bug 36207
+ok 556 - $c=~/$c|xyz/i : chr(14) : u_str = 0 u_pat = 1; Bug 36207
+ok 557 - $c =~ /$c/i : chr (14) : u_str = 1 u_pat = 0; Bug 36207
+ok 558 - $c=~/$c|xyz/i : chr(14) : u_str = 1 u_pat = 0; Bug 36207
+ok 559 - $c =~ /$c/i : chr (14) : u_str = 1 u_pat = 1; Bug 36207
+ok 560 - $c=~/$c|xyz/i : chr(14) : u_str = 1 u_pat = 1; Bug 36207
+ok 561 - $c =~ /$c/i : chr (15) : u_str = 0 u_pat = 0; Bug 36207
+ok 562 - $c=~/$c|xyz/i : chr(15) : u_str = 0 u_pat = 0; Bug 36207
+ok 563 - $c =~ /$c/i : chr (15) : u_str = 0 u_pat = 1; Bug 36207
+ok 564 - $c=~/$c|xyz/i : chr(15) : u_str = 0 u_pat = 1; Bug 36207
+ok 565 - $c =~ /$c/i : chr (15) : u_str = 1 u_pat = 0; Bug 36207
+ok 566 - $c=~/$c|xyz/i : chr(15) : u_str = 1 u_pat = 0; Bug 36207
+ok 567 - $c =~ /$c/i : chr (15) : u_str = 1 u_pat = 1; Bug 36207
+ok 568 - $c=~/$c|xyz/i : chr(15) : u_str = 1 u_pat = 1; Bug 36207
+ok 569 - $c =~ /$c/i : chr (16) : u_str = 0 u_pat = 0; Bug 36207
+ok 570 - $c=~/$c|xyz/i : chr(16) : u_str = 0 u_pat = 0; Bug 36207
+ok 571 - $c =~ /$c/i : chr (16) : u_str = 0 u_pat = 1; Bug 36207
+ok 572 - $c=~/$c|xyz/i : chr(16) : u_str = 0 u_pat = 1; Bug 36207
+ok 573 - $c =~ /$c/i : chr (16) : u_str = 1 u_pat = 0; Bug 36207
+ok 574 - $c=~/$c|xyz/i : chr(16) : u_str = 1 u_pat = 0; Bug 36207
+ok 575 - $c =~ /$c/i : chr (16) : u_str = 1 u_pat = 1; Bug 36207
+ok 576 - $c=~/$c|xyz/i : chr(16) : u_str = 1 u_pat = 1; Bug 36207
+ok 577 - $c =~ /$c/i : chr (17) : u_str = 0 u_pat = 0; Bug 36207
+ok 578 - $c=~/$c|xyz/i : chr(17) : u_str = 0 u_pat = 0; Bug 36207
+ok 579 - $c =~ /$c/i : chr (17) : u_str = 0 u_pat = 1; Bug 36207
+ok 580 - $c=~/$c|xyz/i : chr(17) : u_str = 0 u_pat = 1; Bug 36207
+ok 581 - $c =~ /$c/i : chr (17) : u_str = 1 u_pat = 0; Bug 36207
+ok 582 - $c=~/$c|xyz/i : chr(17) : u_str = 1 u_pat = 0; Bug 36207
+ok 583 - $c =~ /$c/i : chr (17) : u_str = 1 u_pat = 1; Bug 36207
+ok 584 - $c=~/$c|xyz/i : chr(17) : u_str = 1 u_pat = 1; Bug 36207
+ok 585 - $c =~ /$c/i : chr (18) : u_str = 0 u_pat = 0; Bug 36207
+ok 586 - $c=~/$c|xyz/i : chr(18) : u_str = 0 u_pat = 0; Bug 36207
+ok 587 - $c =~ /$c/i : chr (18) : u_str = 0 u_pat = 1; Bug 36207
+ok 588 - $c=~/$c|xyz/i : chr(18) : u_str = 0 u_pat = 1; Bug 36207
+ok 589 - $c =~ /$c/i : chr (18) : u_str = 1 u_pat = 0; Bug 36207
+ok 590 - $c=~/$c|xyz/i : chr(18) : u_str = 1 u_pat = 0; Bug 36207
+ok 591 - $c =~ /$c/i : chr (18) : u_str = 1 u_pat = 1; Bug 36207
+ok 592 - $c=~/$c|xyz/i : chr(18) : u_str = 1 u_pat = 1; Bug 36207
+ok 593 - $c =~ /$c/i : chr (19) : u_str = 0 u_pat = 0; Bug 36207
+ok 594 - $c=~/$c|xyz/i : chr(19) : u_str = 0 u_pat = 0; Bug 36207
+ok 595 - $c =~ /$c/i : chr (19) : u_str = 0 u_pat = 1; Bug 36207
+ok 596 - $c=~/$c|xyz/i : chr(19) : u_str = 0 u_pat = 1; Bug 36207
+ok 597 - $c =~ /$c/i : chr (19) : u_str = 1 u_pat = 0; Bug 36207
+ok 598 - $c=~/$c|xyz/i : chr(19) : u_str = 1 u_pat = 0; Bug 36207
+ok 599 - $c =~ /$c/i : chr (19) : u_str = 1 u_pat = 1; Bug 36207
+ok 600 - $c=~/$c|xyz/i : chr(19) : u_str = 1 u_pat = 1; Bug 36207
+ok 601 - $c =~ /$c/i : chr (20) : u_str = 0 u_pat = 0; Bug 36207
+ok 602 - $c=~/$c|xyz/i : chr(20) : u_str = 0 u_pat = 0; Bug 36207
+ok 603 - $c =~ /$c/i : chr (20) : u_str = 0 u_pat = 1; Bug 36207
+ok 604 - $c=~/$c|xyz/i : chr(20) : u_str = 0 u_pat = 1; Bug 36207
+ok 605 - $c =~ /$c/i : chr (20) : u_str = 1 u_pat = 0; Bug 36207
+ok 606 - $c=~/$c|xyz/i : chr(20) : u_str = 1 u_pat = 0; Bug 36207
+ok 607 - $c =~ /$c/i : chr (20) : u_str = 1 u_pat = 1; Bug 36207
+ok 608 - $c=~/$c|xyz/i : chr(20) : u_str = 1 u_pat = 1; Bug 36207
+ok 609 - $c =~ /$c/i : chr (21) : u_str = 0 u_pat = 0; Bug 36207
+ok 610 - $c=~/$c|xyz/i : chr(21) : u_str = 0 u_pat = 0; Bug 36207
+ok 611 - $c =~ /$c/i : chr (21) : u_str = 0 u_pat = 1; Bug 36207
+ok 612 - $c=~/$c|xyz/i : chr(21) : u_str = 0 u_pat = 1; Bug 36207
+ok 613 - $c =~ /$c/i : chr (21) : u_str = 1 u_pat = 0; Bug 36207
+ok 614 - $c=~/$c|xyz/i : chr(21) : u_str = 1 u_pat = 0; Bug 36207
+ok 615 - $c =~ /$c/i : chr (21) : u_str = 1 u_pat = 1; Bug 36207
+ok 616 - $c=~/$c|xyz/i : chr(21) : u_str = 1 u_pat = 1; Bug 36207
+ok 617 - $c =~ /$c/i : chr (22) : u_str = 0 u_pat = 0; Bug 36207
+ok 618 - $c=~/$c|xyz/i : chr(22) : u_str = 0 u_pat = 0; Bug 36207
+ok 619 - $c =~ /$c/i : chr (22) : u_str = 0 u_pat = 1; Bug 36207
+ok 620 - $c=~/$c|xyz/i : chr(22) : u_str = 0 u_pat = 1; Bug 36207
+ok 621 - $c =~ /$c/i : chr (22) : u_str = 1 u_pat = 0; Bug 36207
+ok 622 - $c=~/$c|xyz/i : chr(22) : u_str = 1 u_pat = 0; Bug 36207
+ok 623 - $c =~ /$c/i : chr (22) : u_str = 1 u_pat = 1; Bug 36207
+ok 624 - $c=~/$c|xyz/i : chr(22) : u_str = 1 u_pat = 1; Bug 36207
+ok 625 - $c =~ /$c/i : chr (23) : u_str = 0 u_pat = 0; Bug 36207
+ok 626 - $c=~/$c|xyz/i : chr(23) : u_str = 0 u_pat = 0; Bug 36207
+ok 627 - $c =~ /$c/i : chr (23) : u_str = 0 u_pat = 1; Bug 36207
+ok 628 - $c=~/$c|xyz/i : chr(23) : u_str = 0 u_pat = 1; Bug 36207
+ok 629 - $c =~ /$c/i : chr (23) : u_str = 1 u_pat = 0; Bug 36207
+ok 630 - $c=~/$c|xyz/i : chr(23) : u_str = 1 u_pat = 0; Bug 36207
+ok 631 - $c =~ /$c/i : chr (23) : u_str = 1 u_pat = 1; Bug 36207
+ok 632 - $c=~/$c|xyz/i : chr(23) : u_str = 1 u_pat = 1; Bug 36207
+ok 633 - $c =~ /$c/i : chr (24) : u_str = 0 u_pat = 0; Bug 36207
+ok 634 - $c=~/$c|xyz/i : chr(24) : u_str = 0 u_pat = 0; Bug 36207
+ok 635 - $c =~ /$c/i : chr (24) : u_str = 0 u_pat = 1; Bug 36207
+ok 636 - $c=~/$c|xyz/i : chr(24) : u_str = 0 u_pat = 1; Bug 36207
+ok 637 - $c =~ /$c/i : chr (24) : u_str = 1 u_pat = 0; Bug 36207
+ok 638 - $c=~/$c|xyz/i : chr(24) : u_str = 1 u_pat = 0; Bug 36207
+ok 639 - $c =~ /$c/i : chr (24) : u_str = 1 u_pat = 1; Bug 36207
+ok 640 - $c=~/$c|xyz/i : chr(24) : u_str = 1 u_pat = 1; Bug 36207
+ok 641 - $c =~ /$c/i : chr (25) : u_str = 0 u_pat = 0; Bug 36207
+ok 642 - $c=~/$c|xyz/i : chr(25) : u_str = 0 u_pat = 0; Bug 36207
+ok 643 - $c =~ /$c/i : chr (25) : u_str = 0 u_pat = 1; Bug 36207
+ok 644 - $c=~/$c|xyz/i : chr(25) : u_str = 0 u_pat = 1; Bug 36207
+ok 645 - $c =~ /$c/i : chr (25) : u_str = 1 u_pat = 0; Bug 36207
+ok 646 - $c=~/$c|xyz/i : chr(25) : u_str = 1 u_pat = 0; Bug 36207
+ok 647 - $c =~ /$c/i : chr (25) : u_str = 1 u_pat = 1; Bug 36207
+ok 648 - $c=~/$c|xyz/i : chr(25) : u_str = 1 u_pat = 1; Bug 36207
+ok 649 - $c =~ /$c/i : chr (26) : u_str = 0 u_pat = 0; Bug 36207
+ok 650 - $c=~/$c|xyz/i : chr(26) : u_str = 0 u_pat = 0; Bug 36207
+ok 651 - $c =~ /$c/i : chr (26) : u_str = 0 u_pat = 1; Bug 36207
+ok 652 - $c=~/$c|xyz/i : chr(26) : u_str = 0 u_pat = 1; Bug 36207
+ok 653 - $c =~ /$c/i : chr (26) : u_str = 1 u_pat = 0; Bug 36207
+ok 654 - $c=~/$c|xyz/i : chr(26) : u_str = 1 u_pat = 0; Bug 36207
+ok 655 - $c =~ /$c/i : chr (26) : u_str = 1 u_pat = 1; Bug 36207
+ok 656 - $c=~/$c|xyz/i : chr(26) : u_str = 1 u_pat = 1; Bug 36207
+ok 657 - $c =~ /$c/i : chr (27) : u_str = 0 u_pat = 0; Bug 36207
+ok 658 - $c=~/$c|xyz/i : chr(27) : u_str = 0 u_pat = 0; Bug 36207
+ok 659 - $c =~ /$c/i : chr (27) : u_str = 0 u_pat = 1; Bug 36207
+ok 660 - $c=~/$c|xyz/i : chr(27) : u_str = 0 u_pat = 1; Bug 36207
+ok 661 - $c =~ /$c/i : chr (27) : u_str = 1 u_pat = 0; Bug 36207
+ok 662 - $c=~/$c|xyz/i : chr(27) : u_str = 1 u_pat = 0; Bug 36207
+ok 663 - $c =~ /$c/i : chr (27) : u_str = 1 u_pat = 1; Bug 36207
+ok 664 - $c=~/$c|xyz/i : chr(27) : u_str = 1 u_pat = 1; Bug 36207
+ok 665 - $c =~ /$c/i : chr (28) : u_str = 0 u_pat = 0; Bug 36207
+ok 666 - $c=~/$c|xyz/i : chr(28) : u_str = 0 u_pat = 0; Bug 36207
+ok 667 - $c =~ /$c/i : chr (28) : u_str = 0 u_pat = 1; Bug 36207
+ok 668 - $c=~/$c|xyz/i : chr(28) : u_str = 0 u_pat = 1; Bug 36207
+ok 669 - $c =~ /$c/i : chr (28) : u_str = 1 u_pat = 0; Bug 36207
+ok 670 - $c=~/$c|xyz/i : chr(28) : u_str = 1 u_pat = 0; Bug 36207
+ok 671 - $c =~ /$c/i : chr (28) : u_str = 1 u_pat = 1; Bug 36207
+ok 672 - $c=~/$c|xyz/i : chr(28) : u_str = 1 u_pat = 1; Bug 36207
+ok 673 - $c =~ /$c/i : chr (29) : u_str = 0 u_pat = 0; Bug 36207
+ok 674 - $c=~/$c|xyz/i : chr(29) : u_str = 0 u_pat = 0; Bug 36207
+ok 675 - $c =~ /$c/i : chr (29) : u_str = 0 u_pat = 1; Bug 36207
+ok 676 - $c=~/$c|xyz/i : chr(29) : u_str = 0 u_pat = 1; Bug 36207
+ok 677 - $c =~ /$c/i : chr (29) : u_str = 1 u_pat = 0; Bug 36207
+ok 678 - $c=~/$c|xyz/i : chr(29) : u_str = 1 u_pat = 0; Bug 36207
+ok 679 - $c =~ /$c/i : chr (29) : u_str = 1 u_pat = 1; Bug 36207
+ok 680 - $c=~/$c|xyz/i : chr(29) : u_str = 1 u_pat = 1; Bug 36207
+ok 681 - $c =~ /$c/i : chr (30) : u_str = 0 u_pat = 0; Bug 36207
+ok 682 - $c=~/$c|xyz/i : chr(30) : u_str = 0 u_pat = 0; Bug 36207
+ok 683 - $c =~ /$c/i : chr (30) : u_str = 0 u_pat = 1; Bug 36207
+ok 684 - $c=~/$c|xyz/i : chr(30) : u_str = 0 u_pat = 1; Bug 36207
+ok 685 - $c =~ /$c/i : chr (30) : u_str = 1 u_pat = 0; Bug 36207
+ok 686 - $c=~/$c|xyz/i : chr(30) : u_str = 1 u_pat = 0; Bug 36207
+ok 687 - $c =~ /$c/i : chr (30) : u_str = 1 u_pat = 1; Bug 36207
+ok 688 - $c=~/$c|xyz/i : chr(30) : u_str = 1 u_pat = 1; Bug 36207
+ok 689 - $c =~ /$c/i : chr (31) : u_str = 0 u_pat = 0; Bug 36207
+ok 690 - $c=~/$c|xyz/i : chr(31) : u_str = 0 u_pat = 0; Bug 36207
+ok 691 - $c =~ /$c/i : chr (31) : u_str = 0 u_pat = 1; Bug 36207
+ok 692 - $c=~/$c|xyz/i : chr(31) : u_str = 0 u_pat = 1; Bug 36207
+ok 693 - $c =~ /$c/i : chr (31) : u_str = 1 u_pat = 0; Bug 36207
+ok 694 - $c=~/$c|xyz/i : chr(31) : u_str = 1 u_pat = 0; Bug 36207
+ok 695 - $c =~ /$c/i : chr (31) : u_str = 1 u_pat = 1; Bug 36207
+ok 696 - $c=~/$c|xyz/i : chr(31) : u_str = 1 u_pat = 1; Bug 36207
+ok 697 - $c =~ /$c/i : chr (32) : u_str = 0 u_pat = 0; Bug 36207
+ok 698 - $c=~/$c|xyz/i : chr(32) : u_str = 0 u_pat = 0; Bug 36207
+ok 699 - $c =~ /$c/i : chr (32) : u_str = 0 u_pat = 1; Bug 36207
+ok 700 - $c=~/$c|xyz/i : chr(32) : u_str = 0 u_pat = 1; Bug 36207
+ok 701 - $c =~ /$c/i : chr (32) : u_str = 1 u_pat = 0; Bug 36207
+ok 702 - $c=~/$c|xyz/i : chr(32) : u_str = 1 u_pat = 0; Bug 36207
+ok 703 - $c =~ /$c/i : chr (32) : u_str = 1 u_pat = 1; Bug 36207
+ok 704 - $c=~/$c|xyz/i : chr(32) : u_str = 1 u_pat = 1; Bug 36207
+ok 705 - $c =~ /$c/i : chr (33) : u_str = 0 u_pat = 0; Bug 36207
+ok 706 - $c=~/$c|xyz/i : chr(33) : u_str = 0 u_pat = 0; Bug 36207
+ok 707 - $c =~ /$c/i : chr (33) : u_str = 0 u_pat = 1; Bug 36207
+ok 708 - $c=~/$c|xyz/i : chr(33) : u_str = 0 u_pat = 1; Bug 36207
+ok 709 - $c =~ /$c/i : chr (33) : u_str = 1 u_pat = 0; Bug 36207
+ok 710 - $c=~/$c|xyz/i : chr(33) : u_str = 1 u_pat = 0; Bug 36207
+ok 711 - $c =~ /$c/i : chr (33) : u_str = 1 u_pat = 1; Bug 36207
+ok 712 - $c=~/$c|xyz/i : chr(33) : u_str = 1 u_pat = 1; Bug 36207
+ok 713 - $c =~ /$c/i : chr (34) : u_str = 0 u_pat = 0; Bug 36207
+ok 714 - $c=~/$c|xyz/i : chr(34) : u_str = 0 u_pat = 0; Bug 36207
+ok 715 - $c =~ /$c/i : chr (34) : u_str = 0 u_pat = 1; Bug 36207
+ok 716 - $c=~/$c|xyz/i : chr(34) : u_str = 0 u_pat = 1; Bug 36207
+ok 717 - $c =~ /$c/i : chr (34) : u_str = 1 u_pat = 0; Bug 36207
+ok 718 - $c=~/$c|xyz/i : chr(34) : u_str = 1 u_pat = 0; Bug 36207
+ok 719 - $c =~ /$c/i : chr (34) : u_str = 1 u_pat = 1; Bug 36207
+ok 720 - $c=~/$c|xyz/i : chr(34) : u_str = 1 u_pat = 1; Bug 36207
+ok 721 - $c =~ /$c/i : chr (35) : u_str = 0 u_pat = 0; Bug 36207
+ok 722 - $c=~/$c|xyz/i : chr(35) : u_str = 0 u_pat = 0; Bug 36207
+ok 723 - $c =~ /$c/i : chr (35) : u_str = 0 u_pat = 1; Bug 36207
+ok 724 - $c=~/$c|xyz/i : chr(35) : u_str = 0 u_pat = 1; Bug 36207
+ok 725 - $c =~ /$c/i : chr (35) : u_str = 1 u_pat = 0; Bug 36207
+ok 726 - $c=~/$c|xyz/i : chr(35) : u_str = 1 u_pat = 0; Bug 36207
+ok 727 - $c =~ /$c/i : chr (35) : u_str = 1 u_pat = 1; Bug 36207
+ok 728 - $c=~/$c|xyz/i : chr(35) : u_str = 1 u_pat = 1; Bug 36207
+ok 729 - $c =~ /$c/i : chr (36) : u_str = 0 u_pat = 0; Bug 36207
+ok 730 - $c=~/$c|xyz/i : chr(36) : u_str = 0 u_pat = 0; Bug 36207
+ok 731 - $c =~ /$c/i : chr (36) : u_str = 0 u_pat = 1; Bug 36207
+ok 732 - $c=~/$c|xyz/i : chr(36) : u_str = 0 u_pat = 1; Bug 36207
+ok 733 - $c =~ /$c/i : chr (36) : u_str = 1 u_pat = 0; Bug 36207
+ok 734 - $c=~/$c|xyz/i : chr(36) : u_str = 1 u_pat = 0; Bug 36207
+ok 735 - $c =~ /$c/i : chr (36) : u_str = 1 u_pat = 1; Bug 36207
+ok 736 - $c=~/$c|xyz/i : chr(36) : u_str = 1 u_pat = 1; Bug 36207
+ok 737 - $c =~ /$c/i : chr (37) : u_str = 0 u_pat = 0; Bug 36207
+ok 738 - $c=~/$c|xyz/i : chr(37) : u_str = 0 u_pat = 0; Bug 36207
+ok 739 - $c =~ /$c/i : chr (37) : u_str = 0 u_pat = 1; Bug 36207
+ok 740 - $c=~/$c|xyz/i : chr(37) : u_str = 0 u_pat = 1; Bug 36207
+ok 741 - $c =~ /$c/i : chr (37) : u_str = 1 u_pat = 0; Bug 36207
+ok 742 - $c=~/$c|xyz/i : chr(37) : u_str = 1 u_pat = 0; Bug 36207
+ok 743 - $c =~ /$c/i : chr (37) : u_str = 1 u_pat = 1; Bug 36207
+ok 744 - $c=~/$c|xyz/i : chr(37) : u_str = 1 u_pat = 1; Bug 36207
+ok 745 - $c =~ /$c/i : chr (38) : u_str = 0 u_pat = 0; Bug 36207
+ok 746 - $c=~/$c|xyz/i : chr(38) : u_str = 0 u_pat = 0; Bug 36207
+ok 747 - $c =~ /$c/i : chr (38) : u_str = 0 u_pat = 1; Bug 36207
+ok 748 - $c=~/$c|xyz/i : chr(38) : u_str = 0 u_pat = 1; Bug 36207
+ok 749 - $c =~ /$c/i : chr (38) : u_str = 1 u_pat = 0; Bug 36207
+ok 750 - $c=~/$c|xyz/i : chr(38) : u_str = 1 u_pat = 0; Bug 36207
+ok 751 - $c =~ /$c/i : chr (38) : u_str = 1 u_pat = 1; Bug 36207
+ok 752 - $c=~/$c|xyz/i : chr(38) : u_str = 1 u_pat = 1; Bug 36207
+ok 753 - $c =~ /$c/i : chr (39) : u_str = 0 u_pat = 0; Bug 36207
+ok 754 - $c=~/$c|xyz/i : chr(39) : u_str = 0 u_pat = 0; Bug 36207
+ok 755 - $c =~ /$c/i : chr (39) : u_str = 0 u_pat = 1; Bug 36207
+ok 756 - $c=~/$c|xyz/i : chr(39) : u_str = 0 u_pat = 1; Bug 36207
+ok 757 - $c =~ /$c/i : chr (39) : u_str = 1 u_pat = 0; Bug 36207
+ok 758 - $c=~/$c|xyz/i : chr(39) : u_str = 1 u_pat = 0; Bug 36207
+ok 759 - $c =~ /$c/i : chr (39) : u_str = 1 u_pat = 1; Bug 36207
+ok 760 - $c=~/$c|xyz/i : chr(39) : u_str = 1 u_pat = 1; Bug 36207
+ok 761 - $c =~ /$c/i : chr (40) : u_str = 0 u_pat = 0; Bug 36207
+ok 762 - $c=~/$c|xyz/i : chr(40) : u_str = 0 u_pat = 0; Bug 36207
+ok 763 - $c =~ /$c/i : chr (40) : u_str = 0 u_pat = 1; Bug 36207
+ok 764 - $c=~/$c|xyz/i : chr(40) : u_str = 0 u_pat = 1; Bug 36207
+ok 765 - $c =~ /$c/i : chr (40) : u_str = 1 u_pat = 0; Bug 36207
+ok 766 - $c=~/$c|xyz/i : chr(40) : u_str = 1 u_pat = 0; Bug 36207
+ok 767 - $c =~ /$c/i : chr (40) : u_str = 1 u_pat = 1; Bug 36207
+ok 768 - $c=~/$c|xyz/i : chr(40) : u_str = 1 u_pat = 1; Bug 36207
+ok 769 - $c =~ /$c/i : chr (41) : u_str = 0 u_pat = 0; Bug 36207
+ok 770 - $c=~/$c|xyz/i : chr(41) : u_str = 0 u_pat = 0; Bug 36207
+ok 771 - $c =~ /$c/i : chr (41) : u_str = 0 u_pat = 1; Bug 36207
+ok 772 - $c=~/$c|xyz/i : chr(41) : u_str = 0 u_pat = 1; Bug 36207
+ok 773 - $c =~ /$c/i : chr (41) : u_str = 1 u_pat = 0; Bug 36207
+ok 774 - $c=~/$c|xyz/i : chr(41) : u_str = 1 u_pat = 0; Bug 36207
+ok 775 - $c =~ /$c/i : chr (41) : u_str = 1 u_pat = 1; Bug 36207
+ok 776 - $c=~/$c|xyz/i : chr(41) : u_str = 1 u_pat = 1; Bug 36207
+ok 777 - $c =~ /$c/i : chr (42) : u_str = 0 u_pat = 0; Bug 36207
+ok 778 - $c=~/$c|xyz/i : chr(42) : u_str = 0 u_pat = 0; Bug 36207
+ok 779 - $c =~ /$c/i : chr (42) : u_str = 0 u_pat = 1; Bug 36207
+ok 780 - $c=~/$c|xyz/i : chr(42) : u_str = 0 u_pat = 1; Bug 36207
+ok 781 - $c =~ /$c/i : chr (42) : u_str = 1 u_pat = 0; Bug 36207
+ok 782 - $c=~/$c|xyz/i : chr(42) : u_str = 1 u_pat = 0; Bug 36207
+ok 783 - $c =~ /$c/i : chr (42) : u_str = 1 u_pat = 1; Bug 36207
+ok 784 - $c=~/$c|xyz/i : chr(42) : u_str = 1 u_pat = 1; Bug 36207
+ok 785 - $c =~ /$c/i : chr (43) : u_str = 0 u_pat = 0; Bug 36207
+ok 786 - $c=~/$c|xyz/i : chr(43) : u_str = 0 u_pat = 0; Bug 36207
+ok 787 - $c =~ /$c/i : chr (43) : u_str = 0 u_pat = 1; Bug 36207
+ok 788 - $c=~/$c|xyz/i : chr(43) : u_str = 0 u_pat = 1; Bug 36207
+ok 789 - $c =~ /$c/i : chr (43) : u_str = 1 u_pat = 0; Bug 36207
+ok 790 - $c=~/$c|xyz/i : chr(43) : u_str = 1 u_pat = 0; Bug 36207
+ok 791 - $c =~ /$c/i : chr (43) : u_str = 1 u_pat = 1; Bug 36207
+ok 792 - $c=~/$c|xyz/i : chr(43) : u_str = 1 u_pat = 1; Bug 36207
+ok 793 - $c =~ /$c/i : chr (44) : u_str = 0 u_pat = 0; Bug 36207
+ok 794 - $c=~/$c|xyz/i : chr(44) : u_str = 0 u_pat = 0; Bug 36207
+ok 795 - $c =~ /$c/i : chr (44) : u_str = 0 u_pat = 1; Bug 36207
+ok 796 - $c=~/$c|xyz/i : chr(44) : u_str = 0 u_pat = 1; Bug 36207
+ok 797 - $c =~ /$c/i : chr (44) : u_str = 1 u_pat = 0; Bug 36207
+ok 798 - $c=~/$c|xyz/i : chr(44) : u_str = 1 u_pat = 0; Bug 36207
+ok 799 - $c =~ /$c/i : chr (44) : u_str = 1 u_pat = 1; Bug 36207
+ok 800 - $c=~/$c|xyz/i : chr(44) : u_str = 1 u_pat = 1; Bug 36207
+ok 801 - $c =~ /$c/i : chr (45) : u_str = 0 u_pat = 0; Bug 36207
+ok 802 - $c=~/$c|xyz/i : chr(45) : u_str = 0 u_pat = 0; Bug 36207
+ok 803 - $c =~ /$c/i : chr (45) : u_str = 0 u_pat = 1; Bug 36207
+ok 804 - $c=~/$c|xyz/i : chr(45) : u_str = 0 u_pat = 1; Bug 36207
+ok 805 - $c =~ /$c/i : chr (45) : u_str = 1 u_pat = 0; Bug 36207
+ok 806 - $c=~/$c|xyz/i : chr(45) : u_str = 1 u_pat = 0; Bug 36207
+ok 807 - $c =~ /$c/i : chr (45) : u_str = 1 u_pat = 1; Bug 36207
+ok 808 - $c=~/$c|xyz/i : chr(45) : u_str = 1 u_pat = 1; Bug 36207
+ok 809 - $c =~ /$c/i : chr (46) : u_str = 0 u_pat = 0; Bug 36207
+ok 810 - $c=~/$c|xyz/i : chr(46) : u_str = 0 u_pat = 0; Bug 36207
+ok 811 - $c =~ /$c/i : chr (46) : u_str = 0 u_pat = 1; Bug 36207
+ok 812 - $c=~/$c|xyz/i : chr(46) : u_str = 0 u_pat = 1; Bug 36207
+ok 813 - $c =~ /$c/i : chr (46) : u_str = 1 u_pat = 0; Bug 36207
+ok 814 - $c=~/$c|xyz/i : chr(46) : u_str = 1 u_pat = 0; Bug 36207
+ok 815 - $c =~ /$c/i : chr (46) : u_str = 1 u_pat = 1; Bug 36207
+ok 816 - $c=~/$c|xyz/i : chr(46) : u_str = 1 u_pat = 1; Bug 36207
+ok 817 - $c =~ /$c/i : chr (47) : u_str = 0 u_pat = 0; Bug 36207
+ok 818 - $c=~/$c|xyz/i : chr(47) : u_str = 0 u_pat = 0; Bug 36207
+ok 819 - $c =~ /$c/i : chr (47) : u_str = 0 u_pat = 1; Bug 36207
+ok 820 - $c=~/$c|xyz/i : chr(47) : u_str = 0 u_pat = 1; Bug 36207
+ok 821 - $c =~ /$c/i : chr (47) : u_str = 1 u_pat = 0; Bug 36207
+ok 822 - $c=~/$c|xyz/i : chr(47) : u_str = 1 u_pat = 0; Bug 36207
+ok 823 - $c =~ /$c/i : chr (47) : u_str = 1 u_pat = 1; Bug 36207
+ok 824 - $c=~/$c|xyz/i : chr(47) : u_str = 1 u_pat = 1; Bug 36207
+ok 825 - $c =~ /$c/i : chr (48) : u_str = 0 u_pat = 0; Bug 36207
+ok 826 - $c=~/$c|xyz/i : chr(48) : u_str = 0 u_pat = 0; Bug 36207
+ok 827 - $c =~ /$c/i : chr (48) : u_str = 0 u_pat = 1; Bug 36207
+ok 828 - $c=~/$c|xyz/i : chr(48) : u_str = 0 u_pat = 1; Bug 36207
+ok 829 - $c =~ /$c/i : chr (48) : u_str = 1 u_pat = 0; Bug 36207
+ok 830 - $c=~/$c|xyz/i : chr(48) : u_str = 1 u_pat = 0; Bug 36207
+ok 831 - $c =~ /$c/i : chr (48) : u_str = 1 u_pat = 1; Bug 36207
+ok 832 - $c=~/$c|xyz/i : chr(48) : u_str = 1 u_pat = 1; Bug 36207
+ok 833 - $c =~ /$c/i : chr (49) : u_str = 0 u_pat = 0; Bug 36207
+ok 834 - $c=~/$c|xyz/i : chr(49) : u_str = 0 u_pat = 0; Bug 36207
+ok 835 - $c =~ /$c/i : chr (49) : u_str = 0 u_pat = 1; Bug 36207
+ok 836 - $c=~/$c|xyz/i : chr(49) : u_str = 0 u_pat = 1; Bug 36207
+ok 837 - $c =~ /$c/i : chr (49) : u_str = 1 u_pat = 0; Bug 36207
+ok 838 - $c=~/$c|xyz/i : chr(49) : u_str = 1 u_pat = 0; Bug 36207
+ok 839 - $c =~ /$c/i : chr (49) : u_str = 1 u_pat = 1; Bug 36207
+ok 840 - $c=~/$c|xyz/i : chr(49) : u_str = 1 u_pat = 1; Bug 36207
+ok 841 - $c =~ /$c/i : chr (50) : u_str = 0 u_pat = 0; Bug 36207
+ok 842 - $c=~/$c|xyz/i : chr(50) : u_str = 0 u_pat = 0; Bug 36207
+ok 843 - $c =~ /$c/i : chr (50) : u_str = 0 u_pat = 1; Bug 36207
+ok 844 - $c=~/$c|xyz/i : chr(50) : u_str = 0 u_pat = 1; Bug 36207
+ok 845 - $c =~ /$c/i : chr (50) : u_str = 1 u_pat = 0; Bug 36207
+ok 846 - $c=~/$c|xyz/i : chr(50) : u_str = 1 u_pat = 0; Bug 36207
+ok 847 - $c =~ /$c/i : chr (50) : u_str = 1 u_pat = 1; Bug 36207
+ok 848 - $c=~/$c|xyz/i : chr(50) : u_str = 1 u_pat = 1; Bug 36207
+ok 849 - $c =~ /$c/i : chr (51) : u_str = 0 u_pat = 0; Bug 36207
+ok 850 - $c=~/$c|xyz/i : chr(51) : u_str = 0 u_pat = 0; Bug 36207
+ok 851 - $c =~ /$c/i : chr (51) : u_str = 0 u_pat = 1; Bug 36207
+ok 852 - $c=~/$c|xyz/i : chr(51) : u_str = 0 u_pat = 1; Bug 36207
+ok 853 - $c =~ /$c/i : chr (51) : u_str = 1 u_pat = 0; Bug 36207
+ok 854 - $c=~/$c|xyz/i : chr(51) : u_str = 1 u_pat = 0; Bug 36207
+ok 855 - $c =~ /$c/i : chr (51) : u_str = 1 u_pat = 1; Bug 36207
+ok 856 - $c=~/$c|xyz/i : chr(51) : u_str = 1 u_pat = 1; Bug 36207
+ok 857 - $c =~ /$c/i : chr (52) : u_str = 0 u_pat = 0; Bug 36207
+ok 858 - $c=~/$c|xyz/i : chr(52) : u_str = 0 u_pat = 0; Bug 36207
+ok 859 - $c =~ /$c/i : chr (52) : u_str = 0 u_pat = 1; Bug 36207
+ok 860 - $c=~/$c|xyz/i : chr(52) : u_str = 0 u_pat = 1; Bug 36207
+ok 861 - $c =~ /$c/i : chr (52) : u_str = 1 u_pat = 0; Bug 36207
+ok 862 - $c=~/$c|xyz/i : chr(52) : u_str = 1 u_pat = 0; Bug 36207
+ok 863 - $c =~ /$c/i : chr (52) : u_str = 1 u_pat = 1; Bug 36207
+ok 864 - $c=~/$c|xyz/i : chr(52) : u_str = 1 u_pat = 1; Bug 36207
+ok 865 - $c =~ /$c/i : chr (53) : u_str = 0 u_pat = 0; Bug 36207
+ok 866 - $c=~/$c|xyz/i : chr(53) : u_str = 0 u_pat = 0; Bug 36207
+ok 867 - $c =~ /$c/i : chr (53) : u_str = 0 u_pat = 1; Bug 36207
+ok 868 - $c=~/$c|xyz/i : chr(53) : u_str = 0 u_pat = 1; Bug 36207
+ok 869 - $c =~ /$c/i : chr (53) : u_str = 1 u_pat = 0; Bug 36207
+ok 870 - $c=~/$c|xyz/i : chr(53) : u_str = 1 u_pat = 0; Bug 36207
+ok 871 - $c =~ /$c/i : chr (53) : u_str = 1 u_pat = 1; Bug 36207
+ok 872 - $c=~/$c|xyz/i : chr(53) : u_str = 1 u_pat = 1; Bug 36207
+ok 873 - $c =~ /$c/i : chr (54) : u_str = 0 u_pat = 0; Bug 36207
+ok 874 - $c=~/$c|xyz/i : chr(54) : u_str = 0 u_pat = 0; Bug 36207
+ok 875 - $c =~ /$c/i : chr (54) : u_str = 0 u_pat = 1; Bug 36207
+ok 876 - $c=~/$c|xyz/i : chr(54) : u_str = 0 u_pat = 1; Bug 36207
+ok 877 - $c =~ /$c/i : chr (54) : u_str = 1 u_pat = 0; Bug 36207
+ok 878 - $c=~/$c|xyz/i : chr(54) : u_str = 1 u_pat = 0; Bug 36207
+ok 879 - $c =~ /$c/i : chr (54) : u_str = 1 u_pat = 1; Bug 36207
+ok 880 - $c=~/$c|xyz/i : chr(54) : u_str = 1 u_pat = 1; Bug 36207
+ok 881 - $c =~ /$c/i : chr (55) : u_str = 0 u_pat = 0; Bug 36207
+ok 882 - $c=~/$c|xyz/i : chr(55) : u_str = 0 u_pat = 0; Bug 36207
+ok 883 - $c =~ /$c/i : chr (55) : u_str = 0 u_pat = 1; Bug 36207
+ok 884 - $c=~/$c|xyz/i : chr(55) : u_str = 0 u_pat = 1; Bug 36207
+ok 885 - $c =~ /$c/i : chr (55) : u_str = 1 u_pat = 0; Bug 36207
+ok 886 - $c=~/$c|xyz/i : chr(55) : u_str = 1 u_pat = 0; Bug 36207
+ok 887 - $c =~ /$c/i : chr (55) : u_str = 1 u_pat = 1; Bug 36207
+ok 888 - $c=~/$c|xyz/i : chr(55) : u_str = 1 u_pat = 1; Bug 36207
+ok 889 - $c =~ /$c/i : chr (56) : u_str = 0 u_pat = 0; Bug 36207
+ok 890 - $c=~/$c|xyz/i : chr(56) : u_str = 0 u_pat = 0; Bug 36207
+ok 891 - $c =~ /$c/i : chr (56) : u_str = 0 u_pat = 1; Bug 36207
+ok 892 - $c=~/$c|xyz/i : chr(56) : u_str = 0 u_pat = 1; Bug 36207
+ok 893 - $c =~ /$c/i : chr (56) : u_str = 1 u_pat = 0; Bug 36207
+ok 894 - $c=~/$c|xyz/i : chr(56) : u_str = 1 u_pat = 0; Bug 36207
+ok 895 - $c =~ /$c/i : chr (56) : u_str = 1 u_pat = 1; Bug 36207
+ok 896 - $c=~/$c|xyz/i : chr(56) : u_str = 1 u_pat = 1; Bug 36207
+ok 897 - $c =~ /$c/i : chr (57) : u_str = 0 u_pat = 0; Bug 36207
+ok 898 - $c=~/$c|xyz/i : chr(57) : u_str = 0 u_pat = 0; Bug 36207
+ok 899 - $c =~ /$c/i : chr (57) : u_str = 0 u_pat = 1; Bug 36207
+ok 900 - $c=~/$c|xyz/i : chr(57) : u_str = 0 u_pat = 1; Bug 36207
+ok 901 - $c =~ /$c/i : chr (57) : u_str = 1 u_pat = 0; Bug 36207
+ok 902 - $c=~/$c|xyz/i : chr(57) : u_str = 1 u_pat = 0; Bug 36207
+ok 903 - $c =~ /$c/i : chr (57) : u_str = 1 u_pat = 1; Bug 36207
+ok 904 - $c=~/$c|xyz/i : chr(57) : u_str = 1 u_pat = 1; Bug 36207
+ok 905 - $c =~ /$c/i : chr (58) : u_str = 0 u_pat = 0; Bug 36207
+ok 906 - $c=~/$c|xyz/i : chr(58) : u_str = 0 u_pat = 0; Bug 36207
+ok 907 - $c =~ /$c/i : chr (58) : u_str = 0 u_pat = 1; Bug 36207
+ok 908 - $c=~/$c|xyz/i : chr(58) : u_str = 0 u_pat = 1; Bug 36207
+ok 909 - $c =~ /$c/i : chr (58) : u_str = 1 u_pat = 0; Bug 36207
+ok 910 - $c=~/$c|xyz/i : chr(58) : u_str = 1 u_pat = 0; Bug 36207
+ok 911 - $c =~ /$c/i : chr (58) : u_str = 1 u_pat = 1; Bug 36207
+ok 912 - $c=~/$c|xyz/i : chr(58) : u_str = 1 u_pat = 1; Bug 36207
+ok 913 - $c =~ /$c/i : chr (59) : u_str = 0 u_pat = 0; Bug 36207
+ok 914 - $c=~/$c|xyz/i : chr(59) : u_str = 0 u_pat = 0; Bug 36207
+ok 915 - $c =~ /$c/i : chr (59) : u_str = 0 u_pat = 1; Bug 36207
+ok 916 - $c=~/$c|xyz/i : chr(59) : u_str = 0 u_pat = 1; Bug 36207
+ok 917 - $c =~ /$c/i : chr (59) : u_str = 1 u_pat = 0; Bug 36207
+ok 918 - $c=~/$c|xyz/i : chr(59) : u_str = 1 u_pat = 0; Bug 36207
+ok 919 - $c =~ /$c/i : chr (59) : u_str = 1 u_pat = 1; Bug 36207
+ok 920 - $c=~/$c|xyz/i : chr(59) : u_str = 1 u_pat = 1; Bug 36207
+ok 921 - $c =~ /$c/i : chr (60) : u_str = 0 u_pat = 0; Bug 36207
+ok 922 - $c=~/$c|xyz/i : chr(60) : u_str = 0 u_pat = 0; Bug 36207
+ok 923 - $c =~ /$c/i : chr (60) : u_str = 0 u_pat = 1; Bug 36207
+ok 924 - $c=~/$c|xyz/i : chr(60) : u_str = 0 u_pat = 1; Bug 36207
+ok 925 - $c =~ /$c/i : chr (60) : u_str = 1 u_pat = 0; Bug 36207
+ok 926 - $c=~/$c|xyz/i : chr(60) : u_str = 1 u_pat = 0; Bug 36207
+ok 927 - $c =~ /$c/i : chr (60) : u_str = 1 u_pat = 1; Bug 36207
+ok 928 - $c=~/$c|xyz/i : chr(60) : u_str = 1 u_pat = 1; Bug 36207
+ok 929 - $c =~ /$c/i : chr (61) : u_str = 0 u_pat = 0; Bug 36207
+ok 930 - $c=~/$c|xyz/i : chr(61) : u_str = 0 u_pat = 0; Bug 36207
+ok 931 - $c =~ /$c/i : chr (61) : u_str = 0 u_pat = 1; Bug 36207
+ok 932 - $c=~/$c|xyz/i : chr(61) : u_str = 0 u_pat = 1; Bug 36207
+ok 933 - $c =~ /$c/i : chr (61) : u_str = 1 u_pat = 0; Bug 36207
+ok 934 - $c=~/$c|xyz/i : chr(61) : u_str = 1 u_pat = 0; Bug 36207
+ok 935 - $c =~ /$c/i : chr (61) : u_str = 1 u_pat = 1; Bug 36207
+ok 936 - $c=~/$c|xyz/i : chr(61) : u_str = 1 u_pat = 1; Bug 36207
+ok 937 - $c =~ /$c/i : chr (62) : u_str = 0 u_pat = 0; Bug 36207
+ok 938 - $c=~/$c|xyz/i : chr(62) : u_str = 0 u_pat = 0; Bug 36207
+ok 939 - $c =~ /$c/i : chr (62) : u_str = 0 u_pat = 1; Bug 36207
+ok 940 - $c=~/$c|xyz/i : chr(62) : u_str = 0 u_pat = 1; Bug 36207
+ok 941 - $c =~ /$c/i : chr (62) : u_str = 1 u_pat = 0; Bug 36207
+ok 942 - $c=~/$c|xyz/i : chr(62) : u_str = 1 u_pat = 0; Bug 36207
+ok 943 - $c =~ /$c/i : chr (62) : u_str = 1 u_pat = 1; Bug 36207
+ok 944 - $c=~/$c|xyz/i : chr(62) : u_str = 1 u_pat = 1; Bug 36207
+ok 945 - $c =~ /$c/i : chr (63) : u_str = 0 u_pat = 0; Bug 36207
+ok 946 - $c=~/$c|xyz/i : chr(63) : u_str = 0 u_pat = 0; Bug 36207
+ok 947 - $c =~ /$c/i : chr (63) : u_str = 0 u_pat = 1; Bug 36207
+ok 948 - $c=~/$c|xyz/i : chr(63) : u_str = 0 u_pat = 1; Bug 36207
+ok 949 - $c =~ /$c/i : chr (63) : u_str = 1 u_pat = 0; Bug 36207
+ok 950 - $c=~/$c|xyz/i : chr(63) : u_str = 1 u_pat = 0; Bug 36207
+ok 951 - $c =~ /$c/i : chr (63) : u_str = 1 u_pat = 1; Bug 36207
+ok 952 - $c=~/$c|xyz/i : chr(63) : u_str = 1 u_pat = 1; Bug 36207
+ok 953 - $c =~ /$c/i : chr (64) : u_str = 0 u_pat = 0; Bug 36207
+ok 954 - $c=~/$c|xyz/i : chr(64) : u_str = 0 u_pat = 0; Bug 36207
+ok 955 - $c =~ /$c/i : chr (64) : u_str = 0 u_pat = 1; Bug 36207
+ok 956 - $c=~/$c|xyz/i : chr(64) : u_str = 0 u_pat = 1; Bug 36207
+ok 957 - $c =~ /$c/i : chr (64) : u_str = 1 u_pat = 0; Bug 36207
+ok 958 - $c=~/$c|xyz/i : chr(64) : u_str = 1 u_pat = 0; Bug 36207
+ok 959 - $c =~ /$c/i : chr (64) : u_str = 1 u_pat = 1; Bug 36207
+ok 960 - $c=~/$c|xyz/i : chr(64) : u_str = 1 u_pat = 1; Bug 36207
+ok 961 - $c =~ /$c/i : chr (65) : u_str = 0 u_pat = 0; Bug 36207
+ok 962 - $c=~/$c|xyz/i : chr(65) : u_str = 0 u_pat = 0; Bug 36207
+ok 963 - $c =~ /$c/i : chr (65) : u_str = 0 u_pat = 1; Bug 36207
+ok 964 - $c=~/$c|xyz/i : chr(65) : u_str = 0 u_pat = 1; Bug 36207
+ok 965 - $c =~ /$c/i : chr (65) : u_str = 1 u_pat = 0; Bug 36207
+ok 966 - $c=~/$c|xyz/i : chr(65) : u_str = 1 u_pat = 0; Bug 36207
+ok 967 - $c =~ /$c/i : chr (65) : u_str = 1 u_pat = 1; Bug 36207
+ok 968 - $c=~/$c|xyz/i : chr(65) : u_str = 1 u_pat = 1; Bug 36207
+ok 969 - $c =~ /$c/i : chr (66) : u_str = 0 u_pat = 0; Bug 36207
+ok 970 - $c=~/$c|xyz/i : chr(66) : u_str = 0 u_pat = 0; Bug 36207
+ok 971 - $c =~ /$c/i : chr (66) : u_str = 0 u_pat = 1; Bug 36207
+ok 972 - $c=~/$c|xyz/i : chr(66) : u_str = 0 u_pat = 1; Bug 36207
+ok 973 - $c =~ /$c/i : chr (66) : u_str = 1 u_pat = 0; Bug 36207
+ok 974 - $c=~/$c|xyz/i : chr(66) : u_str = 1 u_pat = 0; Bug 36207
+ok 975 - $c =~ /$c/i : chr (66) : u_str = 1 u_pat = 1; Bug 36207
+ok 976 - $c=~/$c|xyz/i : chr(66) : u_str = 1 u_pat = 1; Bug 36207
+ok 977 - $c =~ /$c/i : chr (67) : u_str = 0 u_pat = 0; Bug 36207
+ok 978 - $c=~/$c|xyz/i : chr(67) : u_str = 0 u_pat = 0; Bug 36207
+ok 979 - $c =~ /$c/i : chr (67) : u_str = 0 u_pat = 1; Bug 36207
+ok 980 - $c=~/$c|xyz/i : chr(67) : u_str = 0 u_pat = 1; Bug 36207
+ok 981 - $c =~ /$c/i : chr (67) : u_str = 1 u_pat = 0; Bug 36207
+ok 982 - $c=~/$c|xyz/i : chr(67) : u_str = 1 u_pat = 0; Bug 36207
+ok 983 - $c =~ /$c/i : chr (67) : u_str = 1 u_pat = 1; Bug 36207
+ok 984 - $c=~/$c|xyz/i : chr(67) : u_str = 1 u_pat = 1; Bug 36207
+ok 985 - $c =~ /$c/i : chr (68) : u_str = 0 u_pat = 0; Bug 36207
+ok 986 - $c=~/$c|xyz/i : chr(68) : u_str = 0 u_pat = 0; Bug 36207
+ok 987 - $c =~ /$c/i : chr (68) : u_str = 0 u_pat = 1; Bug 36207
+ok 988 - $c=~/$c|xyz/i : chr(68) : u_str = 0 u_pat = 1; Bug 36207
+ok 989 - $c =~ /$c/i : chr (68) : u_str = 1 u_pat = 0; Bug 36207
+ok 990 - $c=~/$c|xyz/i : chr(68) : u_str = 1 u_pat = 0; Bug 36207
+ok 991 - $c =~ /$c/i : chr (68) : u_str = 1 u_pat = 1; Bug 36207
+ok 992 - $c=~/$c|xyz/i : chr(68) : u_str = 1 u_pat = 1; Bug 36207
+ok 993 - $c =~ /$c/i : chr (69) : u_str = 0 u_pat = 0; Bug 36207
+ok 994 - $c=~/$c|xyz/i : chr(69) : u_str = 0 u_pat = 0; Bug 36207
+ok 995 - $c =~ /$c/i : chr (69) : u_str = 0 u_pat = 1; Bug 36207
+ok 996 - $c=~/$c|xyz/i : chr(69) : u_str = 0 u_pat = 1; Bug 36207
+ok 997 - $c =~ /$c/i : chr (69) : u_str = 1 u_pat = 0; Bug 36207
+ok 998 - $c=~/$c|xyz/i : chr(69) : u_str = 1 u_pat = 0; Bug 36207
+ok 999 - $c =~ /$c/i : chr (69) : u_str = 1 u_pat = 1; Bug 36207
+ok 1000 - $c=~/$c|xyz/i : chr(69) : u_str = 1 u_pat = 1; Bug 36207
+ok 1001 - $c =~ /$c/i : chr (70) : u_str = 0 u_pat = 0; Bug 36207
+ok 1002 - $c=~/$c|xyz/i : chr(70) : u_str = 0 u_pat = 0; Bug 36207
+ok 1003 - $c =~ /$c/i : chr (70) : u_str = 0 u_pat = 1; Bug 36207
+ok 1004 - $c=~/$c|xyz/i : chr(70) : u_str = 0 u_pat = 1; Bug 36207
+ok 1005 - $c =~ /$c/i : chr (70) : u_str = 1 u_pat = 0; Bug 36207
+ok 1006 - $c=~/$c|xyz/i : chr(70) : u_str = 1 u_pat = 0; Bug 36207
+ok 1007 - $c =~ /$c/i : chr (70) : u_str = 1 u_pat = 1; Bug 36207
+ok 1008 - $c=~/$c|xyz/i : chr(70) : u_str = 1 u_pat = 1; Bug 36207
+ok 1009 - $c =~ /$c/i : chr (71) : u_str = 0 u_pat = 0; Bug 36207
+ok 1010 - $c=~/$c|xyz/i : chr(71) : u_str = 0 u_pat = 0; Bug 36207
+ok 1011 - $c =~ /$c/i : chr (71) : u_str = 0 u_pat = 1; Bug 36207
+ok 1012 - $c=~/$c|xyz/i : chr(71) : u_str = 0 u_pat = 1; Bug 36207
+ok 1013 - $c =~ /$c/i : chr (71) : u_str = 1 u_pat = 0; Bug 36207
+ok 1014 - $c=~/$c|xyz/i : chr(71) : u_str = 1 u_pat = 0; Bug 36207
+ok 1015 - $c =~ /$c/i : chr (71) : u_str = 1 u_pat = 1; Bug 36207
+ok 1016 - $c=~/$c|xyz/i : chr(71) : u_str = 1 u_pat = 1; Bug 36207
+ok 1017 - $c =~ /$c/i : chr (72) : u_str = 0 u_pat = 0; Bug 36207
+ok 1018 - $c=~/$c|xyz/i : chr(72) : u_str = 0 u_pat = 0; Bug 36207
+ok 1019 - $c =~ /$c/i : chr (72) : u_str = 0 u_pat = 1; Bug 36207
+ok 1020 - $c=~/$c|xyz/i : chr(72) : u_str = 0 u_pat = 1; Bug 36207
+ok 1021 - $c =~ /$c/i : chr (72) : u_str = 1 u_pat = 0; Bug 36207
+ok 1022 - $c=~/$c|xyz/i : chr(72) : u_str = 1 u_pat = 0; Bug 36207
+ok 1023 - $c =~ /$c/i : chr (72) : u_str = 1 u_pat = 1; Bug 36207
+ok 1024 - $c=~/$c|xyz/i : chr(72) : u_str = 1 u_pat = 1; Bug 36207
+ok 1025 - $c =~ /$c/i : chr (73) : u_str = 0 u_pat = 0; Bug 36207
+ok 1026 - $c=~/$c|xyz/i : chr(73) : u_str = 0 u_pat = 0; Bug 36207
+ok 1027 - $c =~ /$c/i : chr (73) : u_str = 0 u_pat = 1; Bug 36207
+ok 1028 - $c=~/$c|xyz/i : chr(73) : u_str = 0 u_pat = 1; Bug 36207
+ok 1029 - $c =~ /$c/i : chr (73) : u_str = 1 u_pat = 0; Bug 36207
+ok 1030 - $c=~/$c|xyz/i : chr(73) : u_str = 1 u_pat = 0; Bug 36207
+ok 1031 - $c =~ /$c/i : chr (73) : u_str = 1 u_pat = 1; Bug 36207
+ok 1032 - $c=~/$c|xyz/i : chr(73) : u_str = 1 u_pat = 1; Bug 36207
+ok 1033 - $c =~ /$c/i : chr (74) : u_str = 0 u_pat = 0; Bug 36207
+ok 1034 - $c=~/$c|xyz/i : chr(74) : u_str = 0 u_pat = 0; Bug 36207
+ok 1035 - $c =~ /$c/i : chr (74) : u_str = 0 u_pat = 1; Bug 36207
+ok 1036 - $c=~/$c|xyz/i : chr(74) : u_str = 0 u_pat = 1; Bug 36207
+ok 1037 - $c =~ /$c/i : chr (74) : u_str = 1 u_pat = 0; Bug 36207
+ok 1038 - $c=~/$c|xyz/i : chr(74) : u_str = 1 u_pat = 0; Bug 36207
+ok 1039 - $c =~ /$c/i : chr (74) : u_str = 1 u_pat = 1; Bug 36207
+ok 1040 - $c=~/$c|xyz/i : chr(74) : u_str = 1 u_pat = 1; Bug 36207
+ok 1041 - $c =~ /$c/i : chr (75) : u_str = 0 u_pat = 0; Bug 36207
+ok 1042 - $c=~/$c|xyz/i : chr(75) : u_str = 0 u_pat = 0; Bug 36207
+ok 1043 - $c =~ /$c/i : chr (75) : u_str = 0 u_pat = 1; Bug 36207
+ok 1044 - $c=~/$c|xyz/i : chr(75) : u_str = 0 u_pat = 1; Bug 36207
+ok 1045 - $c =~ /$c/i : chr (75) : u_str = 1 u_pat = 0; Bug 36207
+ok 1046 - $c=~/$c|xyz/i : chr(75) : u_str = 1 u_pat = 0; Bug 36207
+ok 1047 - $c =~ /$c/i : chr (75) : u_str = 1 u_pat = 1; Bug 36207
+ok 1048 - $c=~/$c|xyz/i : chr(75) : u_str = 1 u_pat = 1; Bug 36207
+ok 1049 - $c =~ /$c/i : chr (76) : u_str = 0 u_pat = 0; Bug 36207
+ok 1050 - $c=~/$c|xyz/i : chr(76) : u_str = 0 u_pat = 0; Bug 36207
+ok 1051 - $c =~ /$c/i : chr (76) : u_str = 0 u_pat = 1; Bug 36207
+ok 1052 - $c=~/$c|xyz/i : chr(76) : u_str = 0 u_pat = 1; Bug 36207
+ok 1053 - $c =~ /$c/i : chr (76) : u_str = 1 u_pat = 0; Bug 36207
+ok 1054 - $c=~/$c|xyz/i : chr(76) : u_str = 1 u_pat = 0; Bug 36207
+ok 1055 - $c =~ /$c/i : chr (76) : u_str = 1 u_pat = 1; Bug 36207
+ok 1056 - $c=~/$c|xyz/i : chr(76) : u_str = 1 u_pat = 1; Bug 36207
+ok 1057 - $c =~ /$c/i : chr (77) : u_str = 0 u_pat = 0; Bug 36207
+ok 1058 - $c=~/$c|xyz/i : chr(77) : u_str = 0 u_pat = 0; Bug 36207
+ok 1059 - $c =~ /$c/i : chr (77) : u_str = 0 u_pat = 1; Bug 36207
+ok 1060 - $c=~/$c|xyz/i : chr(77) : u_str = 0 u_pat = 1; Bug 36207
+ok 1061 - $c =~ /$c/i : chr (77) : u_str = 1 u_pat = 0; Bug 36207
+ok 1062 - $c=~/$c|xyz/i : chr(77) : u_str = 1 u_pat = 0; Bug 36207
+ok 1063 - $c =~ /$c/i : chr (77) : u_str = 1 u_pat = 1; Bug 36207
+ok 1064 - $c=~/$c|xyz/i : chr(77) : u_str = 1 u_pat = 1; Bug 36207
+ok 1065 - $c =~ /$c/i : chr (78) : u_str = 0 u_pat = 0; Bug 36207
+ok 1066 - $c=~/$c|xyz/i : chr(78) : u_str = 0 u_pat = 0; Bug 36207
+ok 1067 - $c =~ /$c/i : chr (78) : u_str = 0 u_pat = 1; Bug 36207
+ok 1068 - $c=~/$c|xyz/i : chr(78) : u_str = 0 u_pat = 1; Bug 36207
+ok 1069 - $c =~ /$c/i : chr (78) : u_str = 1 u_pat = 0; Bug 36207
+ok 1070 - $c=~/$c|xyz/i : chr(78) : u_str = 1 u_pat = 0; Bug 36207
+ok 1071 - $c =~ /$c/i : chr (78) : u_str = 1 u_pat = 1; Bug 36207
+ok 1072 - $c=~/$c|xyz/i : chr(78) : u_str = 1 u_pat = 1; Bug 36207
+ok 1073 - $c =~ /$c/i : chr (79) : u_str = 0 u_pat = 0; Bug 36207
+ok 1074 - $c=~/$c|xyz/i : chr(79) : u_str = 0 u_pat = 0; Bug 36207
+ok 1075 - $c =~ /$c/i : chr (79) : u_str = 0 u_pat = 1; Bug 36207
+ok 1076 - $c=~/$c|xyz/i : chr(79) : u_str = 0 u_pat = 1; Bug 36207
+ok 1077 - $c =~ /$c/i : chr (79) : u_str = 1 u_pat = 0; Bug 36207
+ok 1078 - $c=~/$c|xyz/i : chr(79) : u_str = 1 u_pat = 0; Bug 36207
+ok 1079 - $c =~ /$c/i : chr (79) : u_str = 1 u_pat = 1; Bug 36207
+ok 1080 - $c=~/$c|xyz/i : chr(79) : u_str = 1 u_pat = 1; Bug 36207
+ok 1081 - $c =~ /$c/i : chr (80) : u_str = 0 u_pat = 0; Bug 36207
+ok 1082 - $c=~/$c|xyz/i : chr(80) : u_str = 0 u_pat = 0; Bug 36207
+ok 1083 - $c =~ /$c/i : chr (80) : u_str = 0 u_pat = 1; Bug 36207
+ok 1084 - $c=~/$c|xyz/i : chr(80) : u_str = 0 u_pat = 1; Bug 36207
+ok 1085 - $c =~ /$c/i : chr (80) : u_str = 1 u_pat = 0; Bug 36207
+ok 1086 - $c=~/$c|xyz/i : chr(80) : u_str = 1 u_pat = 0; Bug 36207
+ok 1087 - $c =~ /$c/i : chr (80) : u_str = 1 u_pat = 1; Bug 36207
+ok 1088 - $c=~/$c|xyz/i : chr(80) : u_str = 1 u_pat = 1; Bug 36207
+ok 1089 - $c =~ /$c/i : chr (81) : u_str = 0 u_pat = 0; Bug 36207
+ok 1090 - $c=~/$c|xyz/i : chr(81) : u_str = 0 u_pat = 0; Bug 36207
+ok 1091 - $c =~ /$c/i : chr (81) : u_str = 0 u_pat = 1; Bug 36207
+ok 1092 - $c=~/$c|xyz/i : chr(81) : u_str = 0 u_pat = 1; Bug 36207
+ok 1093 - $c =~ /$c/i : chr (81) : u_str = 1 u_pat = 0; Bug 36207
+ok 1094 - $c=~/$c|xyz/i : chr(81) : u_str = 1 u_pat = 0; Bug 36207
+ok 1095 - $c =~ /$c/i : chr (81) : u_str = 1 u_pat = 1; Bug 36207
+ok 1096 - $c=~/$c|xyz/i : chr(81) : u_str = 1 u_pat = 1; Bug 36207
+ok 1097 - $c =~ /$c/i : chr (82) : u_str = 0 u_pat = 0; Bug 36207
+ok 1098 - $c=~/$c|xyz/i : chr(82) : u_str = 0 u_pat = 0; Bug 36207
+ok 1099 - $c =~ /$c/i : chr (82) : u_str = 0 u_pat = 1; Bug 36207
+ok 1100 - $c=~/$c|xyz/i : chr(82) : u_str = 0 u_pat = 1; Bug 36207
+ok 1101 - $c =~ /$c/i : chr (82) : u_str = 1 u_pat = 0; Bug 36207
+ok 1102 - $c=~/$c|xyz/i : chr(82) : u_str = 1 u_pat = 0; Bug 36207
+ok 1103 - $c =~ /$c/i : chr (82) : u_str = 1 u_pat = 1; Bug 36207
+ok 1104 - $c=~/$c|xyz/i : chr(82) : u_str = 1 u_pat = 1; Bug 36207
+ok 1105 - $c =~ /$c/i : chr (83) : u_str = 0 u_pat = 0; Bug 36207
+ok 1106 - $c=~/$c|xyz/i : chr(83) : u_str = 0 u_pat = 0; Bug 36207
+ok 1107 - $c =~ /$c/i : chr (83) : u_str = 0 u_pat = 1; Bug 36207
+ok 1108 - $c=~/$c|xyz/i : chr(83) : u_str = 0 u_pat = 1; Bug 36207
+ok 1109 - $c =~ /$c/i : chr (83) : u_str = 1 u_pat = 0; Bug 36207
+ok 1110 - $c=~/$c|xyz/i : chr(83) : u_str = 1 u_pat = 0; Bug 36207
+ok 1111 - $c =~ /$c/i : chr (83) : u_str = 1 u_pat = 1; Bug 36207
+ok 1112 - $c=~/$c|xyz/i : chr(83) : u_str = 1 u_pat = 1; Bug 36207
+ok 1113 - $c =~ /$c/i : chr (84) : u_str = 0 u_pat = 0; Bug 36207
+ok 1114 - $c=~/$c|xyz/i : chr(84) : u_str = 0 u_pat = 0; Bug 36207
+ok 1115 - $c =~ /$c/i : chr (84) : u_str = 0 u_pat = 1; Bug 36207
+ok 1116 - $c=~/$c|xyz/i : chr(84) : u_str = 0 u_pat = 1; Bug 36207
+ok 1117 - $c =~ /$c/i : chr (84) : u_str = 1 u_pat = 0; Bug 36207
+ok 1118 - $c=~/$c|xyz/i : chr(84) : u_str = 1 u_pat = 0; Bug 36207
+ok 1119 - $c =~ /$c/i : chr (84) : u_str = 1 u_pat = 1; Bug 36207
+ok 1120 - $c=~/$c|xyz/i : chr(84) : u_str = 1 u_pat = 1; Bug 36207
+ok 1121 - $c =~ /$c/i : chr (85) : u_str = 0 u_pat = 0; Bug 36207
+ok 1122 - $c=~/$c|xyz/i : chr(85) : u_str = 0 u_pat = 0; Bug 36207
+ok 1123 - $c =~ /$c/i : chr (85) : u_str = 0 u_pat = 1; Bug 36207
+ok 1124 - $c=~/$c|xyz/i : chr(85) : u_str = 0 u_pat = 1; Bug 36207
+ok 1125 - $c =~ /$c/i : chr (85) : u_str = 1 u_pat = 0; Bug 36207
+ok 1126 - $c=~/$c|xyz/i : chr(85) : u_str = 1 u_pat = 0; Bug 36207
+ok 1127 - $c =~ /$c/i : chr (85) : u_str = 1 u_pat = 1; Bug 36207
+ok 1128 - $c=~/$c|xyz/i : chr(85) : u_str = 1 u_pat = 1; Bug 36207
+ok 1129 - $c =~ /$c/i : chr (86) : u_str = 0 u_pat = 0; Bug 36207
+ok 1130 - $c=~/$c|xyz/i : chr(86) : u_str = 0 u_pat = 0; Bug 36207
+ok 1131 - $c =~ /$c/i : chr (86) : u_str = 0 u_pat = 1; Bug 36207
+ok 1132 - $c=~/$c|xyz/i : chr(86) : u_str = 0 u_pat = 1; Bug 36207
+ok 1133 - $c =~ /$c/i : chr (86) : u_str = 1 u_pat = 0; Bug 36207
+ok 1134 - $c=~/$c|xyz/i : chr(86) : u_str = 1 u_pat = 0; Bug 36207
+ok 1135 - $c =~ /$c/i : chr (86) : u_str = 1 u_pat = 1; Bug 36207
+ok 1136 - $c=~/$c|xyz/i : chr(86) : u_str = 1 u_pat = 1; Bug 36207
+ok 1137 - $c =~ /$c/i : chr (87) : u_str = 0 u_pat = 0; Bug 36207
+ok 1138 - $c=~/$c|xyz/i : chr(87) : u_str = 0 u_pat = 0; Bug 36207
+ok 1139 - $c =~ /$c/i : chr (87) : u_str = 0 u_pat = 1; Bug 36207
+ok 1140 - $c=~/$c|xyz/i : chr(87) : u_str = 0 u_pat = 1; Bug 36207
+ok 1141 - $c =~ /$c/i : chr (87) : u_str = 1 u_pat = 0; Bug 36207
+ok 1142 - $c=~/$c|xyz/i : chr(87) : u_str = 1 u_pat = 0; Bug 36207
+ok 1143 - $c =~ /$c/i : chr (87) : u_str = 1 u_pat = 1; Bug 36207
+ok 1144 - $c=~/$c|xyz/i : chr(87) : u_str = 1 u_pat = 1; Bug 36207
+ok 1145 - $c =~ /$c/i : chr (88) : u_str = 0 u_pat = 0; Bug 36207
+ok 1146 - $c=~/$c|xyz/i : chr(88) : u_str = 0 u_pat = 0; Bug 36207
+ok 1147 - $c =~ /$c/i : chr (88) : u_str = 0 u_pat = 1; Bug 36207
+ok 1148 - $c=~/$c|xyz/i : chr(88) : u_str = 0 u_pat = 1; Bug 36207
+ok 1149 - $c =~ /$c/i : chr (88) : u_str = 1 u_pat = 0; Bug 36207
+ok 1150 - $c=~/$c|xyz/i : chr(88) : u_str = 1 u_pat = 0; Bug 36207
+ok 1151 - $c =~ /$c/i : chr (88) : u_str = 1 u_pat = 1; Bug 36207
+ok 1152 - $c=~/$c|xyz/i : chr(88) : u_str = 1 u_pat = 1; Bug 36207
+ok 1153 - $c =~ /$c/i : chr (89) : u_str = 0 u_pat = 0; Bug 36207
+ok 1154 - $c=~/$c|xyz/i : chr(89) : u_str = 0 u_pat = 0; Bug 36207
+ok 1155 - $c =~ /$c/i : chr (89) : u_str = 0 u_pat = 1; Bug 36207
+ok 1156 - $c=~/$c|xyz/i : chr(89) : u_str = 0 u_pat = 1; Bug 36207
+ok 1157 - $c =~ /$c/i : chr (89) : u_str = 1 u_pat = 0; Bug 36207
+ok 1158 - $c=~/$c|xyz/i : chr(89) : u_str = 1 u_pat = 0; Bug 36207
+ok 1159 - $c =~ /$c/i : chr (89) : u_str = 1 u_pat = 1; Bug 36207
+ok 1160 - $c=~/$c|xyz/i : chr(89) : u_str = 1 u_pat = 1; Bug 36207
+ok 1161 - $c =~ /$c/i : chr (90) : u_str = 0 u_pat = 0; Bug 36207
+ok 1162 - $c=~/$c|xyz/i : chr(90) : u_str = 0 u_pat = 0; Bug 36207
+ok 1163 - $c =~ /$c/i : chr (90) : u_str = 0 u_pat = 1; Bug 36207
+ok 1164 - $c=~/$c|xyz/i : chr(90) : u_str = 0 u_pat = 1; Bug 36207
+ok 1165 - $c =~ /$c/i : chr (90) : u_str = 1 u_pat = 0; Bug 36207
+ok 1166 - $c=~/$c|xyz/i : chr(90) : u_str = 1 u_pat = 0; Bug 36207
+ok 1167 - $c =~ /$c/i : chr (90) : u_str = 1 u_pat = 1; Bug 36207
+ok 1168 - $c=~/$c|xyz/i : chr(90) : u_str = 1 u_pat = 1; Bug 36207
+ok 1169 - $c =~ /$c/i : chr (91) : u_str = 0 u_pat = 0; Bug 36207
+ok 1170 - $c=~/$c|xyz/i : chr(91) : u_str = 0 u_pat = 0; Bug 36207
+ok 1171 - $c =~ /$c/i : chr (91) : u_str = 0 u_pat = 1; Bug 36207
+ok 1172 - $c=~/$c|xyz/i : chr(91) : u_str = 0 u_pat = 1; Bug 36207
+ok 1173 - $c =~ /$c/i : chr (91) : u_str = 1 u_pat = 0; Bug 36207
+ok 1174 - $c=~/$c|xyz/i : chr(91) : u_str = 1 u_pat = 0; Bug 36207
+ok 1175 - $c =~ /$c/i : chr (91) : u_str = 1 u_pat = 1; Bug 36207
+ok 1176 - $c=~/$c|xyz/i : chr(91) : u_str = 1 u_pat = 1; Bug 36207
+ok 1177 - $c =~ /$c/i : chr (92) : u_str = 0 u_pat = 0; Bug 36207
+ok 1178 - $c=~/$c|xyz/i : chr(92) : u_str = 0 u_pat = 0; Bug 36207
+ok 1179 - $c =~ /$c/i : chr (92) : u_str = 0 u_pat = 1; Bug 36207
+ok 1180 - $c=~/$c|xyz/i : chr(92) : u_str = 0 u_pat = 1; Bug 36207
+ok 1181 - $c =~ /$c/i : chr (92) : u_str = 1 u_pat = 0; Bug 36207
+ok 1182 - $c=~/$c|xyz/i : chr(92) : u_str = 1 u_pat = 0; Bug 36207
+ok 1183 - $c =~ /$c/i : chr (92) : u_str = 1 u_pat = 1; Bug 36207
+ok 1184 - $c=~/$c|xyz/i : chr(92) : u_str = 1 u_pat = 1; Bug 36207
+ok 1185 - $c =~ /$c/i : chr (93) : u_str = 0 u_pat = 0; Bug 36207
+ok 1186 - $c=~/$c|xyz/i : chr(93) : u_str = 0 u_pat = 0; Bug 36207
+ok 1187 - $c =~ /$c/i : chr (93) : u_str = 0 u_pat = 1; Bug 36207
+ok 1188 - $c=~/$c|xyz/i : chr(93) : u_str = 0 u_pat = 1; Bug 36207
+ok 1189 - $c =~ /$c/i : chr (93) : u_str = 1 u_pat = 0; Bug 36207
+ok 1190 - $c=~/$c|xyz/i : chr(93) : u_str = 1 u_pat = 0; Bug 36207
+ok 1191 - $c =~ /$c/i : chr (93) : u_str = 1 u_pat = 1; Bug 36207
+ok 1192 - $c=~/$c|xyz/i : chr(93) : u_str = 1 u_pat = 1; Bug 36207
+ok 1193 - $c =~ /$c/i : chr (94) : u_str = 0 u_pat = 0; Bug 36207
+ok 1194 - $c=~/$c|xyz/i : chr(94) : u_str = 0 u_pat = 0; Bug 36207
+ok 1195 - $c =~ /$c/i : chr (94) : u_str = 0 u_pat = 1; Bug 36207
+ok 1196 - $c=~/$c|xyz/i : chr(94) : u_str = 0 u_pat = 1; Bug 36207
+ok 1197 - $c =~ /$c/i : chr (94) : u_str = 1 u_pat = 0; Bug 36207
+ok 1198 - $c=~/$c|xyz/i : chr(94) : u_str = 1 u_pat = 0; Bug 36207
+ok 1199 - $c =~ /$c/i : chr (94) : u_str = 1 u_pat = 1; Bug 36207
+ok 1200 - $c=~/$c|xyz/i : chr(94) : u_str = 1 u_pat = 1; Bug 36207
+ok 1201 - $c =~ /$c/i : chr (95) : u_str = 0 u_pat = 0; Bug 36207
+ok 1202 - $c=~/$c|xyz/i : chr(95) : u_str = 0 u_pat = 0; Bug 36207
+ok 1203 - $c =~ /$c/i : chr (95) : u_str = 0 u_pat = 1; Bug 36207
+ok 1204 - $c=~/$c|xyz/i : chr(95) : u_str = 0 u_pat = 1; Bug 36207
+ok 1205 - $c =~ /$c/i : chr (95) : u_str = 1 u_pat = 0; Bug 36207
+ok 1206 - $c=~/$c|xyz/i : chr(95) : u_str = 1 u_pat = 0; Bug 36207
+ok 1207 - $c =~ /$c/i : chr (95) : u_str = 1 u_pat = 1; Bug 36207
+ok 1208 - $c=~/$c|xyz/i : chr(95) : u_str = 1 u_pat = 1; Bug 36207
+ok 1209 - $c =~ /$c/i : chr (96) : u_str = 0 u_pat = 0; Bug 36207
+ok 1210 - $c=~/$c|xyz/i : chr(96) : u_str = 0 u_pat = 0; Bug 36207
+ok 1211 - $c =~ /$c/i : chr (96) : u_str = 0 u_pat = 1; Bug 36207
+ok 1212 - $c=~/$c|xyz/i : chr(96) : u_str = 0 u_pat = 1; Bug 36207
+ok 1213 - $c =~ /$c/i : chr (96) : u_str = 1 u_pat = 0; Bug 36207
+ok 1214 - $c=~/$c|xyz/i : chr(96) : u_str = 1 u_pat = 0; Bug 36207
+ok 1215 - $c =~ /$c/i : chr (96) : u_str = 1 u_pat = 1; Bug 36207
+ok 1216 - $c=~/$c|xyz/i : chr(96) : u_str = 1 u_pat = 1; Bug 36207
+ok 1217 - $c =~ /$c/i : chr (97) : u_str = 0 u_pat = 0; Bug 36207
+ok 1218 - $c=~/$c|xyz/i : chr(97) : u_str = 0 u_pat = 0; Bug 36207
+ok 1219 - $c =~ /$c/i : chr (97) : u_str = 0 u_pat = 1; Bug 36207
+ok 1220 - $c=~/$c|xyz/i : chr(97) : u_str = 0 u_pat = 1; Bug 36207
+ok 1221 - $c =~ /$c/i : chr (97) : u_str = 1 u_pat = 0; Bug 36207
+ok 1222 - $c=~/$c|xyz/i : chr(97) : u_str = 1 u_pat = 0; Bug 36207
+ok 1223 - $c =~ /$c/i : chr (97) : u_str = 1 u_pat = 1; Bug 36207
+ok 1224 - $c=~/$c|xyz/i : chr(97) : u_str = 1 u_pat = 1; Bug 36207
+ok 1225 - $c =~ /$c/i : chr (98) : u_str = 0 u_pat = 0; Bug 36207
+ok 1226 - $c=~/$c|xyz/i : chr(98) : u_str = 0 u_pat = 0; Bug 36207
+ok 1227 - $c =~ /$c/i : chr (98) : u_str = 0 u_pat = 1; Bug 36207
+ok 1228 - $c=~/$c|xyz/i : chr(98) : u_str = 0 u_pat = 1; Bug 36207
+ok 1229 - $c =~ /$c/i : chr (98) : u_str = 1 u_pat = 0; Bug 36207
+ok 1230 - $c=~/$c|xyz/i : chr(98) : u_str = 1 u_pat = 0; Bug 36207
+ok 1231 - $c =~ /$c/i : chr (98) : u_str = 1 u_pat = 1; Bug 36207
+ok 1232 - $c=~/$c|xyz/i : chr(98) : u_str = 1 u_pat = 1; Bug 36207
+ok 1233 - $c =~ /$c/i : chr (99) : u_str = 0 u_pat = 0; Bug 36207
+ok 1234 - $c=~/$c|xyz/i : chr(99) : u_str = 0 u_pat = 0; Bug 36207
+ok 1235 - $c =~ /$c/i : chr (99) : u_str = 0 u_pat = 1; Bug 36207
+ok 1236 - $c=~/$c|xyz/i : chr(99) : u_str = 0 u_pat = 1; Bug 36207
+ok 1237 - $c =~ /$c/i : chr (99) : u_str = 1 u_pat = 0; Bug 36207
+ok 1238 - $c=~/$c|xyz/i : chr(99) : u_str = 1 u_pat = 0; Bug 36207
+ok 1239 - $c =~ /$c/i : chr (99) : u_str = 1 u_pat = 1; Bug 36207
+ok 1240 - $c=~/$c|xyz/i : chr(99) : u_str = 1 u_pat = 1; Bug 36207
+ok 1241 - $c =~ /$c/i : chr (100) : u_str = 0 u_pat = 0; Bug 36207
+ok 1242 - $c=~/$c|xyz/i : chr(100) : u_str = 0 u_pat = 0; Bug 36207
+ok 1243 - $c =~ /$c/i : chr (100) : u_str = 0 u_pat = 1; Bug 36207
+ok 1244 - $c=~/$c|xyz/i : chr(100) : u_str = 0 u_pat = 1; Bug 36207
+ok 1245 - $c =~ /$c/i : chr (100) : u_str = 1 u_pat = 0; Bug 36207
+ok 1246 - $c=~/$c|xyz/i : chr(100) : u_str = 1 u_pat = 0; Bug 36207
+ok 1247 - $c =~ /$c/i : chr (100) : u_str = 1 u_pat = 1; Bug 36207
+ok 1248 - $c=~/$c|xyz/i : chr(100) : u_str = 1 u_pat = 1; Bug 36207
+ok 1249 - $c =~ /$c/i : chr (101) : u_str = 0 u_pat = 0; Bug 36207
+ok 1250 - $c=~/$c|xyz/i : chr(101) : u_str = 0 u_pat = 0; Bug 36207
+ok 1251 - $c =~ /$c/i : chr (101) : u_str = 0 u_pat = 1; Bug 36207
+ok 1252 - $c=~/$c|xyz/i : chr(101) : u_str = 0 u_pat = 1; Bug 36207
+ok 1253 - $c =~ /$c/i : chr (101) : u_str = 1 u_pat = 0; Bug 36207
+ok 1254 - $c=~/$c|xyz/i : chr(101) : u_str = 1 u_pat = 0; Bug 36207
+ok 1255 - $c =~ /$c/i : chr (101) : u_str = 1 u_pat = 1; Bug 36207
+ok 1256 - $c=~/$c|xyz/i : chr(101) : u_str = 1 u_pat = 1; Bug 36207
+ok 1257 - $c =~ /$c/i : chr (102) : u_str = 0 u_pat = 0; Bug 36207
+ok 1258 - $c=~/$c|xyz/i : chr(102) : u_str = 0 u_pat = 0; Bug 36207
+ok 1259 - $c =~ /$c/i : chr (102) : u_str = 0 u_pat = 1; Bug 36207
+ok 1260 - $c=~/$c|xyz/i : chr(102) : u_str = 0 u_pat = 1; Bug 36207
+ok 1261 - $c =~ /$c/i : chr (102) : u_str = 1 u_pat = 0; Bug 36207
+ok 1262 - $c=~/$c|xyz/i : chr(102) : u_str = 1 u_pat = 0; Bug 36207
+ok 1263 - $c =~ /$c/i : chr (102) : u_str = 1 u_pat = 1; Bug 36207
+ok 1264 - $c=~/$c|xyz/i : chr(102) : u_str = 1 u_pat = 1; Bug 36207
+ok 1265 - $c =~ /$c/i : chr (103) : u_str = 0 u_pat = 0; Bug 36207
+ok 1266 - $c=~/$c|xyz/i : chr(103) : u_str = 0 u_pat = 0; Bug 36207
+ok 1267 - $c =~ /$c/i : chr (103) : u_str = 0 u_pat = 1; Bug 36207
+ok 1268 - $c=~/$c|xyz/i : chr(103) : u_str = 0 u_pat = 1; Bug 36207
+ok 1269 - $c =~ /$c/i : chr (103) : u_str = 1 u_pat = 0; Bug 36207
+ok 1270 - $c=~/$c|xyz/i : chr(103) : u_str = 1 u_pat = 0; Bug 36207
+ok 1271 - $c =~ /$c/i : chr (103) : u_str = 1 u_pat = 1; Bug 36207
+ok 1272 - $c=~/$c|xyz/i : chr(103) : u_str = 1 u_pat = 1; Bug 36207
+ok 1273 - $c =~ /$c/i : chr (104) : u_str = 0 u_pat = 0; Bug 36207
+ok 1274 - $c=~/$c|xyz/i : chr(104) : u_str = 0 u_pat = 0; Bug 36207
+ok 1275 - $c =~ /$c/i : chr (104) : u_str = 0 u_pat = 1; Bug 36207
+ok 1276 - $c=~/$c|xyz/i : chr(104) : u_str = 0 u_pat = 1; Bug 36207
+ok 1277 - $c =~ /$c/i : chr (104) : u_str = 1 u_pat = 0; Bug 36207
+ok 1278 - $c=~/$c|xyz/i : chr(104) : u_str = 1 u_pat = 0; Bug 36207
+ok 1279 - $c =~ /$c/i : chr (104) : u_str = 1 u_pat = 1; Bug 36207
+ok 1280 - $c=~/$c|xyz/i : chr(104) : u_str = 1 u_pat = 1; Bug 36207
+ok 1281 - $c =~ /$c/i : chr (105) : u_str = 0 u_pat = 0; Bug 36207
+ok 1282 - $c=~/$c|xyz/i : chr(105) : u_str = 0 u_pat = 0; Bug 36207
+ok 1283 - $c =~ /$c/i : chr (105) : u_str = 0 u_pat = 1; Bug 36207
+ok 1284 - $c=~/$c|xyz/i : chr(105) : u_str = 0 u_pat = 1; Bug 36207
+ok 1285 - $c =~ /$c/i : chr (105) : u_str = 1 u_pat = 0; Bug 36207
+ok 1286 - $c=~/$c|xyz/i : chr(105) : u_str = 1 u_pat = 0; Bug 36207
+ok 1287 - $c =~ /$c/i : chr (105) : u_str = 1 u_pat = 1; Bug 36207
+ok 1288 - $c=~/$c|xyz/i : chr(105) : u_str = 1 u_pat = 1; Bug 36207
+ok 1289 - $c =~ /$c/i : chr (106) : u_str = 0 u_pat = 0; Bug 36207
+ok 1290 - $c=~/$c|xyz/i : chr(106) : u_str = 0 u_pat = 0; Bug 36207
+ok 1291 - $c =~ /$c/i : chr (106) : u_str = 0 u_pat = 1; Bug 36207
+ok 1292 - $c=~/$c|xyz/i : chr(106) : u_str = 0 u_pat = 1; Bug 36207
+ok 1293 - $c =~ /$c/i : chr (106) : u_str = 1 u_pat = 0; Bug 36207
+ok 1294 - $c=~/$c|xyz/i : chr(106) : u_str = 1 u_pat = 0; Bug 36207
+ok 1295 - $c =~ /$c/i : chr (106) : u_str = 1 u_pat = 1; Bug 36207
+ok 1296 - $c=~/$c|xyz/i : chr(106) : u_str = 1 u_pat = 1; Bug 36207
+ok 1297 - $c =~ /$c/i : chr (107) : u_str = 0 u_pat = 0; Bug 36207
+ok 1298 - $c=~/$c|xyz/i : chr(107) : u_str = 0 u_pat = 0; Bug 36207
+ok 1299 - $c =~ /$c/i : chr (107) : u_str = 0 u_pat = 1; Bug 36207
+ok 1300 - $c=~/$c|xyz/i : chr(107) : u_str = 0 u_pat = 1; Bug 36207
+ok 1301 - $c =~ /$c/i : chr (107) : u_str = 1 u_pat = 0; Bug 36207
+ok 1302 - $c=~/$c|xyz/i : chr(107) : u_str = 1 u_pat = 0; Bug 36207
+ok 1303 - $c =~ /$c/i : chr (107) : u_str = 1 u_pat = 1; Bug 36207
+ok 1304 - $c=~/$c|xyz/i : chr(107) : u_str = 1 u_pat = 1; Bug 36207
+ok 1305 - $c =~ /$c/i : chr (108) : u_str = 0 u_pat = 0; Bug 36207
+ok 1306 - $c=~/$c|xyz/i : chr(108) : u_str = 0 u_pat = 0; Bug 36207
+ok 1307 - $c =~ /$c/i : chr (108) : u_str = 0 u_pat = 1; Bug 36207
+ok 1308 - $c=~/$c|xyz/i : chr(108) : u_str = 0 u_pat = 1; Bug 36207
+ok 1309 - $c =~ /$c/i : chr (108) : u_str = 1 u_pat = 0; Bug 36207
+ok 1310 - $c=~/$c|xyz/i : chr(108) : u_str = 1 u_pat = 0; Bug 36207
+ok 1311 - $c =~ /$c/i : chr (108) : u_str = 1 u_pat = 1; Bug 36207
+ok 1312 - $c=~/$c|xyz/i : chr(108) : u_str = 1 u_pat = 1; Bug 36207
+ok 1313 - $c =~ /$c/i : chr (109) : u_str = 0 u_pat = 0; Bug 36207
+ok 1314 - $c=~/$c|xyz/i : chr(109) : u_str = 0 u_pat = 0; Bug 36207
+ok 1315 - $c =~ /$c/i : chr (109) : u_str = 0 u_pat = 1; Bug 36207
+ok 1316 - $c=~/$c|xyz/i : chr(109) : u_str = 0 u_pat = 1; Bug 36207
+ok 1317 - $c =~ /$c/i : chr (109) : u_str = 1 u_pat = 0; Bug 36207
+ok 1318 - $c=~/$c|xyz/i : chr(109) : u_str = 1 u_pat = 0; Bug 36207
+ok 1319 - $c =~ /$c/i : chr (109) : u_str = 1 u_pat = 1; Bug 36207
+ok 1320 - $c=~/$c|xyz/i : chr(109) : u_str = 1 u_pat = 1; Bug 36207
+ok 1321 - $c =~ /$c/i : chr (110) : u_str = 0 u_pat = 0; Bug 36207
+ok 1322 - $c=~/$c|xyz/i : chr(110) : u_str = 0 u_pat = 0; Bug 36207
+ok 1323 - $c =~ /$c/i : chr (110) : u_str = 0 u_pat = 1; Bug 36207
+ok 1324 - $c=~/$c|xyz/i : chr(110) : u_str = 0 u_pat = 1; Bug 36207
+ok 1325 - $c =~ /$c/i : chr (110) : u_str = 1 u_pat = 0; Bug 36207
+ok 1326 - $c=~/$c|xyz/i : chr(110) : u_str = 1 u_pat = 0; Bug 36207
+ok 1327 - $c =~ /$c/i : chr (110) : u_str = 1 u_pat = 1; Bug 36207
+ok 1328 - $c=~/$c|xyz/i : chr(110) : u_str = 1 u_pat = 1; Bug 36207
+ok 1329 - $c =~ /$c/i : chr (111) : u_str = 0 u_pat = 0; Bug 36207
+ok 1330 - $c=~/$c|xyz/i : chr(111) : u_str = 0 u_pat = 0; Bug 36207
+ok 1331 - $c =~ /$c/i : chr (111) : u_str = 0 u_pat = 1; Bug 36207
+ok 1332 - $c=~/$c|xyz/i : chr(111) : u_str = 0 u_pat = 1; Bug 36207
+ok 1333 - $c =~ /$c/i : chr (111) : u_str = 1 u_pat = 0; Bug 36207
+ok 1334 - $c=~/$c|xyz/i : chr(111) : u_str = 1 u_pat = 0; Bug 36207
+ok 1335 - $c =~ /$c/i : chr (111) : u_str = 1 u_pat = 1; Bug 36207
+ok 1336 - $c=~/$c|xyz/i : chr(111) : u_str = 1 u_pat = 1; Bug 36207
+ok 1337 - $c =~ /$c/i : chr (112) : u_str = 0 u_pat = 0; Bug 36207
+ok 1338 - $c=~/$c|xyz/i : chr(112) : u_str = 0 u_pat = 0; Bug 36207
+ok 1339 - $c =~ /$c/i : chr (112) : u_str = 0 u_pat = 1; Bug 36207
+ok 1340 - $c=~/$c|xyz/i : chr(112) : u_str = 0 u_pat = 1; Bug 36207
+ok 1341 - $c =~ /$c/i : chr (112) : u_str = 1 u_pat = 0; Bug 36207
+ok 1342 - $c=~/$c|xyz/i : chr(112) : u_str = 1 u_pat = 0; Bug 36207
+ok 1343 - $c =~ /$c/i : chr (112) : u_str = 1 u_pat = 1; Bug 36207
+ok 1344 - $c=~/$c|xyz/i : chr(112) : u_str = 1 u_pat = 1; Bug 36207
+ok 1345 - $c =~ /$c/i : chr (113) : u_str = 0 u_pat = 0; Bug 36207
+ok 1346 - $c=~/$c|xyz/i : chr(113) : u_str = 0 u_pat = 0; Bug 36207
+ok 1347 - $c =~ /$c/i : chr (113) : u_str = 0 u_pat = 1; Bug 36207
+ok 1348 - $c=~/$c|xyz/i : chr(113) : u_str = 0 u_pat = 1; Bug 36207
+ok 1349 - $c =~ /$c/i : chr (113) : u_str = 1 u_pat = 0; Bug 36207
+ok 1350 - $c=~/$c|xyz/i : chr(113) : u_str = 1 u_pat = 0; Bug 36207
+ok 1351 - $c =~ /$c/i : chr (113) : u_str = 1 u_pat = 1; Bug 36207
+ok 1352 - $c=~/$c|xyz/i : chr(113) : u_str = 1 u_pat = 1; Bug 36207
+ok 1353 - $c =~ /$c/i : chr (114) : u_str = 0 u_pat = 0; Bug 36207
+ok 1354 - $c=~/$c|xyz/i : chr(114) : u_str = 0 u_pat = 0; Bug 36207
+ok 1355 - $c =~ /$c/i : chr (114) : u_str = 0 u_pat = 1; Bug 36207
+ok 1356 - $c=~/$c|xyz/i : chr(114) : u_str = 0 u_pat = 1; Bug 36207
+ok 1357 - $c =~ /$c/i : chr (114) : u_str = 1 u_pat = 0; Bug 36207
+ok 1358 - $c=~/$c|xyz/i : chr(114) : u_str = 1 u_pat = 0; Bug 36207
+ok 1359 - $c =~ /$c/i : chr (114) : u_str = 1 u_pat = 1; Bug 36207
+ok 1360 - $c=~/$c|xyz/i : chr(114) : u_str = 1 u_pat = 1; Bug 36207
+ok 1361 - $c =~ /$c/i : chr (115) : u_str = 0 u_pat = 0; Bug 36207
+ok 1362 - $c=~/$c|xyz/i : chr(115) : u_str = 0 u_pat = 0; Bug 36207
+ok 1363 - $c =~ /$c/i : chr (115) : u_str = 0 u_pat = 1; Bug 36207
+ok 1364 - $c=~/$c|xyz/i : chr(115) : u_str = 0 u_pat = 1; Bug 36207
+ok 1365 - $c =~ /$c/i : chr (115) : u_str = 1 u_pat = 0; Bug 36207
+ok 1366 - $c=~/$c|xyz/i : chr(115) : u_str = 1 u_pat = 0; Bug 36207
+ok 1367 - $c =~ /$c/i : chr (115) : u_str = 1 u_pat = 1; Bug 36207
+ok 1368 - $c=~/$c|xyz/i : chr(115) : u_str = 1 u_pat = 1; Bug 36207
+ok 1369 - $c =~ /$c/i : chr (116) : u_str = 0 u_pat = 0; Bug 36207
+ok 1370 - $c=~/$c|xyz/i : chr(116) : u_str = 0 u_pat = 0; Bug 36207
+ok 1371 - $c =~ /$c/i : chr (116) : u_str = 0 u_pat = 1; Bug 36207
+ok 1372 - $c=~/$c|xyz/i : chr(116) : u_str = 0 u_pat = 1; Bug 36207
+ok 1373 - $c =~ /$c/i : chr (116) : u_str = 1 u_pat = 0; Bug 36207
+ok 1374 - $c=~/$c|xyz/i : chr(116) : u_str = 1 u_pat = 0; Bug 36207
+ok 1375 - $c =~ /$c/i : chr (116) : u_str = 1 u_pat = 1; Bug 36207
+ok 1376 - $c=~/$c|xyz/i : chr(116) : u_str = 1 u_pat = 1; Bug 36207
+ok 1377 - $c =~ /$c/i : chr (117) : u_str = 0 u_pat = 0; Bug 36207
+ok 1378 - $c=~/$c|xyz/i : chr(117) : u_str = 0 u_pat = 0; Bug 36207
+ok 1379 - $c =~ /$c/i : chr (117) : u_str = 0 u_pat = 1; Bug 36207
+ok 1380 - $c=~/$c|xyz/i : chr(117) : u_str = 0 u_pat = 1; Bug 36207
+ok 1381 - $c =~ /$c/i : chr (117) : u_str = 1 u_pat = 0; Bug 36207
+ok 1382 - $c=~/$c|xyz/i : chr(117) : u_str = 1 u_pat = 0; Bug 36207
+ok 1383 - $c =~ /$c/i : chr (117) : u_str = 1 u_pat = 1; Bug 36207
+ok 1384 - $c=~/$c|xyz/i : chr(117) : u_str = 1 u_pat = 1; Bug 36207
+ok 1385 - $c =~ /$c/i : chr (118) : u_str = 0 u_pat = 0; Bug 36207
+ok 1386 - $c=~/$c|xyz/i : chr(118) : u_str = 0 u_pat = 0; Bug 36207
+ok 1387 - $c =~ /$c/i : chr (118) : u_str = 0 u_pat = 1; Bug 36207
+ok 1388 - $c=~/$c|xyz/i : chr(118) : u_str = 0 u_pat = 1; Bug 36207
+ok 1389 - $c =~ /$c/i : chr (118) : u_str = 1 u_pat = 0; Bug 36207
+ok 1390 - $c=~/$c|xyz/i : chr(118) : u_str = 1 u_pat = 0; Bug 36207
+ok 1391 - $c =~ /$c/i : chr (118) : u_str = 1 u_pat = 1; Bug 36207
+ok 1392 - $c=~/$c|xyz/i : chr(118) : u_str = 1 u_pat = 1; Bug 36207
+ok 1393 - $c =~ /$c/i : chr (119) : u_str = 0 u_pat = 0; Bug 36207
+ok 1394 - $c=~/$c|xyz/i : chr(119) : u_str = 0 u_pat = 0; Bug 36207
+ok 1395 - $c =~ /$c/i : chr (119) : u_str = 0 u_pat = 1; Bug 36207
+ok 1396 - $c=~/$c|xyz/i : chr(119) : u_str = 0 u_pat = 1; Bug 36207
+ok 1397 - $c =~ /$c/i : chr (119) : u_str = 1 u_pat = 0; Bug 36207
+ok 1398 - $c=~/$c|xyz/i : chr(119) : u_str = 1 u_pat = 0; Bug 36207
+ok 1399 - $c =~ /$c/i : chr (119) : u_str = 1 u_pat = 1; Bug 36207
+ok 1400 - $c=~/$c|xyz/i : chr(119) : u_str = 1 u_pat = 1; Bug 36207
+ok 1401 - $c =~ /$c/i : chr (120) : u_str = 0 u_pat = 0; Bug 36207
+ok 1402 - $c=~/$c|xyz/i : chr(120) : u_str = 0 u_pat = 0; Bug 36207
+ok 1403 - $c =~ /$c/i : chr (120) : u_str = 0 u_pat = 1; Bug 36207
+ok 1404 - $c=~/$c|xyz/i : chr(120) : u_str = 0 u_pat = 1; Bug 36207
+ok 1405 - $c =~ /$c/i : chr (120) : u_str = 1 u_pat = 0; Bug 36207
+ok 1406 - $c=~/$c|xyz/i : chr(120) : u_str = 1 u_pat = 0; Bug 36207
+ok 1407 - $c =~ /$c/i : chr (120) : u_str = 1 u_pat = 1; Bug 36207
+ok 1408 - $c=~/$c|xyz/i : chr(120) : u_str = 1 u_pat = 1; Bug 36207
+ok 1409 - $c =~ /$c/i : chr (121) : u_str = 0 u_pat = 0; Bug 36207
+ok 1410 - $c=~/$c|xyz/i : chr(121) : u_str = 0 u_pat = 0; Bug 36207
+ok 1411 - $c =~ /$c/i : chr (121) : u_str = 0 u_pat = 1; Bug 36207
+ok 1412 - $c=~/$c|xyz/i : chr(121) : u_str = 0 u_pat = 1; Bug 36207
+ok 1413 - $c =~ /$c/i : chr (121) : u_str = 1 u_pat = 0; Bug 36207
+ok 1414 - $c=~/$c|xyz/i : chr(121) : u_str = 1 u_pat = 0; Bug 36207
+ok 1415 - $c =~ /$c/i : chr (121) : u_str = 1 u_pat = 1; Bug 36207
+ok 1416 - $c=~/$c|xyz/i : chr(121) : u_str = 1 u_pat = 1; Bug 36207
+ok 1417 - $c =~ /$c/i : chr (122) : u_str = 0 u_pat = 0; Bug 36207
+ok 1418 - $c=~/$c|xyz/i : chr(122) : u_str = 0 u_pat = 0; Bug 36207
+ok 1419 - $c =~ /$c/i : chr (122) : u_str = 0 u_pat = 1; Bug 36207
+ok 1420 - $c=~/$c|xyz/i : chr(122) : u_str = 0 u_pat = 1; Bug 36207
+ok 1421 - $c =~ /$c/i : chr (122) : u_str = 1 u_pat = 0; Bug 36207
+ok 1422 - $c=~/$c|xyz/i : chr(122) : u_str = 1 u_pat = 0; Bug 36207
+ok 1423 - $c =~ /$c/i : chr (122) : u_str = 1 u_pat = 1; Bug 36207
+ok 1424 - $c=~/$c|xyz/i : chr(122) : u_str = 1 u_pat = 1; Bug 36207
+ok 1425 - $c =~ /$c/i : chr (123) : u_str = 0 u_pat = 0; Bug 36207
+ok 1426 - $c=~/$c|xyz/i : chr(123) : u_str = 0 u_pat = 0; Bug 36207
+ok 1427 - $c =~ /$c/i : chr (123) : u_str = 0 u_pat = 1; Bug 36207
+ok 1428 - $c=~/$c|xyz/i : chr(123) : u_str = 0 u_pat = 1; Bug 36207
+ok 1429 - $c =~ /$c/i : chr (123) : u_str = 1 u_pat = 0; Bug 36207
+ok 1430 - $c=~/$c|xyz/i : chr(123) : u_str = 1 u_pat = 0; Bug 36207
+ok 1431 - $c =~ /$c/i : chr (123) : u_str = 1 u_pat = 1; Bug 36207
+ok 1432 - $c=~/$c|xyz/i : chr(123) : u_str = 1 u_pat = 1; Bug 36207
+ok 1433 - $c =~ /$c/i : chr (124) : u_str = 0 u_pat = 0; Bug 36207
+ok 1434 - $c=~/$c|xyz/i : chr(124) : u_str = 0 u_pat = 0; Bug 36207
+ok 1435 - $c =~ /$c/i : chr (124) : u_str = 0 u_pat = 1; Bug 36207
+ok 1436 - $c=~/$c|xyz/i : chr(124) : u_str = 0 u_pat = 1; Bug 36207
+ok 1437 - $c =~ /$c/i : chr (124) : u_str = 1 u_pat = 0; Bug 36207
+ok 1438 - $c=~/$c|xyz/i : chr(124) : u_str = 1 u_pat = 0; Bug 36207
+ok 1439 - $c =~ /$c/i : chr (124) : u_str = 1 u_pat = 1; Bug 36207
+ok 1440 - $c=~/$c|xyz/i : chr(124) : u_str = 1 u_pat = 1; Bug 36207
+ok 1441 - $c =~ /$c/i : chr (125) : u_str = 0 u_pat = 0; Bug 36207
+ok 1442 - $c=~/$c|xyz/i : chr(125) : u_str = 0 u_pat = 0; Bug 36207
+ok 1443 - $c =~ /$c/i : chr (125) : u_str = 0 u_pat = 1; Bug 36207
+ok 1444 - $c=~/$c|xyz/i : chr(125) : u_str = 0 u_pat = 1; Bug 36207
+ok 1445 - $c =~ /$c/i : chr (125) : u_str = 1 u_pat = 0; Bug 36207
+ok 1446 - $c=~/$c|xyz/i : chr(125) : u_str = 1 u_pat = 0; Bug 36207
+ok 1447 - $c =~ /$c/i : chr (125) : u_str = 1 u_pat = 1; Bug 36207
+ok 1448 - $c=~/$c|xyz/i : chr(125) : u_str = 1 u_pat = 1; Bug 36207
+ok 1449 - $c =~ /$c/i : chr (126) : u_str = 0 u_pat = 0; Bug 36207
+ok 1450 - $c=~/$c|xyz/i : chr(126) : u_str = 0 u_pat = 0; Bug 36207
+ok 1451 - $c =~ /$c/i : chr (126) : u_str = 0 u_pat = 1; Bug 36207
+ok 1452 - $c=~/$c|xyz/i : chr(126) : u_str = 0 u_pat = 1; Bug 36207
+ok 1453 - $c =~ /$c/i : chr (126) : u_str = 1 u_pat = 0; Bug 36207
+ok 1454 - $c=~/$c|xyz/i : chr(126) : u_str = 1 u_pat = 0; Bug 36207
+ok 1455 - $c =~ /$c/i : chr (126) : u_str = 1 u_pat = 1; Bug 36207
+ok 1456 - $c=~/$c|xyz/i : chr(126) : u_str = 1 u_pat = 1; Bug 36207
+ok 1457 - $c =~ /$c/i : chr (127) : u_str = 0 u_pat = 0; Bug 36207
+ok 1458 - $c=~/$c|xyz/i : chr(127) : u_str = 0 u_pat = 0; Bug 36207
+ok 1459 - $c =~ /$c/i : chr (127) : u_str = 0 u_pat = 1; Bug 36207
+ok 1460 - $c=~/$c|xyz/i : chr(127) : u_str = 0 u_pat = 1; Bug 36207
+ok 1461 - $c =~ /$c/i : chr (127) : u_str = 1 u_pat = 0; Bug 36207
+ok 1462 - $c=~/$c|xyz/i : chr(127) : u_str = 1 u_pat = 0; Bug 36207
+ok 1463 - $c =~ /$c/i : chr (127) : u_str = 1 u_pat = 1; Bug 36207
+ok 1464 - $c=~/$c|xyz/i : chr(127) : u_str = 1 u_pat = 1; Bug 36207
+ok 1465 - $c =~ /$c/i : chr (128) : u_str = 0 u_pat = 0; Bug 36207
+ok 1466 - $c=~/$c|xyz/i : chr(128) : u_str = 0 u_pat = 0; Bug 36207
+ok 1467 - $c =~ /$c/i : chr (128) : u_str = 0 u_pat = 1; Bug 36207
+ok 1468 - $c=~/$c|xyz/i : chr(128) : u_str = 0 u_pat = 1; Bug 36207
+ok 1469 - $c =~ /$c/i : chr (128) : u_str = 1 u_pat = 0; Bug 36207
+ok 1470 - $c=~/$c|xyz/i : chr(128) : u_str = 1 u_pat = 0; Bug 36207
+ok 1471 - $c =~ /$c/i : chr (128) : u_str = 1 u_pat = 1; Bug 36207
+ok 1472 - $c=~/$c|xyz/i : chr(128) : u_str = 1 u_pat = 1; Bug 36207
+ok 1473 - $c =~ /$c/i : chr (129) : u_str = 0 u_pat = 0; Bug 36207
+ok 1474 - $c=~/$c|xyz/i : chr(129) : u_str = 0 u_pat = 0; Bug 36207
+ok 1475 - $c =~ /$c/i : chr (129) : u_str = 0 u_pat = 1; Bug 36207
+ok 1476 - $c=~/$c|xyz/i : chr(129) : u_str = 0 u_pat = 1; Bug 36207
+ok 1477 - $c =~ /$c/i : chr (129) : u_str = 1 u_pat = 0; Bug 36207
+ok 1478 - $c=~/$c|xyz/i : chr(129) : u_str = 1 u_pat = 0; Bug 36207
+ok 1479 - $c =~ /$c/i : chr (129) : u_str = 1 u_pat = 1; Bug 36207
+ok 1480 - $c=~/$c|xyz/i : chr(129) : u_str = 1 u_pat = 1; Bug 36207
+ok 1481 - $c =~ /$c/i : chr (130) : u_str = 0 u_pat = 0; Bug 36207
+ok 1482 - $c=~/$c|xyz/i : chr(130) : u_str = 0 u_pat = 0; Bug 36207
+ok 1483 - $c =~ /$c/i : chr (130) : u_str = 0 u_pat = 1; Bug 36207
+ok 1484 - $c=~/$c|xyz/i : chr(130) : u_str = 0 u_pat = 1; Bug 36207
+ok 1485 - $c =~ /$c/i : chr (130) : u_str = 1 u_pat = 0; Bug 36207
+ok 1486 - $c=~/$c|xyz/i : chr(130) : u_str = 1 u_pat = 0; Bug 36207
+ok 1487 - $c =~ /$c/i : chr (130) : u_str = 1 u_pat = 1; Bug 36207
+ok 1488 - $c=~/$c|xyz/i : chr(130) : u_str = 1 u_pat = 1; Bug 36207
+ok 1489 - $c =~ /$c/i : chr (131) : u_str = 0 u_pat = 0; Bug 36207
+ok 1490 - $c=~/$c|xyz/i : chr(131) : u_str = 0 u_pat = 0; Bug 36207
+ok 1491 - $c =~ /$c/i : chr (131) : u_str = 0 u_pat = 1; Bug 36207
+ok 1492 - $c=~/$c|xyz/i : chr(131) : u_str = 0 u_pat = 1; Bug 36207
+ok 1493 - $c =~ /$c/i : chr (131) : u_str = 1 u_pat = 0; Bug 36207
+ok 1494 - $c=~/$c|xyz/i : chr(131) : u_str = 1 u_pat = 0; Bug 36207
+ok 1495 - $c =~ /$c/i : chr (131) : u_str = 1 u_pat = 1; Bug 36207
+ok 1496 - $c=~/$c|xyz/i : chr(131) : u_str = 1 u_pat = 1; Bug 36207
+ok 1497 - $c =~ /$c/i : chr (132) : u_str = 0 u_pat = 0; Bug 36207
+ok 1498 - $c=~/$c|xyz/i : chr(132) : u_str = 0 u_pat = 0; Bug 36207
+ok 1499 - $c =~ /$c/i : chr (132) : u_str = 0 u_pat = 1; Bug 36207
+ok 1500 - $c=~/$c|xyz/i : chr(132) : u_str = 0 u_pat = 1; Bug 36207
+ok 1501 - $c =~ /$c/i : chr (132) : u_str = 1 u_pat = 0; Bug 36207
+ok 1502 - $c=~/$c|xyz/i : chr(132) : u_str = 1 u_pat = 0; Bug 36207
+ok 1503 - $c =~ /$c/i : chr (132) : u_str = 1 u_pat = 1; Bug 36207
+ok 1504 - $c=~/$c|xyz/i : chr(132) : u_str = 1 u_pat = 1; Bug 36207
+ok 1505 - $c =~ /$c/i : chr (133) : u_str = 0 u_pat = 0; Bug 36207
+ok 1506 - $c=~/$c|xyz/i : chr(133) : u_str = 0 u_pat = 0; Bug 36207
+ok 1507 - $c =~ /$c/i : chr (133) : u_str = 0 u_pat = 1; Bug 36207
+ok 1508 - $c=~/$c|xyz/i : chr(133) : u_str = 0 u_pat = 1; Bug 36207
+ok 1509 - $c =~ /$c/i : chr (133) : u_str = 1 u_pat = 0; Bug 36207
+ok 1510 - $c=~/$c|xyz/i : chr(133) : u_str = 1 u_pat = 0; Bug 36207
+ok 1511 - $c =~ /$c/i : chr (133) : u_str = 1 u_pat = 1; Bug 36207
+ok 1512 - $c=~/$c|xyz/i : chr(133) : u_str = 1 u_pat = 1; Bug 36207
+ok 1513 - $c =~ /$c/i : chr (134) : u_str = 0 u_pat = 0; Bug 36207
+ok 1514 - $c=~/$c|xyz/i : chr(134) : u_str = 0 u_pat = 0; Bug 36207
+ok 1515 - $c =~ /$c/i : chr (134) : u_str = 0 u_pat = 1; Bug 36207
+ok 1516 - $c=~/$c|xyz/i : chr(134) : u_str = 0 u_pat = 1; Bug 36207
+ok 1517 - $c =~ /$c/i : chr (134) : u_str = 1 u_pat = 0; Bug 36207
+ok 1518 - $c=~/$c|xyz/i : chr(134) : u_str = 1 u_pat = 0; Bug 36207
+ok 1519 - $c =~ /$c/i : chr (134) : u_str = 1 u_pat = 1; Bug 36207
+ok 1520 - $c=~/$c|xyz/i : chr(134) : u_str = 1 u_pat = 1; Bug 36207
+ok 1521 - $c =~ /$c/i : chr (135) : u_str = 0 u_pat = 0; Bug 36207
+ok 1522 - $c=~/$c|xyz/i : chr(135) : u_str = 0 u_pat = 0; Bug 36207
+ok 1523 - $c =~ /$c/i : chr (135) : u_str = 0 u_pat = 1; Bug 36207
+ok 1524 - $c=~/$c|xyz/i : chr(135) : u_str = 0 u_pat = 1; Bug 36207
+ok 1525 - $c =~ /$c/i : chr (135) : u_str = 1 u_pat = 0; Bug 36207
+ok 1526 - $c=~/$c|xyz/i : chr(135) : u_str = 1 u_pat = 0; Bug 36207
+ok 1527 - $c =~ /$c/i : chr (135) : u_str = 1 u_pat = 1; Bug 36207
+ok 1528 - $c=~/$c|xyz/i : chr(135) : u_str = 1 u_pat = 1; Bug 36207
+ok 1529 - $c =~ /$c/i : chr (136) : u_str = 0 u_pat = 0; Bug 36207
+ok 1530 - $c=~/$c|xyz/i : chr(136) : u_str = 0 u_pat = 0; Bug 36207
+ok 1531 - $c =~ /$c/i : chr (136) : u_str = 0 u_pat = 1; Bug 36207
+ok 1532 - $c=~/$c|xyz/i : chr(136) : u_str = 0 u_pat = 1; Bug 36207
+ok 1533 - $c =~ /$c/i : chr (136) : u_str = 1 u_pat = 0; Bug 36207
+ok 1534 - $c=~/$c|xyz/i : chr(136) : u_str = 1 u_pat = 0; Bug 36207
+ok 1535 - $c =~ /$c/i : chr (136) : u_str = 1 u_pat = 1; Bug 36207
+ok 1536 - $c=~/$c|xyz/i : chr(136) : u_str = 1 u_pat = 1; Bug 36207
+ok 1537 - $c =~ /$c/i : chr (137) : u_str = 0 u_pat = 0; Bug 36207
+ok 1538 - $c=~/$c|xyz/i : chr(137) : u_str = 0 u_pat = 0; Bug 36207
+ok 1539 - $c =~ /$c/i : chr (137) : u_str = 0 u_pat = 1; Bug 36207
+ok 1540 - $c=~/$c|xyz/i : chr(137) : u_str = 0 u_pat = 1; Bug 36207
+ok 1541 - $c =~ /$c/i : chr (137) : u_str = 1 u_pat = 0; Bug 36207
+ok 1542 - $c=~/$c|xyz/i : chr(137) : u_str = 1 u_pat = 0; Bug 36207
+ok 1543 - $c =~ /$c/i : chr (137) : u_str = 1 u_pat = 1; Bug 36207
+ok 1544 - $c=~/$c|xyz/i : chr(137) : u_str = 1 u_pat = 1; Bug 36207
+ok 1545 - $c =~ /$c/i : chr (138) : u_str = 0 u_pat = 0; Bug 36207
+ok 1546 - $c=~/$c|xyz/i : chr(138) : u_str = 0 u_pat = 0; Bug 36207
+ok 1547 - $c =~ /$c/i : chr (138) : u_str = 0 u_pat = 1; Bug 36207
+ok 1548 - $c=~/$c|xyz/i : chr(138) : u_str = 0 u_pat = 1; Bug 36207
+ok 1549 - $c =~ /$c/i : chr (138) : u_str = 1 u_pat = 0; Bug 36207
+ok 1550 - $c=~/$c|xyz/i : chr(138) : u_str = 1 u_pat = 0; Bug 36207
+ok 1551 - $c =~ /$c/i : chr (138) : u_str = 1 u_pat = 1; Bug 36207
+ok 1552 - $c=~/$c|xyz/i : chr(138) : u_str = 1 u_pat = 1; Bug 36207
+ok 1553 - $c =~ /$c/i : chr (139) : u_str = 0 u_pat = 0; Bug 36207
+ok 1554 - $c=~/$c|xyz/i : chr(139) : u_str = 0 u_pat = 0; Bug 36207
+ok 1555 - $c =~ /$c/i : chr (139) : u_str = 0 u_pat = 1; Bug 36207
+ok 1556 - $c=~/$c|xyz/i : chr(139) : u_str = 0 u_pat = 1; Bug 36207
+ok 1557 - $c =~ /$c/i : chr (139) : u_str = 1 u_pat = 0; Bug 36207
+ok 1558 - $c=~/$c|xyz/i : chr(139) : u_str = 1 u_pat = 0; Bug 36207
+ok 1559 - $c =~ /$c/i : chr (139) : u_str = 1 u_pat = 1; Bug 36207
+ok 1560 - $c=~/$c|xyz/i : chr(139) : u_str = 1 u_pat = 1; Bug 36207
+ok 1561 - $c =~ /$c/i : chr (140) : u_str = 0 u_pat = 0; Bug 36207
+ok 1562 - $c=~/$c|xyz/i : chr(140) : u_str = 0 u_pat = 0; Bug 36207
+ok 1563 - $c =~ /$c/i : chr (140) : u_str = 0 u_pat = 1; Bug 36207
+ok 1564 - $c=~/$c|xyz/i : chr(140) : u_str = 0 u_pat = 1; Bug 36207
+ok 1565 - $c =~ /$c/i : chr (140) : u_str = 1 u_pat = 0; Bug 36207
+ok 1566 - $c=~/$c|xyz/i : chr(140) : u_str = 1 u_pat = 0; Bug 36207
+ok 1567 - $c =~ /$c/i : chr (140) : u_str = 1 u_pat = 1; Bug 36207
+ok 1568 - $c=~/$c|xyz/i : chr(140) : u_str = 1 u_pat = 1; Bug 36207
+ok 1569 - $c =~ /$c/i : chr (141) : u_str = 0 u_pat = 0; Bug 36207
+ok 1570 - $c=~/$c|xyz/i : chr(141) : u_str = 0 u_pat = 0; Bug 36207
+ok 1571 - $c =~ /$c/i : chr (141) : u_str = 0 u_pat = 1; Bug 36207
+ok 1572 - $c=~/$c|xyz/i : chr(141) : u_str = 0 u_pat = 1; Bug 36207
+ok 1573 - $c =~ /$c/i : chr (141) : u_str = 1 u_pat = 0; Bug 36207
+ok 1574 - $c=~/$c|xyz/i : chr(141) : u_str = 1 u_pat = 0; Bug 36207
+ok 1575 - $c =~ /$c/i : chr (141) : u_str = 1 u_pat = 1; Bug 36207
+ok 1576 - $c=~/$c|xyz/i : chr(141) : u_str = 1 u_pat = 1; Bug 36207
+ok 1577 - $c =~ /$c/i : chr (142) : u_str = 0 u_pat = 0; Bug 36207
+ok 1578 - $c=~/$c|xyz/i : chr(142) : u_str = 0 u_pat = 0; Bug 36207
+ok 1579 - $c =~ /$c/i : chr (142) : u_str = 0 u_pat = 1; Bug 36207
+ok 1580 - $c=~/$c|xyz/i : chr(142) : u_str = 0 u_pat = 1; Bug 36207
+ok 1581 - $c =~ /$c/i : chr (142) : u_str = 1 u_pat = 0; Bug 36207
+ok 1582 - $c=~/$c|xyz/i : chr(142) : u_str = 1 u_pat = 0; Bug 36207
+ok 1583 - $c =~ /$c/i : chr (142) : u_str = 1 u_pat = 1; Bug 36207
+ok 1584 - $c=~/$c|xyz/i : chr(142) : u_str = 1 u_pat = 1; Bug 36207
+ok 1585 - $c =~ /$c/i : chr (143) : u_str = 0 u_pat = 0; Bug 36207
+ok 1586 - $c=~/$c|xyz/i : chr(143) : u_str = 0 u_pat = 0; Bug 36207
+ok 1587 - $c =~ /$c/i : chr (143) : u_str = 0 u_pat = 1; Bug 36207
+ok 1588 - $c=~/$c|xyz/i : chr(143) : u_str = 0 u_pat = 1; Bug 36207
+ok 1589 - $c =~ /$c/i : chr (143) : u_str = 1 u_pat = 0; Bug 36207
+ok 1590 - $c=~/$c|xyz/i : chr(143) : u_str = 1 u_pat = 0; Bug 36207
+ok 1591 - $c =~ /$c/i : chr (143) : u_str = 1 u_pat = 1; Bug 36207
+ok 1592 - $c=~/$c|xyz/i : chr(143) : u_str = 1 u_pat = 1; Bug 36207
+ok 1593 - $c =~ /$c/i : chr (144) : u_str = 0 u_pat = 0; Bug 36207
+ok 1594 - $c=~/$c|xyz/i : chr(144) : u_str = 0 u_pat = 0; Bug 36207
+ok 1595 - $c =~ /$c/i : chr (144) : u_str = 0 u_pat = 1; Bug 36207
+ok 1596 - $c=~/$c|xyz/i : chr(144) : u_str = 0 u_pat = 1; Bug 36207
+ok 1597 - $c =~ /$c/i : chr (144) : u_str = 1 u_pat = 0; Bug 36207
+ok 1598 - $c=~/$c|xyz/i : chr(144) : u_str = 1 u_pat = 0; Bug 36207
+ok 1599 - $c =~ /$c/i : chr (144) : u_str = 1 u_pat = 1; Bug 36207
+ok 1600 - $c=~/$c|xyz/i : chr(144) : u_str = 1 u_pat = 1; Bug 36207
+ok 1601 - $c =~ /$c/i : chr (145) : u_str = 0 u_pat = 0; Bug 36207
+ok 1602 - $c=~/$c|xyz/i : chr(145) : u_str = 0 u_pat = 0; Bug 36207
+ok 1603 - $c =~ /$c/i : chr (145) : u_str = 0 u_pat = 1; Bug 36207
+ok 1604 - $c=~/$c|xyz/i : chr(145) : u_str = 0 u_pat = 1; Bug 36207
+ok 1605 - $c =~ /$c/i : chr (145) : u_str = 1 u_pat = 0; Bug 36207
+ok 1606 - $c=~/$c|xyz/i : chr(145) : u_str = 1 u_pat = 0; Bug 36207
+ok 1607 - $c =~ /$c/i : chr (145) : u_str = 1 u_pat = 1; Bug 36207
+ok 1608 - $c=~/$c|xyz/i : chr(145) : u_str = 1 u_pat = 1; Bug 36207
+ok 1609 - $c =~ /$c/i : chr (146) : u_str = 0 u_pat = 0; Bug 36207
+ok 1610 - $c=~/$c|xyz/i : chr(146) : u_str = 0 u_pat = 0; Bug 36207
+ok 1611 - $c =~ /$c/i : chr (146) : u_str = 0 u_pat = 1; Bug 36207
+ok 1612 - $c=~/$c|xyz/i : chr(146) : u_str = 0 u_pat = 1; Bug 36207
+ok 1613 - $c =~ /$c/i : chr (146) : u_str = 1 u_pat = 0; Bug 36207
+ok 1614 - $c=~/$c|xyz/i : chr(146) : u_str = 1 u_pat = 0; Bug 36207
+ok 1615 - $c =~ /$c/i : chr (146) : u_str = 1 u_pat = 1; Bug 36207
+ok 1616 - $c=~/$c|xyz/i : chr(146) : u_str = 1 u_pat = 1; Bug 36207
+ok 1617 - $c =~ /$c/i : chr (147) : u_str = 0 u_pat = 0; Bug 36207
+ok 1618 - $c=~/$c|xyz/i : chr(147) : u_str = 0 u_pat = 0; Bug 36207
+ok 1619 - $c =~ /$c/i : chr (147) : u_str = 0 u_pat = 1; Bug 36207
+ok 1620 - $c=~/$c|xyz/i : chr(147) : u_str = 0 u_pat = 1; Bug 36207
+ok 1621 - $c =~ /$c/i : chr (147) : u_str = 1 u_pat = 0; Bug 36207
+ok 1622 - $c=~/$c|xyz/i : chr(147) : u_str = 1 u_pat = 0; Bug 36207
+ok 1623 - $c =~ /$c/i : chr (147) : u_str = 1 u_pat = 1; Bug 36207
+ok 1624 - $c=~/$c|xyz/i : chr(147) : u_str = 1 u_pat = 1; Bug 36207
+ok 1625 - $c =~ /$c/i : chr (148) : u_str = 0 u_pat = 0; Bug 36207
+ok 1626 - $c=~/$c|xyz/i : chr(148) : u_str = 0 u_pat = 0; Bug 36207
+ok 1627 - $c =~ /$c/i : chr (148) : u_str = 0 u_pat = 1; Bug 36207
+ok 1628 - $c=~/$c|xyz/i : chr(148) : u_str = 0 u_pat = 1; Bug 36207
+ok 1629 - $c =~ /$c/i : chr (148) : u_str = 1 u_pat = 0; Bug 36207
+ok 1630 - $c=~/$c|xyz/i : chr(148) : u_str = 1 u_pat = 0; Bug 36207
+ok 1631 - $c =~ /$c/i : chr (148) : u_str = 1 u_pat = 1; Bug 36207
+ok 1632 - $c=~/$c|xyz/i : chr(148) : u_str = 1 u_pat = 1; Bug 36207
+ok 1633 - $c =~ /$c/i : chr (149) : u_str = 0 u_pat = 0; Bug 36207
+ok 1634 - $c=~/$c|xyz/i : chr(149) : u_str = 0 u_pat = 0; Bug 36207
+ok 1635 - $c =~ /$c/i : chr (149) : u_str = 0 u_pat = 1; Bug 36207
+ok 1636 - $c=~/$c|xyz/i : chr(149) : u_str = 0 u_pat = 1; Bug 36207
+ok 1637 - $c =~ /$c/i : chr (149) : u_str = 1 u_pat = 0; Bug 36207
+ok 1638 - $c=~/$c|xyz/i : chr(149) : u_str = 1 u_pat = 0; Bug 36207
+ok 1639 - $c =~ /$c/i : chr (149) : u_str = 1 u_pat = 1; Bug 36207
+ok 1640 - $c=~/$c|xyz/i : chr(149) : u_str = 1 u_pat = 1; Bug 36207
+ok 1641 - $c =~ /$c/i : chr (150) : u_str = 0 u_pat = 0; Bug 36207
+ok 1642 - $c=~/$c|xyz/i : chr(150) : u_str = 0 u_pat = 0; Bug 36207
+ok 1643 - $c =~ /$c/i : chr (150) : u_str = 0 u_pat = 1; Bug 36207
+ok 1644 - $c=~/$c|xyz/i : chr(150) : u_str = 0 u_pat = 1; Bug 36207
+ok 1645 - $c =~ /$c/i : chr (150) : u_str = 1 u_pat = 0; Bug 36207
+ok 1646 - $c=~/$c|xyz/i : chr(150) : u_str = 1 u_pat = 0; Bug 36207
+ok 1647 - $c =~ /$c/i : chr (150) : u_str = 1 u_pat = 1; Bug 36207
+ok 1648 - $c=~/$c|xyz/i : chr(150) : u_str = 1 u_pat = 1; Bug 36207
+ok 1649 - $c =~ /$c/i : chr (151) : u_str = 0 u_pat = 0; Bug 36207
+ok 1650 - $c=~/$c|xyz/i : chr(151) : u_str = 0 u_pat = 0; Bug 36207
+ok 1651 - $c =~ /$c/i : chr (151) : u_str = 0 u_pat = 1; Bug 36207
+ok 1652 - $c=~/$c|xyz/i : chr(151) : u_str = 0 u_pat = 1; Bug 36207
+ok 1653 - $c =~ /$c/i : chr (151) : u_str = 1 u_pat = 0; Bug 36207
+ok 1654 - $c=~/$c|xyz/i : chr(151) : u_str = 1 u_pat = 0; Bug 36207
+ok 1655 - $c =~ /$c/i : chr (151) : u_str = 1 u_pat = 1; Bug 36207
+ok 1656 - $c=~/$c|xyz/i : chr(151) : u_str = 1 u_pat = 1; Bug 36207
+ok 1657 - $c =~ /$c/i : chr (152) : u_str = 0 u_pat = 0; Bug 36207
+ok 1658 - $c=~/$c|xyz/i : chr(152) : u_str = 0 u_pat = 0; Bug 36207
+ok 1659 - $c =~ /$c/i : chr (152) : u_str = 0 u_pat = 1; Bug 36207
+ok 1660 - $c=~/$c|xyz/i : chr(152) : u_str = 0 u_pat = 1; Bug 36207
+ok 1661 - $c =~ /$c/i : chr (152) : u_str = 1 u_pat = 0; Bug 36207
+ok 1662 - $c=~/$c|xyz/i : chr(152) : u_str = 1 u_pat = 0; Bug 36207
+ok 1663 - $c =~ /$c/i : chr (152) : u_str = 1 u_pat = 1; Bug 36207
+ok 1664 - $c=~/$c|xyz/i : chr(152) : u_str = 1 u_pat = 1; Bug 36207
+ok 1665 - $c =~ /$c/i : chr (153) : u_str = 0 u_pat = 0; Bug 36207
+ok 1666 - $c=~/$c|xyz/i : chr(153) : u_str = 0 u_pat = 0; Bug 36207
+ok 1667 - $c =~ /$c/i : chr (153) : u_str = 0 u_pat = 1; Bug 36207
+ok 1668 - $c=~/$c|xyz/i : chr(153) : u_str = 0 u_pat = 1; Bug 36207
+ok 1669 - $c =~ /$c/i : chr (153) : u_str = 1 u_pat = 0; Bug 36207
+ok 1670 - $c=~/$c|xyz/i : chr(153) : u_str = 1 u_pat = 0; Bug 36207
+ok 1671 - $c =~ /$c/i : chr (153) : u_str = 1 u_pat = 1; Bug 36207
+ok 1672 - $c=~/$c|xyz/i : chr(153) : u_str = 1 u_pat = 1; Bug 36207
+ok 1673 - $c =~ /$c/i : chr (154) : u_str = 0 u_pat = 0; Bug 36207
+ok 1674 - $c=~/$c|xyz/i : chr(154) : u_str = 0 u_pat = 0; Bug 36207
+ok 1675 - $c =~ /$c/i : chr (154) : u_str = 0 u_pat = 1; Bug 36207
+ok 1676 - $c=~/$c|xyz/i : chr(154) : u_str = 0 u_pat = 1; Bug 36207
+ok 1677 - $c =~ /$c/i : chr (154) : u_str = 1 u_pat = 0; Bug 36207
+ok 1678 - $c=~/$c|xyz/i : chr(154) : u_str = 1 u_pat = 0; Bug 36207
+ok 1679 - $c =~ /$c/i : chr (154) : u_str = 1 u_pat = 1; Bug 36207
+ok 1680 - $c=~/$c|xyz/i : chr(154) : u_str = 1 u_pat = 1; Bug 36207
+ok 1681 - $c =~ /$c/i : chr (155) : u_str = 0 u_pat = 0; Bug 36207
+ok 1682 - $c=~/$c|xyz/i : chr(155) : u_str = 0 u_pat = 0; Bug 36207
+ok 1683 - $c =~ /$c/i : chr (155) : u_str = 0 u_pat = 1; Bug 36207
+ok 1684 - $c=~/$c|xyz/i : chr(155) : u_str = 0 u_pat = 1; Bug 36207
+ok 1685 - $c =~ /$c/i : chr (155) : u_str = 1 u_pat = 0; Bug 36207
+ok 1686 - $c=~/$c|xyz/i : chr(155) : u_str = 1 u_pat = 0; Bug 36207
+ok 1687 - $c =~ /$c/i : chr (155) : u_str = 1 u_pat = 1; Bug 36207
+ok 1688 - $c=~/$c|xyz/i : chr(155) : u_str = 1 u_pat = 1; Bug 36207
+ok 1689 - $c =~ /$c/i : chr (156) : u_str = 0 u_pat = 0; Bug 36207
+ok 1690 - $c=~/$c|xyz/i : chr(156) : u_str = 0 u_pat = 0; Bug 36207
+ok 1691 - $c =~ /$c/i : chr (156) : u_str = 0 u_pat = 1; Bug 36207
+ok 1692 - $c=~/$c|xyz/i : chr(156) : u_str = 0 u_pat = 1; Bug 36207
+ok 1693 - $c =~ /$c/i : chr (156) : u_str = 1 u_pat = 0; Bug 36207
+ok 1694 - $c=~/$c|xyz/i : chr(156) : u_str = 1 u_pat = 0; Bug 36207
+ok 1695 - $c =~ /$c/i : chr (156) : u_str = 1 u_pat = 1; Bug 36207
+ok 1696 - $c=~/$c|xyz/i : chr(156) : u_str = 1 u_pat = 1; Bug 36207
+ok 1697 - $c =~ /$c/i : chr (157) : u_str = 0 u_pat = 0; Bug 36207
+ok 1698 - $c=~/$c|xyz/i : chr(157) : u_str = 0 u_pat = 0; Bug 36207
+ok 1699 - $c =~ /$c/i : chr (157) : u_str = 0 u_pat = 1; Bug 36207
+ok 1700 - $c=~/$c|xyz/i : chr(157) : u_str = 0 u_pat = 1; Bug 36207
+ok 1701 - $c =~ /$c/i : chr (157) : u_str = 1 u_pat = 0; Bug 36207
+ok 1702 - $c=~/$c|xyz/i : chr(157) : u_str = 1 u_pat = 0; Bug 36207
+ok 1703 - $c =~ /$c/i : chr (157) : u_str = 1 u_pat = 1; Bug 36207
+ok 1704 - $c=~/$c|xyz/i : chr(157) : u_str = 1 u_pat = 1; Bug 36207
+ok 1705 - $c =~ /$c/i : chr (158) : u_str = 0 u_pat = 0; Bug 36207
+ok 1706 - $c=~/$c|xyz/i : chr(158) : u_str = 0 u_pat = 0; Bug 36207
+ok 1707 - $c =~ /$c/i : chr (158) : u_str = 0 u_pat = 1; Bug 36207
+ok 1708 - $c=~/$c|xyz/i : chr(158) : u_str = 0 u_pat = 1; Bug 36207
+ok 1709 - $c =~ /$c/i : chr (158) : u_str = 1 u_pat = 0; Bug 36207
+ok 1710 - $c=~/$c|xyz/i : chr(158) : u_str = 1 u_pat = 0; Bug 36207
+ok 1711 - $c =~ /$c/i : chr (158) : u_str = 1 u_pat = 1; Bug 36207
+ok 1712 - $c=~/$c|xyz/i : chr(158) : u_str = 1 u_pat = 1; Bug 36207
+ok 1713 - $c =~ /$c/i : chr (159) : u_str = 0 u_pat = 0; Bug 36207
+ok 1714 - $c=~/$c|xyz/i : chr(159) : u_str = 0 u_pat = 0; Bug 36207
+ok 1715 - $c =~ /$c/i : chr (159) : u_str = 0 u_pat = 1; Bug 36207
+ok 1716 - $c=~/$c|xyz/i : chr(159) : u_str = 0 u_pat = 1; Bug 36207
+ok 1717 - $c =~ /$c/i : chr (159) : u_str = 1 u_pat = 0; Bug 36207
+ok 1718 - $c=~/$c|xyz/i : chr(159) : u_str = 1 u_pat = 0; Bug 36207
+ok 1719 - $c =~ /$c/i : chr (159) : u_str = 1 u_pat = 1; Bug 36207
+ok 1720 - $c=~/$c|xyz/i : chr(159) : u_str = 1 u_pat = 1; Bug 36207
+ok 1721 - $c =~ /$c/i : chr (160) : u_str = 0 u_pat = 0; Bug 36207
+ok 1722 - $c=~/$c|xyz/i : chr(160) : u_str = 0 u_pat = 0; Bug 36207
+ok 1723 - $c =~ /$c/i : chr (160) : u_str = 0 u_pat = 1; Bug 36207
+ok 1724 - $c=~/$c|xyz/i : chr(160) : u_str = 0 u_pat = 1; Bug 36207
+ok 1725 - $c =~ /$c/i : chr (160) : u_str = 1 u_pat = 0; Bug 36207
+ok 1726 - $c=~/$c|xyz/i : chr(160) : u_str = 1 u_pat = 0; Bug 36207
+ok 1727 - $c =~ /$c/i : chr (160) : u_str = 1 u_pat = 1; Bug 36207
+ok 1728 - $c=~/$c|xyz/i : chr(160) : u_str = 1 u_pat = 1; Bug 36207
+ok 1729 - $c =~ /$c/i : chr (161) : u_str = 0 u_pat = 0; Bug 36207
+ok 1730 - $c=~/$c|xyz/i : chr(161) : u_str = 0 u_pat = 0; Bug 36207
+ok 1731 - $c =~ /$c/i : chr (161) : u_str = 0 u_pat = 1; Bug 36207
+ok 1732 - $c=~/$c|xyz/i : chr(161) : u_str = 0 u_pat = 1; Bug 36207
+ok 1733 - $c =~ /$c/i : chr (161) : u_str = 1 u_pat = 0; Bug 36207
+ok 1734 - $c=~/$c|xyz/i : chr(161) : u_str = 1 u_pat = 0; Bug 36207
+ok 1735 - $c =~ /$c/i : chr (161) : u_str = 1 u_pat = 1; Bug 36207
+ok 1736 - $c=~/$c|xyz/i : chr(161) : u_str = 1 u_pat = 1; Bug 36207
+ok 1737 - $c =~ /$c/i : chr (162) : u_str = 0 u_pat = 0; Bug 36207
+ok 1738 - $c=~/$c|xyz/i : chr(162) : u_str = 0 u_pat = 0; Bug 36207
+ok 1739 - $c =~ /$c/i : chr (162) : u_str = 0 u_pat = 1; Bug 36207
+ok 1740 - $c=~/$c|xyz/i : chr(162) : u_str = 0 u_pat = 1; Bug 36207
+ok 1741 - $c =~ /$c/i : chr (162) : u_str = 1 u_pat = 0; Bug 36207
+ok 1742 - $c=~/$c|xyz/i : chr(162) : u_str = 1 u_pat = 0; Bug 36207
+ok 1743 - $c =~ /$c/i : chr (162) : u_str = 1 u_pat = 1; Bug 36207
+ok 1744 - $c=~/$c|xyz/i : chr(162) : u_str = 1 u_pat = 1; Bug 36207
+ok 1745 - $c =~ /$c/i : chr (163) : u_str = 0 u_pat = 0; Bug 36207
+ok 1746 - $c=~/$c|xyz/i : chr(163) : u_str = 0 u_pat = 0; Bug 36207
+ok 1747 - $c =~ /$c/i : chr (163) : u_str = 0 u_pat = 1; Bug 36207
+ok 1748 - $c=~/$c|xyz/i : chr(163) : u_str = 0 u_pat = 1; Bug 36207
+ok 1749 - $c =~ /$c/i : chr (163) : u_str = 1 u_pat = 0; Bug 36207
+ok 1750 - $c=~/$c|xyz/i : chr(163) : u_str = 1 u_pat = 0; Bug 36207
+ok 1751 - $c =~ /$c/i : chr (163) : u_str = 1 u_pat = 1; Bug 36207
+ok 1752 - $c=~/$c|xyz/i : chr(163) : u_str = 1 u_pat = 1; Bug 36207
+ok 1753 - $c =~ /$c/i : chr (164) : u_str = 0 u_pat = 0; Bug 36207
+ok 1754 - $c=~/$c|xyz/i : chr(164) : u_str = 0 u_pat = 0; Bug 36207
+ok 1755 - $c =~ /$c/i : chr (164) : u_str = 0 u_pat = 1; Bug 36207
+ok 1756 - $c=~/$c|xyz/i : chr(164) : u_str = 0 u_pat = 1; Bug 36207
+ok 1757 - $c =~ /$c/i : chr (164) : u_str = 1 u_pat = 0; Bug 36207
+ok 1758 - $c=~/$c|xyz/i : chr(164) : u_str = 1 u_pat = 0; Bug 36207
+ok 1759 - $c =~ /$c/i : chr (164) : u_str = 1 u_pat = 1; Bug 36207
+ok 1760 - $c=~/$c|xyz/i : chr(164) : u_str = 1 u_pat = 1; Bug 36207
+ok 1761 - $c =~ /$c/i : chr (165) : u_str = 0 u_pat = 0; Bug 36207
+ok 1762 - $c=~/$c|xyz/i : chr(165) : u_str = 0 u_pat = 0; Bug 36207
+ok 1763 - $c =~ /$c/i : chr (165) : u_str = 0 u_pat = 1; Bug 36207
+ok 1764 - $c=~/$c|xyz/i : chr(165) : u_str = 0 u_pat = 1; Bug 36207
+ok 1765 - $c =~ /$c/i : chr (165) : u_str = 1 u_pat = 0; Bug 36207
+ok 1766 - $c=~/$c|xyz/i : chr(165) : u_str = 1 u_pat = 0; Bug 36207
+ok 1767 - $c =~ /$c/i : chr (165) : u_str = 1 u_pat = 1; Bug 36207
+ok 1768 - $c=~/$c|xyz/i : chr(165) : u_str = 1 u_pat = 1; Bug 36207
+ok 1769 - $c =~ /$c/i : chr (166) : u_str = 0 u_pat = 0; Bug 36207
+ok 1770 - $c=~/$c|xyz/i : chr(166) : u_str = 0 u_pat = 0; Bug 36207
+ok 1771 - $c =~ /$c/i : chr (166) : u_str = 0 u_pat = 1; Bug 36207
+ok 1772 - $c=~/$c|xyz/i : chr(166) : u_str = 0 u_pat = 1; Bug 36207
+ok 1773 - $c =~ /$c/i : chr (166) : u_str = 1 u_pat = 0; Bug 36207
+ok 1774 - $c=~/$c|xyz/i : chr(166) : u_str = 1 u_pat = 0; Bug 36207
+ok 1775 - $c =~ /$c/i : chr (166) : u_str = 1 u_pat = 1; Bug 36207
+ok 1776 - $c=~/$c|xyz/i : chr(166) : u_str = 1 u_pat = 1; Bug 36207
+ok 1777 - $c =~ /$c/i : chr (167) : u_str = 0 u_pat = 0; Bug 36207
+ok 1778 - $c=~/$c|xyz/i : chr(167) : u_str = 0 u_pat = 0; Bug 36207
+ok 1779 - $c =~ /$c/i : chr (167) : u_str = 0 u_pat = 1; Bug 36207
+ok 1780 - $c=~/$c|xyz/i : chr(167) : u_str = 0 u_pat = 1; Bug 36207
+ok 1781 - $c =~ /$c/i : chr (167) : u_str = 1 u_pat = 0; Bug 36207
+ok 1782 - $c=~/$c|xyz/i : chr(167) : u_str = 1 u_pat = 0; Bug 36207
+ok 1783 - $c =~ /$c/i : chr (167) : u_str = 1 u_pat = 1; Bug 36207
+ok 1784 - $c=~/$c|xyz/i : chr(167) : u_str = 1 u_pat = 1; Bug 36207
+ok 1785 - $c =~ /$c/i : chr (168) : u_str = 0 u_pat = 0; Bug 36207
+ok 1786 - $c=~/$c|xyz/i : chr(168) : u_str = 0 u_pat = 0; Bug 36207
+ok 1787 - $c =~ /$c/i : chr (168) : u_str = 0 u_pat = 1; Bug 36207
+ok 1788 - $c=~/$c|xyz/i : chr(168) : u_str = 0 u_pat = 1; Bug 36207
+ok 1789 - $c =~ /$c/i : chr (168) : u_str = 1 u_pat = 0; Bug 36207
+ok 1790 - $c=~/$c|xyz/i : chr(168) : u_str = 1 u_pat = 0; Bug 36207
+ok 1791 - $c =~ /$c/i : chr (168) : u_str = 1 u_pat = 1; Bug 36207
+ok 1792 - $c=~/$c|xyz/i : chr(168) : u_str = 1 u_pat = 1; Bug 36207
+ok 1793 - $c =~ /$c/i : chr (169) : u_str = 0 u_pat = 0; Bug 36207
+ok 1794 - $c=~/$c|xyz/i : chr(169) : u_str = 0 u_pat = 0; Bug 36207
+ok 1795 - $c =~ /$c/i : chr (169) : u_str = 0 u_pat = 1; Bug 36207
+ok 1796 - $c=~/$c|xyz/i : chr(169) : u_str = 0 u_pat = 1; Bug 36207
+ok 1797 - $c =~ /$c/i : chr (169) : u_str = 1 u_pat = 0; Bug 36207
+ok 1798 - $c=~/$c|xyz/i : chr(169) : u_str = 1 u_pat = 0; Bug 36207
+ok 1799 - $c =~ /$c/i : chr (169) : u_str = 1 u_pat = 1; Bug 36207
+ok 1800 - $c=~/$c|xyz/i : chr(169) : u_str = 1 u_pat = 1; Bug 36207
+ok 1801 - $c =~ /$c/i : chr (170) : u_str = 0 u_pat = 0; Bug 36207
+ok 1802 - $c=~/$c|xyz/i : chr(170) : u_str = 0 u_pat = 0; Bug 36207
+ok 1803 - $c =~ /$c/i : chr (170) : u_str = 0 u_pat = 1; Bug 36207
+ok 1804 - $c=~/$c|xyz/i : chr(170) : u_str = 0 u_pat = 1; Bug 36207
+ok 1805 - $c =~ /$c/i : chr (170) : u_str = 1 u_pat = 0; Bug 36207
+ok 1806 - $c=~/$c|xyz/i : chr(170) : u_str = 1 u_pat = 0; Bug 36207
+ok 1807 - $c =~ /$c/i : chr (170) : u_str = 1 u_pat = 1; Bug 36207
+ok 1808 - $c=~/$c|xyz/i : chr(170) : u_str = 1 u_pat = 1; Bug 36207
+ok 1809 - $c =~ /$c/i : chr (171) : u_str = 0 u_pat = 0; Bug 36207
+ok 1810 - $c=~/$c|xyz/i : chr(171) : u_str = 0 u_pat = 0; Bug 36207
+ok 1811 - $c =~ /$c/i : chr (171) : u_str = 0 u_pat = 1; Bug 36207
+ok 1812 - $c=~/$c|xyz/i : chr(171) : u_str = 0 u_pat = 1; Bug 36207
+ok 1813 - $c =~ /$c/i : chr (171) : u_str = 1 u_pat = 0; Bug 36207
+ok 1814 - $c=~/$c|xyz/i : chr(171) : u_str = 1 u_pat = 0; Bug 36207
+ok 1815 - $c =~ /$c/i : chr (171) : u_str = 1 u_pat = 1; Bug 36207
+ok 1816 - $c=~/$c|xyz/i : chr(171) : u_str = 1 u_pat = 1; Bug 36207
+ok 1817 - $c =~ /$c/i : chr (172) : u_str = 0 u_pat = 0; Bug 36207
+ok 1818 - $c=~/$c|xyz/i : chr(172) : u_str = 0 u_pat = 0; Bug 36207
+ok 1819 - $c =~ /$c/i : chr (172) : u_str = 0 u_pat = 1; Bug 36207
+ok 1820 - $c=~/$c|xyz/i : chr(172) : u_str = 0 u_pat = 1; Bug 36207
+ok 1821 - $c =~ /$c/i : chr (172) : u_str = 1 u_pat = 0; Bug 36207
+ok 1822 - $c=~/$c|xyz/i : chr(172) : u_str = 1 u_pat = 0; Bug 36207
+ok 1823 - $c =~ /$c/i : chr (172) : u_str = 1 u_pat = 1; Bug 36207
+ok 1824 - $c=~/$c|xyz/i : chr(172) : u_str = 1 u_pat = 1; Bug 36207
+ok 1825 - $c =~ /$c/i : chr (173) : u_str = 0 u_pat = 0; Bug 36207
+ok 1826 - $c=~/$c|xyz/i : chr(173) : u_str = 0 u_pat = 0; Bug 36207
+ok 1827 - $c =~ /$c/i : chr (173) : u_str = 0 u_pat = 1; Bug 36207
+ok 1828 - $c=~/$c|xyz/i : chr(173) : u_str = 0 u_pat = 1; Bug 36207
+ok 1829 - $c =~ /$c/i : chr (173) : u_str = 1 u_pat = 0; Bug 36207
+ok 1830 - $c=~/$c|xyz/i : chr(173) : u_str = 1 u_pat = 0; Bug 36207
+ok 1831 - $c =~ /$c/i : chr (173) : u_str = 1 u_pat = 1; Bug 36207
+ok 1832 - $c=~/$c|xyz/i : chr(173) : u_str = 1 u_pat = 1; Bug 36207
+ok 1833 - $c =~ /$c/i : chr (174) : u_str = 0 u_pat = 0; Bug 36207
+ok 1834 - $c=~/$c|xyz/i : chr(174) : u_str = 0 u_pat = 0; Bug 36207
+ok 1835 - $c =~ /$c/i : chr (174) : u_str = 0 u_pat = 1; Bug 36207
+ok 1836 - $c=~/$c|xyz/i : chr(174) : u_str = 0 u_pat = 1; Bug 36207
+ok 1837 - $c =~ /$c/i : chr (174) : u_str = 1 u_pat = 0; Bug 36207
+ok 1838 - $c=~/$c|xyz/i : chr(174) : u_str = 1 u_pat = 0; Bug 36207
+ok 1839 - $c =~ /$c/i : chr (174) : u_str = 1 u_pat = 1; Bug 36207
+ok 1840 - $c=~/$c|xyz/i : chr(174) : u_str = 1 u_pat = 1; Bug 36207
+ok 1841 - $c =~ /$c/i : chr (175) : u_str = 0 u_pat = 0; Bug 36207
+ok 1842 - $c=~/$c|xyz/i : chr(175) : u_str = 0 u_pat = 0; Bug 36207
+ok 1843 - $c =~ /$c/i : chr (175) : u_str = 0 u_pat = 1; Bug 36207
+ok 1844 - $c=~/$c|xyz/i : chr(175) : u_str = 0 u_pat = 1; Bug 36207
+ok 1845 - $c =~ /$c/i : chr (175) : u_str = 1 u_pat = 0; Bug 36207
+ok 1846 - $c=~/$c|xyz/i : chr(175) : u_str = 1 u_pat = 0; Bug 36207
+ok 1847 - $c =~ /$c/i : chr (175) : u_str = 1 u_pat = 1; Bug 36207
+ok 1848 - $c=~/$c|xyz/i : chr(175) : u_str = 1 u_pat = 1; Bug 36207
+ok 1849 - $c =~ /$c/i : chr (176) : u_str = 0 u_pat = 0; Bug 36207
+ok 1850 - $c=~/$c|xyz/i : chr(176) : u_str = 0 u_pat = 0; Bug 36207
+ok 1851 - $c =~ /$c/i : chr (176) : u_str = 0 u_pat = 1; Bug 36207
+ok 1852 - $c=~/$c|xyz/i : chr(176) : u_str = 0 u_pat = 1; Bug 36207
+ok 1853 - $c =~ /$c/i : chr (176) : u_str = 1 u_pat = 0; Bug 36207
+ok 1854 - $c=~/$c|xyz/i : chr(176) : u_str = 1 u_pat = 0; Bug 36207
+ok 1855 - $c =~ /$c/i : chr (176) : u_str = 1 u_pat = 1; Bug 36207
+ok 1856 - $c=~/$c|xyz/i : chr(176) : u_str = 1 u_pat = 1; Bug 36207
+ok 1857 - $c =~ /$c/i : chr (177) : u_str = 0 u_pat = 0; Bug 36207
+ok 1858 - $c=~/$c|xyz/i : chr(177) : u_str = 0 u_pat = 0; Bug 36207
+ok 1859 - $c =~ /$c/i : chr (177) : u_str = 0 u_pat = 1; Bug 36207
+ok 1860 - $c=~/$c|xyz/i : chr(177) : u_str = 0 u_pat = 1; Bug 36207
+ok 1861 - $c =~ /$c/i : chr (177) : u_str = 1 u_pat = 0; Bug 36207
+ok 1862 - $c=~/$c|xyz/i : chr(177) : u_str = 1 u_pat = 0; Bug 36207
+ok 1863 - $c =~ /$c/i : chr (177) : u_str = 1 u_pat = 1; Bug 36207
+ok 1864 - $c=~/$c|xyz/i : chr(177) : u_str = 1 u_pat = 1; Bug 36207
+ok 1865 - $c =~ /$c/i : chr (178) : u_str = 0 u_pat = 0; Bug 36207
+ok 1866 - $c=~/$c|xyz/i : chr(178) : u_str = 0 u_pat = 0; Bug 36207
+ok 1867 - $c =~ /$c/i : chr (178) : u_str = 0 u_pat = 1; Bug 36207
+ok 1868 - $c=~/$c|xyz/i : chr(178) : u_str = 0 u_pat = 1; Bug 36207
+ok 1869 - $c =~ /$c/i : chr (178) : u_str = 1 u_pat = 0; Bug 36207
+ok 1870 - $c=~/$c|xyz/i : chr(178) : u_str = 1 u_pat = 0; Bug 36207
+ok 1871 - $c =~ /$c/i : chr (178) : u_str = 1 u_pat = 1; Bug 36207
+ok 1872 - $c=~/$c|xyz/i : chr(178) : u_str = 1 u_pat = 1; Bug 36207
+ok 1873 - $c =~ /$c/i : chr (179) : u_str = 0 u_pat = 0; Bug 36207
+ok 1874 - $c=~/$c|xyz/i : chr(179) : u_str = 0 u_pat = 0; Bug 36207
+ok 1875 - $c =~ /$c/i : chr (179) : u_str = 0 u_pat = 1; Bug 36207
+ok 1876 - $c=~/$c|xyz/i : chr(179) : u_str = 0 u_pat = 1; Bug 36207
+ok 1877 - $c =~ /$c/i : chr (179) : u_str = 1 u_pat = 0; Bug 36207
+ok 1878 - $c=~/$c|xyz/i : chr(179) : u_str = 1 u_pat = 0; Bug 36207
+ok 1879 - $c =~ /$c/i : chr (179) : u_str = 1 u_pat = 1; Bug 36207
+ok 1880 - $c=~/$c|xyz/i : chr(179) : u_str = 1 u_pat = 1; Bug 36207
+ok 1881 - $c =~ /$c/i : chr (180) : u_str = 0 u_pat = 0; Bug 36207
+ok 1882 - $c=~/$c|xyz/i : chr(180) : u_str = 0 u_pat = 0; Bug 36207
+ok 1883 - $c =~ /$c/i : chr (180) : u_str = 0 u_pat = 1; Bug 36207
+ok 1884 - $c=~/$c|xyz/i : chr(180) : u_str = 0 u_pat = 1; Bug 36207
+ok 1885 - $c =~ /$c/i : chr (180) : u_str = 1 u_pat = 0; Bug 36207
+ok 1886 - $c=~/$c|xyz/i : chr(180) : u_str = 1 u_pat = 0; Bug 36207
+ok 1887 - $c =~ /$c/i : chr (180) : u_str = 1 u_pat = 1; Bug 36207
+ok 1888 - $c=~/$c|xyz/i : chr(180) : u_str = 1 u_pat = 1; Bug 36207
+ok 1889 - $c =~ /$c/i : chr (181) : u_str = 0 u_pat = 0; Bug 36207
+ok 1890 - $c=~/$c|xyz/i : chr(181) : u_str = 0 u_pat = 0; Bug 36207
+ok 1891 - $c =~ /$c/i : chr (181) : u_str = 0 u_pat = 1; Bug 36207
+ok 1892 - $c=~/$c|xyz/i : chr(181) : u_str = 0 u_pat = 1; Bug 36207
+ok 1893 - $c =~ /$c/i : chr (181) : u_str = 1 u_pat = 0; Bug 36207
+ok 1894 - $c=~/$c|xyz/i : chr(181) : u_str = 1 u_pat = 0; Bug 36207
+ok 1895 - $c =~ /$c/i : chr (181) : u_str = 1 u_pat = 1; Bug 36207
+ok 1896 - $c=~/$c|xyz/i : chr(181) : u_str = 1 u_pat = 1; Bug 36207
+ok 1897 - $c =~ /$c/i : chr (182) : u_str = 0 u_pat = 0; Bug 36207
+ok 1898 - $c=~/$c|xyz/i : chr(182) : u_str = 0 u_pat = 0; Bug 36207
+ok 1899 - $c =~ /$c/i : chr (182) : u_str = 0 u_pat = 1; Bug 36207
+ok 1900 - $c=~/$c|xyz/i : chr(182) : u_str = 0 u_pat = 1; Bug 36207
+ok 1901 - $c =~ /$c/i : chr (182) : u_str = 1 u_pat = 0; Bug 36207
+ok 1902 - $c=~/$c|xyz/i : chr(182) : u_str = 1 u_pat = 0; Bug 36207
+ok 1903 - $c =~ /$c/i : chr (182) : u_str = 1 u_pat = 1; Bug 36207
+ok 1904 - $c=~/$c|xyz/i : chr(182) : u_str = 1 u_pat = 1; Bug 36207
+ok 1905 - $c =~ /$c/i : chr (183) : u_str = 0 u_pat = 0; Bug 36207
+ok 1906 - $c=~/$c|xyz/i : chr(183) : u_str = 0 u_pat = 0; Bug 36207
+ok 1907 - $c =~ /$c/i : chr (183) : u_str = 0 u_pat = 1; Bug 36207
+ok 1908 - $c=~/$c|xyz/i : chr(183) : u_str = 0 u_pat = 1; Bug 36207
+ok 1909 - $c =~ /$c/i : chr (183) : u_str = 1 u_pat = 0; Bug 36207
+ok 1910 - $c=~/$c|xyz/i : chr(183) : u_str = 1 u_pat = 0; Bug 36207
+ok 1911 - $c =~ /$c/i : chr (183) : u_str = 1 u_pat = 1; Bug 36207
+ok 1912 - $c=~/$c|xyz/i : chr(183) : u_str = 1 u_pat = 1; Bug 36207
+ok 1913 - $c =~ /$c/i : chr (184) : u_str = 0 u_pat = 0; Bug 36207
+ok 1914 - $c=~/$c|xyz/i : chr(184) : u_str = 0 u_pat = 0; Bug 36207
+ok 1915 - $c =~ /$c/i : chr (184) : u_str = 0 u_pat = 1; Bug 36207
+ok 1916 - $c=~/$c|xyz/i : chr(184) : u_str = 0 u_pat = 1; Bug 36207
+ok 1917 - $c =~ /$c/i : chr (184) : u_str = 1 u_pat = 0; Bug 36207
+ok 1918 - $c=~/$c|xyz/i : chr(184) : u_str = 1 u_pat = 0; Bug 36207
+ok 1919 - $c =~ /$c/i : chr (184) : u_str = 1 u_pat = 1; Bug 36207
+ok 1920 - $c=~/$c|xyz/i : chr(184) : u_str = 1 u_pat = 1; Bug 36207
+ok 1921 - $c =~ /$c/i : chr (185) : u_str = 0 u_pat = 0; Bug 36207
+ok 1922 - $c=~/$c|xyz/i : chr(185) : u_str = 0 u_pat = 0; Bug 36207
+ok 1923 - $c =~ /$c/i : chr (185) : u_str = 0 u_pat = 1; Bug 36207
+ok 1924 - $c=~/$c|xyz/i : chr(185) : u_str = 0 u_pat = 1; Bug 36207
+ok 1925 - $c =~ /$c/i : chr (185) : u_str = 1 u_pat = 0; Bug 36207
+ok 1926 - $c=~/$c|xyz/i : chr(185) : u_str = 1 u_pat = 0; Bug 36207
+ok 1927 - $c =~ /$c/i : chr (185) : u_str = 1 u_pat = 1; Bug 36207
+ok 1928 - $c=~/$c|xyz/i : chr(185) : u_str = 1 u_pat = 1; Bug 36207
+ok 1929 - $c =~ /$c/i : chr (186) : u_str = 0 u_pat = 0; Bug 36207
+ok 1930 - $c=~/$c|xyz/i : chr(186) : u_str = 0 u_pat = 0; Bug 36207
+ok 1931 - $c =~ /$c/i : chr (186) : u_str = 0 u_pat = 1; Bug 36207
+ok 1932 - $c=~/$c|xyz/i : chr(186) : u_str = 0 u_pat = 1; Bug 36207
+ok 1933 - $c =~ /$c/i : chr (186) : u_str = 1 u_pat = 0; Bug 36207
+ok 1934 - $c=~/$c|xyz/i : chr(186) : u_str = 1 u_pat = 0; Bug 36207
+ok 1935 - $c =~ /$c/i : chr (186) : u_str = 1 u_pat = 1; Bug 36207
+ok 1936 - $c=~/$c|xyz/i : chr(186) : u_str = 1 u_pat = 1; Bug 36207
+ok 1937 - $c =~ /$c/i : chr (187) : u_str = 0 u_pat = 0; Bug 36207
+ok 1938 - $c=~/$c|xyz/i : chr(187) : u_str = 0 u_pat = 0; Bug 36207
+ok 1939 - $c =~ /$c/i : chr (187) : u_str = 0 u_pat = 1; Bug 36207
+ok 1940 - $c=~/$c|xyz/i : chr(187) : u_str = 0 u_pat = 1; Bug 36207
+ok 1941 - $c =~ /$c/i : chr (187) : u_str = 1 u_pat = 0; Bug 36207
+ok 1942 - $c=~/$c|xyz/i : chr(187) : u_str = 1 u_pat = 0; Bug 36207
+ok 1943 - $c =~ /$c/i : chr (187) : u_str = 1 u_pat = 1; Bug 36207
+ok 1944 - $c=~/$c|xyz/i : chr(187) : u_str = 1 u_pat = 1; Bug 36207
+ok 1945 - $c =~ /$c/i : chr (188) : u_str = 0 u_pat = 0; Bug 36207
+ok 1946 - $c=~/$c|xyz/i : chr(188) : u_str = 0 u_pat = 0; Bug 36207
+ok 1947 - $c =~ /$c/i : chr (188) : u_str = 0 u_pat = 1; Bug 36207
+ok 1948 - $c=~/$c|xyz/i : chr(188) : u_str = 0 u_pat = 1; Bug 36207
+ok 1949 - $c =~ /$c/i : chr (188) : u_str = 1 u_pat = 0; Bug 36207
+ok 1950 - $c=~/$c|xyz/i : chr(188) : u_str = 1 u_pat = 0; Bug 36207
+ok 1951 - $c =~ /$c/i : chr (188) : u_str = 1 u_pat = 1; Bug 36207
+ok 1952 - $c=~/$c|xyz/i : chr(188) : u_str = 1 u_pat = 1; Bug 36207
+ok 1953 - $c =~ /$c/i : chr (189) : u_str = 0 u_pat = 0; Bug 36207
+ok 1954 - $c=~/$c|xyz/i : chr(189) : u_str = 0 u_pat = 0; Bug 36207
+ok 1955 - $c =~ /$c/i : chr (189) : u_str = 0 u_pat = 1; Bug 36207
+ok 1956 - $c=~/$c|xyz/i : chr(189) : u_str = 0 u_pat = 1; Bug 36207
+ok 1957 - $c =~ /$c/i : chr (189) : u_str = 1 u_pat = 0; Bug 36207
+ok 1958 - $c=~/$c|xyz/i : chr(189) : u_str = 1 u_pat = 0; Bug 36207
+ok 1959 - $c =~ /$c/i : chr (189) : u_str = 1 u_pat = 1; Bug 36207
+ok 1960 - $c=~/$c|xyz/i : chr(189) : u_str = 1 u_pat = 1; Bug 36207
+ok 1961 - $c =~ /$c/i : chr (190) : u_str = 0 u_pat = 0; Bug 36207
+ok 1962 - $c=~/$c|xyz/i : chr(190) : u_str = 0 u_pat = 0; Bug 36207
+ok 1963 - $c =~ /$c/i : chr (190) : u_str = 0 u_pat = 1; Bug 36207
+ok 1964 - $c=~/$c|xyz/i : chr(190) : u_str = 0 u_pat = 1; Bug 36207
+ok 1965 - $c =~ /$c/i : chr (190) : u_str = 1 u_pat = 0; Bug 36207
+ok 1966 - $c=~/$c|xyz/i : chr(190) : u_str = 1 u_pat = 0; Bug 36207
+ok 1967 - $c =~ /$c/i : chr (190) : u_str = 1 u_pat = 1; Bug 36207
+ok 1968 - $c=~/$c|xyz/i : chr(190) : u_str = 1 u_pat = 1; Bug 36207
+ok 1969 - $c =~ /$c/i : chr (191) : u_str = 0 u_pat = 0; Bug 36207
+ok 1970 - $c=~/$c|xyz/i : chr(191) : u_str = 0 u_pat = 0; Bug 36207
+ok 1971 - $c =~ /$c/i : chr (191) : u_str = 0 u_pat = 1; Bug 36207
+ok 1972 - $c=~/$c|xyz/i : chr(191) : u_str = 0 u_pat = 1; Bug 36207
+ok 1973 - $c =~ /$c/i : chr (191) : u_str = 1 u_pat = 0; Bug 36207
+ok 1974 - $c=~/$c|xyz/i : chr(191) : u_str = 1 u_pat = 0; Bug 36207
+ok 1975 - $c =~ /$c/i : chr (191) : u_str = 1 u_pat = 1; Bug 36207
+ok 1976 - $c=~/$c|xyz/i : chr(191) : u_str = 1 u_pat = 1; Bug 36207
+ok 1977 - $c =~ /$c/i : chr (192) : u_str = 0 u_pat = 0; Bug 36207
+ok 1978 - $c=~/$c|xyz/i : chr(192) : u_str = 0 u_pat = 0; Bug 36207
+ok 1979 - $c =~ /$c/i : chr (192) : u_str = 0 u_pat = 1; Bug 36207
+ok 1980 - $c=~/$c|xyz/i : chr(192) : u_str = 0 u_pat = 1; Bug 36207
+ok 1981 - $c =~ /$c/i : chr (192) : u_str = 1 u_pat = 0; Bug 36207
+ok 1982 - $c=~/$c|xyz/i : chr(192) : u_str = 1 u_pat = 0; Bug 36207
+ok 1983 - $c =~ /$c/i : chr (192) : u_str = 1 u_pat = 1; Bug 36207
+ok 1984 - $c=~/$c|xyz/i : chr(192) : u_str = 1 u_pat = 1; Bug 36207
+ok 1985 - $c =~ /$c/i : chr (193) : u_str = 0 u_pat = 0; Bug 36207
+ok 1986 - $c=~/$c|xyz/i : chr(193) : u_str = 0 u_pat = 0; Bug 36207
+ok 1987 - $c =~ /$c/i : chr (193) : u_str = 0 u_pat = 1; Bug 36207
+ok 1988 - $c=~/$c|xyz/i : chr(193) : u_str = 0 u_pat = 1; Bug 36207
+ok 1989 - $c =~ /$c/i : chr (193) : u_str = 1 u_pat = 0; Bug 36207
+ok 1990 - $c=~/$c|xyz/i : chr(193) : u_str = 1 u_pat = 0; Bug 36207
+ok 1991 - $c =~ /$c/i : chr (193) : u_str = 1 u_pat = 1; Bug 36207
+ok 1992 - $c=~/$c|xyz/i : chr(193) : u_str = 1 u_pat = 1; Bug 36207
+ok 1993 - $c =~ /$c/i : chr (194) : u_str = 0 u_pat = 0; Bug 36207
+ok 1994 - $c=~/$c|xyz/i : chr(194) : u_str = 0 u_pat = 0; Bug 36207
+ok 1995 - $c =~ /$c/i : chr (194) : u_str = 0 u_pat = 1; Bug 36207
+ok 1996 - $c=~/$c|xyz/i : chr(194) : u_str = 0 u_pat = 1; Bug 36207
+ok 1997 - $c =~ /$c/i : chr (194) : u_str = 1 u_pat = 0; Bug 36207
+ok 1998 - $c=~/$c|xyz/i : chr(194) : u_str = 1 u_pat = 0; Bug 36207
+ok 1999 - $c =~ /$c/i : chr (194) : u_str = 1 u_pat = 1; Bug 36207
+ok 2000 - $c=~/$c|xyz/i : chr(194) : u_str = 1 u_pat = 1; Bug 36207
+ok 2001 - $c =~ /$c/i : chr (195) : u_str = 0 u_pat = 0; Bug 36207
+ok 2002 - $c=~/$c|xyz/i : chr(195) : u_str = 0 u_pat = 0; Bug 36207
+ok 2003 - $c =~ /$c/i : chr (195) : u_str = 0 u_pat = 1; Bug 36207
+ok 2004 - $c=~/$c|xyz/i : chr(195) : u_str = 0 u_pat = 1; Bug 36207
+ok 2005 - $c =~ /$c/i : chr (195) : u_str = 1 u_pat = 0; Bug 36207
+ok 2006 - $c=~/$c|xyz/i : chr(195) : u_str = 1 u_pat = 0; Bug 36207
+ok 2007 - $c =~ /$c/i : chr (195) : u_str = 1 u_pat = 1; Bug 36207
+ok 2008 - $c=~/$c|xyz/i : chr(195) : u_str = 1 u_pat = 1; Bug 36207
+ok 2009 - $c =~ /$c/i : chr (196) : u_str = 0 u_pat = 0; Bug 36207
+ok 2010 - $c=~/$c|xyz/i : chr(196) : u_str = 0 u_pat = 0; Bug 36207
+ok 2011 - $c =~ /$c/i : chr (196) : u_str = 0 u_pat = 1; Bug 36207
+ok 2012 - $c=~/$c|xyz/i : chr(196) : u_str = 0 u_pat = 1; Bug 36207
+ok 2013 - $c =~ /$c/i : chr (196) : u_str = 1 u_pat = 0; Bug 36207
+ok 2014 - $c=~/$c|xyz/i : chr(196) : u_str = 1 u_pat = 0; Bug 36207
+ok 2015 - $c =~ /$c/i : chr (196) : u_str = 1 u_pat = 1; Bug 36207
+ok 2016 - $c=~/$c|xyz/i : chr(196) : u_str = 1 u_pat = 1; Bug 36207
+ok 2017 - $c =~ /$c/i : chr (197) : u_str = 0 u_pat = 0; Bug 36207
+ok 2018 - $c=~/$c|xyz/i : chr(197) : u_str = 0 u_pat = 0; Bug 36207
+ok 2019 - $c =~ /$c/i : chr (197) : u_str = 0 u_pat = 1; Bug 36207
+ok 2020 - $c=~/$c|xyz/i : chr(197) : u_str = 0 u_pat = 1; Bug 36207
+ok 2021 - $c =~ /$c/i : chr (197) : u_str = 1 u_pat = 0; Bug 36207
+ok 2022 - $c=~/$c|xyz/i : chr(197) : u_str = 1 u_pat = 0; Bug 36207
+ok 2023 - $c =~ /$c/i : chr (197) : u_str = 1 u_pat = 1; Bug 36207
+ok 2024 - $c=~/$c|xyz/i : chr(197) : u_str = 1 u_pat = 1; Bug 36207
+ok 2025 - $c =~ /$c/i : chr (198) : u_str = 0 u_pat = 0; Bug 36207
+ok 2026 - $c=~/$c|xyz/i : chr(198) : u_str = 0 u_pat = 0; Bug 36207
+ok 2027 - $c =~ /$c/i : chr (198) : u_str = 0 u_pat = 1; Bug 36207
+ok 2028 - $c=~/$c|xyz/i : chr(198) : u_str = 0 u_pat = 1; Bug 36207
+ok 2029 - $c =~ /$c/i : chr (198) : u_str = 1 u_pat = 0; Bug 36207
+ok 2030 - $c=~/$c|xyz/i : chr(198) : u_str = 1 u_pat = 0; Bug 36207
+ok 2031 - $c =~ /$c/i : chr (198) : u_str = 1 u_pat = 1; Bug 36207
+ok 2032 - $c=~/$c|xyz/i : chr(198) : u_str = 1 u_pat = 1; Bug 36207
+ok 2033 - $c =~ /$c/i : chr (199) : u_str = 0 u_pat = 0; Bug 36207
+ok 2034 - $c=~/$c|xyz/i : chr(199) : u_str = 0 u_pat = 0; Bug 36207
+ok 2035 - $c =~ /$c/i : chr (199) : u_str = 0 u_pat = 1; Bug 36207
+ok 2036 - $c=~/$c|xyz/i : chr(199) : u_str = 0 u_pat = 1; Bug 36207
+ok 2037 - $c =~ /$c/i : chr (199) : u_str = 1 u_pat = 0; Bug 36207
+ok 2038 - $c=~/$c|xyz/i : chr(199) : u_str = 1 u_pat = 0; Bug 36207
+ok 2039 - $c =~ /$c/i : chr (199) : u_str = 1 u_pat = 1; Bug 36207
+ok 2040 - $c=~/$c|xyz/i : chr(199) : u_str = 1 u_pat = 1; Bug 36207
+ok 2041 - $c =~ /$c/i : chr (200) : u_str = 0 u_pat = 0; Bug 36207
+ok 2042 - $c=~/$c|xyz/i : chr(200) : u_str = 0 u_pat = 0; Bug 36207
+ok 2043 - $c =~ /$c/i : chr (200) : u_str = 0 u_pat = 1; Bug 36207
+ok 2044 - $c=~/$c|xyz/i : chr(200) : u_str = 0 u_pat = 1; Bug 36207
+ok 2045 - $c =~ /$c/i : chr (200) : u_str = 1 u_pat = 0; Bug 36207
+ok 2046 - $c=~/$c|xyz/i : chr(200) : u_str = 1 u_pat = 0; Bug 36207
+ok 2047 - $c =~ /$c/i : chr (200) : u_str = 1 u_pat = 1; Bug 36207
+ok 2048 - $c=~/$c|xyz/i : chr(200) : u_str = 1 u_pat = 1; Bug 36207
+ok 2049 - $c =~ /$c/i : chr (201) : u_str = 0 u_pat = 0; Bug 36207
+ok 2050 - $c=~/$c|xyz/i : chr(201) : u_str = 0 u_pat = 0; Bug 36207
+ok 2051 - $c =~ /$c/i : chr (201) : u_str = 0 u_pat = 1; Bug 36207
+ok 2052 - $c=~/$c|xyz/i : chr(201) : u_str = 0 u_pat = 1; Bug 36207
+ok 2053 - $c =~ /$c/i : chr (201) : u_str = 1 u_pat = 0; Bug 36207
+ok 2054 - $c=~/$c|xyz/i : chr(201) : u_str = 1 u_pat = 0; Bug 36207
+ok 2055 - $c =~ /$c/i : chr (201) : u_str = 1 u_pat = 1; Bug 36207
+ok 2056 - $c=~/$c|xyz/i : chr(201) : u_str = 1 u_pat = 1; Bug 36207
+ok 2057 - $c =~ /$c/i : chr (202) : u_str = 0 u_pat = 0; Bug 36207
+ok 2058 - $c=~/$c|xyz/i : chr(202) : u_str = 0 u_pat = 0; Bug 36207
+ok 2059 - $c =~ /$c/i : chr (202) : u_str = 0 u_pat = 1; Bug 36207
+ok 2060 - $c=~/$c|xyz/i : chr(202) : u_str = 0 u_pat = 1; Bug 36207
+ok 2061 - $c =~ /$c/i : chr (202) : u_str = 1 u_pat = 0; Bug 36207
+ok 2062 - $c=~/$c|xyz/i : chr(202) : u_str = 1 u_pat = 0; Bug 36207
+ok 2063 - $c =~ /$c/i : chr (202) : u_str = 1 u_pat = 1; Bug 36207
+ok 2064 - $c=~/$c|xyz/i : chr(202) : u_str = 1 u_pat = 1; Bug 36207
+ok 2065 - $c =~ /$c/i : chr (203) : u_str = 0 u_pat = 0; Bug 36207
+ok 2066 - $c=~/$c|xyz/i : chr(203) : u_str = 0 u_pat = 0; Bug 36207
+ok 2067 - $c =~ /$c/i : chr (203) : u_str = 0 u_pat = 1; Bug 36207
+ok 2068 - $c=~/$c|xyz/i : chr(203) : u_str = 0 u_pat = 1; Bug 36207
+ok 2069 - $c =~ /$c/i : chr (203) : u_str = 1 u_pat = 0; Bug 36207
+ok 2070 - $c=~/$c|xyz/i : chr(203) : u_str = 1 u_pat = 0; Bug 36207
+ok 2071 - $c =~ /$c/i : chr (203) : u_str = 1 u_pat = 1; Bug 36207
+ok 2072 - $c=~/$c|xyz/i : chr(203) : u_str = 1 u_pat = 1; Bug 36207
+ok 2073 - $c =~ /$c/i : chr (204) : u_str = 0 u_pat = 0; Bug 36207
+ok 2074 - $c=~/$c|xyz/i : chr(204) : u_str = 0 u_pat = 0; Bug 36207
+ok 2075 - $c =~ /$c/i : chr (204) : u_str = 0 u_pat = 1; Bug 36207
+ok 2076 - $c=~/$c|xyz/i : chr(204) : u_str = 0 u_pat = 1; Bug 36207
+ok 2077 - $c =~ /$c/i : chr (204) : u_str = 1 u_pat = 0; Bug 36207
+ok 2078 - $c=~/$c|xyz/i : chr(204) : u_str = 1 u_pat = 0; Bug 36207
+ok 2079 - $c =~ /$c/i : chr (204) : u_str = 1 u_pat = 1; Bug 36207
+ok 2080 - $c=~/$c|xyz/i : chr(204) : u_str = 1 u_pat = 1; Bug 36207
+ok 2081 - $c =~ /$c/i : chr (205) : u_str = 0 u_pat = 0; Bug 36207
+ok 2082 - $c=~/$c|xyz/i : chr(205) : u_str = 0 u_pat = 0; Bug 36207
+ok 2083 - $c =~ /$c/i : chr (205) : u_str = 0 u_pat = 1; Bug 36207
+ok 2084 - $c=~/$c|xyz/i : chr(205) : u_str = 0 u_pat = 1; Bug 36207
+ok 2085 - $c =~ /$c/i : chr (205) : u_str = 1 u_pat = 0; Bug 36207
+ok 2086 - $c=~/$c|xyz/i : chr(205) : u_str = 1 u_pat = 0; Bug 36207
+ok 2087 - $c =~ /$c/i : chr (205) : u_str = 1 u_pat = 1; Bug 36207
+ok 2088 - $c=~/$c|xyz/i : chr(205) : u_str = 1 u_pat = 1; Bug 36207
+ok 2089 - $c =~ /$c/i : chr (206) : u_str = 0 u_pat = 0; Bug 36207
+ok 2090 - $c=~/$c|xyz/i : chr(206) : u_str = 0 u_pat = 0; Bug 36207
+ok 2091 - $c =~ /$c/i : chr (206) : u_str = 0 u_pat = 1; Bug 36207
+ok 2092 - $c=~/$c|xyz/i : chr(206) : u_str = 0 u_pat = 1; Bug 36207
+ok 2093 - $c =~ /$c/i : chr (206) : u_str = 1 u_pat = 0; Bug 36207
+ok 2094 - $c=~/$c|xyz/i : chr(206) : u_str = 1 u_pat = 0; Bug 36207
+ok 2095 - $c =~ /$c/i : chr (206) : u_str = 1 u_pat = 1; Bug 36207
+ok 2096 - $c=~/$c|xyz/i : chr(206) : u_str = 1 u_pat = 1; Bug 36207
+ok 2097 - $c =~ /$c/i : chr (207) : u_str = 0 u_pat = 0; Bug 36207
+ok 2098 - $c=~/$c|xyz/i : chr(207) : u_str = 0 u_pat = 0; Bug 36207
+ok 2099 - $c =~ /$c/i : chr (207) : u_str = 0 u_pat = 1; Bug 36207
+ok 2100 - $c=~/$c|xyz/i : chr(207) : u_str = 0 u_pat = 1; Bug 36207
+ok 2101 - $c =~ /$c/i : chr (207) : u_str = 1 u_pat = 0; Bug 36207
+ok 2102 - $c=~/$c|xyz/i : chr(207) : u_str = 1 u_pat = 0; Bug 36207
+ok 2103 - $c =~ /$c/i : chr (207) : u_str = 1 u_pat = 1; Bug 36207
+ok 2104 - $c=~/$c|xyz/i : chr(207) : u_str = 1 u_pat = 1; Bug 36207
+ok 2105 - $c =~ /$c/i : chr (208) : u_str = 0 u_pat = 0; Bug 36207
+ok 2106 - $c=~/$c|xyz/i : chr(208) : u_str = 0 u_pat = 0; Bug 36207
+ok 2107 - $c =~ /$c/i : chr (208) : u_str = 0 u_pat = 1; Bug 36207
+ok 2108 - $c=~/$c|xyz/i : chr(208) : u_str = 0 u_pat = 1; Bug 36207
+ok 2109 - $c =~ /$c/i : chr (208) : u_str = 1 u_pat = 0; Bug 36207
+ok 2110 - $c=~/$c|xyz/i : chr(208) : u_str = 1 u_pat = 0; Bug 36207
+ok 2111 - $c =~ /$c/i : chr (208) : u_str = 1 u_pat = 1; Bug 36207
+ok 2112 - $c=~/$c|xyz/i : chr(208) : u_str = 1 u_pat = 1; Bug 36207
+ok 2113 - $c =~ /$c/i : chr (209) : u_str = 0 u_pat = 0; Bug 36207
+ok 2114 - $c=~/$c|xyz/i : chr(209) : u_str = 0 u_pat = 0; Bug 36207
+ok 2115 - $c =~ /$c/i : chr (209) : u_str = 0 u_pat = 1; Bug 36207
+ok 2116 - $c=~/$c|xyz/i : chr(209) : u_str = 0 u_pat = 1; Bug 36207
+ok 2117 - $c =~ /$c/i : chr (209) : u_str = 1 u_pat = 0; Bug 36207
+ok 2118 - $c=~/$c|xyz/i : chr(209) : u_str = 1 u_pat = 0; Bug 36207
+ok 2119 - $c =~ /$c/i : chr (209) : u_str = 1 u_pat = 1; Bug 36207
+ok 2120 - $c=~/$c|xyz/i : chr(209) : u_str = 1 u_pat = 1; Bug 36207
+ok 2121 - $c =~ /$c/i : chr (210) : u_str = 0 u_pat = 0; Bug 36207
+ok 2122 - $c=~/$c|xyz/i : chr(210) : u_str = 0 u_pat = 0; Bug 36207
+ok 2123 - $c =~ /$c/i : chr (210) : u_str = 0 u_pat = 1; Bug 36207
+ok 2124 - $c=~/$c|xyz/i : chr(210) : u_str = 0 u_pat = 1; Bug 36207
+ok 2125 - $c =~ /$c/i : chr (210) : u_str = 1 u_pat = 0; Bug 36207
+ok 2126 - $c=~/$c|xyz/i : chr(210) : u_str = 1 u_pat = 0; Bug 36207
+ok 2127 - $c =~ /$c/i : chr (210) : u_str = 1 u_pat = 1; Bug 36207
+ok 2128 - $c=~/$c|xyz/i : chr(210) : u_str = 1 u_pat = 1; Bug 36207
+ok 2129 - $c =~ /$c/i : chr (211) : u_str = 0 u_pat = 0; Bug 36207
+ok 2130 - $c=~/$c|xyz/i : chr(211) : u_str = 0 u_pat = 0; Bug 36207
+ok 2131 - $c =~ /$c/i : chr (211) : u_str = 0 u_pat = 1; Bug 36207
+ok 2132 - $c=~/$c|xyz/i : chr(211) : u_str = 0 u_pat = 1; Bug 36207
+ok 2133 - $c =~ /$c/i : chr (211) : u_str = 1 u_pat = 0; Bug 36207
+ok 2134 - $c=~/$c|xyz/i : chr(211) : u_str = 1 u_pat = 0; Bug 36207
+ok 2135 - $c =~ /$c/i : chr (211) : u_str = 1 u_pat = 1; Bug 36207
+ok 2136 - $c=~/$c|xyz/i : chr(211) : u_str = 1 u_pat = 1; Bug 36207
+ok 2137 - $c =~ /$c/i : chr (212) : u_str = 0 u_pat = 0; Bug 36207
+ok 2138 - $c=~/$c|xyz/i : chr(212) : u_str = 0 u_pat = 0; Bug 36207
+ok 2139 - $c =~ /$c/i : chr (212) : u_str = 0 u_pat = 1; Bug 36207
+ok 2140 - $c=~/$c|xyz/i : chr(212) : u_str = 0 u_pat = 1; Bug 36207
+ok 2141 - $c =~ /$c/i : chr (212) : u_str = 1 u_pat = 0; Bug 36207
+ok 2142 - $c=~/$c|xyz/i : chr(212) : u_str = 1 u_pat = 0; Bug 36207
+ok 2143 - $c =~ /$c/i : chr (212) : u_str = 1 u_pat = 1; Bug 36207
+ok 2144 - $c=~/$c|xyz/i : chr(212) : u_str = 1 u_pat = 1; Bug 36207
+ok 2145 - $c =~ /$c/i : chr (213) : u_str = 0 u_pat = 0; Bug 36207
+ok 2146 - $c=~/$c|xyz/i : chr(213) : u_str = 0 u_pat = 0; Bug 36207
+ok 2147 - $c =~ /$c/i : chr (213) : u_str = 0 u_pat = 1; Bug 36207
+ok 2148 - $c=~/$c|xyz/i : chr(213) : u_str = 0 u_pat = 1; Bug 36207
+ok 2149 - $c =~ /$c/i : chr (213) : u_str = 1 u_pat = 0; Bug 36207
+ok 2150 - $c=~/$c|xyz/i : chr(213) : u_str = 1 u_pat = 0; Bug 36207
+ok 2151 - $c =~ /$c/i : chr (213) : u_str = 1 u_pat = 1; Bug 36207
+ok 2152 - $c=~/$c|xyz/i : chr(213) : u_str = 1 u_pat = 1; Bug 36207
+ok 2153 - $c =~ /$c/i : chr (214) : u_str = 0 u_pat = 0; Bug 36207
+ok 2154 - $c=~/$c|xyz/i : chr(214) : u_str = 0 u_pat = 0; Bug 36207
+ok 2155 - $c =~ /$c/i : chr (214) : u_str = 0 u_pat = 1; Bug 36207
+ok 2156 - $c=~/$c|xyz/i : chr(214) : u_str = 0 u_pat = 1; Bug 36207
+ok 2157 - $c =~ /$c/i : chr (214) : u_str = 1 u_pat = 0; Bug 36207
+ok 2158 - $c=~/$c|xyz/i : chr(214) : u_str = 1 u_pat = 0; Bug 36207
+ok 2159 - $c =~ /$c/i : chr (214) : u_str = 1 u_pat = 1; Bug 36207
+ok 2160 - $c=~/$c|xyz/i : chr(214) : u_str = 1 u_pat = 1; Bug 36207
+ok 2161 - $c =~ /$c/i : chr (215) : u_str = 0 u_pat = 0; Bug 36207
+ok 2162 - $c=~/$c|xyz/i : chr(215) : u_str = 0 u_pat = 0; Bug 36207
+ok 2163 - $c =~ /$c/i : chr (215) : u_str = 0 u_pat = 1; Bug 36207
+ok 2164 - $c=~/$c|xyz/i : chr(215) : u_str = 0 u_pat = 1; Bug 36207
+ok 2165 - $c =~ /$c/i : chr (215) : u_str = 1 u_pat = 0; Bug 36207
+ok 2166 - $c=~/$c|xyz/i : chr(215) : u_str = 1 u_pat = 0; Bug 36207
+ok 2167 - $c =~ /$c/i : chr (215) : u_str = 1 u_pat = 1; Bug 36207
+ok 2168 - $c=~/$c|xyz/i : chr(215) : u_str = 1 u_pat = 1; Bug 36207
+ok 2169 - $c =~ /$c/i : chr (216) : u_str = 0 u_pat = 0; Bug 36207
+ok 2170 - $c=~/$c|xyz/i : chr(216) : u_str = 0 u_pat = 0; Bug 36207
+ok 2171 - $c =~ /$c/i : chr (216) : u_str = 0 u_pat = 1; Bug 36207
+ok 2172 - $c=~/$c|xyz/i : chr(216) : u_str = 0 u_pat = 1; Bug 36207
+ok 2173 - $c =~ /$c/i : chr (216) : u_str = 1 u_pat = 0; Bug 36207
+ok 2174 - $c=~/$c|xyz/i : chr(216) : u_str = 1 u_pat = 0; Bug 36207
+ok 2175 - $c =~ /$c/i : chr (216) : u_str = 1 u_pat = 1; Bug 36207
+ok 2176 - $c=~/$c|xyz/i : chr(216) : u_str = 1 u_pat = 1; Bug 36207
+ok 2177 - $c =~ /$c/i : chr (217) : u_str = 0 u_pat = 0; Bug 36207
+ok 2178 - $c=~/$c|xyz/i : chr(217) : u_str = 0 u_pat = 0; Bug 36207
+ok 2179 - $c =~ /$c/i : chr (217) : u_str = 0 u_pat = 1; Bug 36207
+ok 2180 - $c=~/$c|xyz/i : chr(217) : u_str = 0 u_pat = 1; Bug 36207
+ok 2181 - $c =~ /$c/i : chr (217) : u_str = 1 u_pat = 0; Bug 36207
+ok 2182 - $c=~/$c|xyz/i : chr(217) : u_str = 1 u_pat = 0; Bug 36207
+ok 2183 - $c =~ /$c/i : chr (217) : u_str = 1 u_pat = 1; Bug 36207
+ok 2184 - $c=~/$c|xyz/i : chr(217) : u_str = 1 u_pat = 1; Bug 36207
+ok 2185 - $c =~ /$c/i : chr (218) : u_str = 0 u_pat = 0; Bug 36207
+ok 2186 - $c=~/$c|xyz/i : chr(218) : u_str = 0 u_pat = 0; Bug 36207
+ok 2187 - $c =~ /$c/i : chr (218) : u_str = 0 u_pat = 1; Bug 36207
+ok 2188 - $c=~/$c|xyz/i : chr(218) : u_str = 0 u_pat = 1; Bug 36207
+ok 2189 - $c =~ /$c/i : chr (218) : u_str = 1 u_pat = 0; Bug 36207
+ok 2190 - $c=~/$c|xyz/i : chr(218) : u_str = 1 u_pat = 0; Bug 36207
+ok 2191 - $c =~ /$c/i : chr (218) : u_str = 1 u_pat = 1; Bug 36207
+ok 2192 - $c=~/$c|xyz/i : chr(218) : u_str = 1 u_pat = 1; Bug 36207
+ok 2193 - $c =~ /$c/i : chr (219) : u_str = 0 u_pat = 0; Bug 36207
+ok 2194 - $c=~/$c|xyz/i : chr(219) : u_str = 0 u_pat = 0; Bug 36207
+ok 2195 - $c =~ /$c/i : chr (219) : u_str = 0 u_pat = 1; Bug 36207
+ok 2196 - $c=~/$c|xyz/i : chr(219) : u_str = 0 u_pat = 1; Bug 36207
+ok 2197 - $c =~ /$c/i : chr (219) : u_str = 1 u_pat = 0; Bug 36207
+ok 2198 - $c=~/$c|xyz/i : chr(219) : u_str = 1 u_pat = 0; Bug 36207
+ok 2199 - $c =~ /$c/i : chr (219) : u_str = 1 u_pat = 1; Bug 36207
+ok 2200 - $c=~/$c|xyz/i : chr(219) : u_str = 1 u_pat = 1; Bug 36207
+ok 2201 - $c =~ /$c/i : chr (220) : u_str = 0 u_pat = 0; Bug 36207
+ok 2202 - $c=~/$c|xyz/i : chr(220) : u_str = 0 u_pat = 0; Bug 36207
+ok 2203 - $c =~ /$c/i : chr (220) : u_str = 0 u_pat = 1; Bug 36207
+ok 2204 - $c=~/$c|xyz/i : chr(220) : u_str = 0 u_pat = 1; Bug 36207
+ok 2205 - $c =~ /$c/i : chr (220) : u_str = 1 u_pat = 0; Bug 36207
+ok 2206 - $c=~/$c|xyz/i : chr(220) : u_str = 1 u_pat = 0; Bug 36207
+ok 2207 - $c =~ /$c/i : chr (220) : u_str = 1 u_pat = 1; Bug 36207
+ok 2208 - $c=~/$c|xyz/i : chr(220) : u_str = 1 u_pat = 1; Bug 36207
+ok 2209 - $c =~ /$c/i : chr (221) : u_str = 0 u_pat = 0; Bug 36207
+ok 2210 - $c=~/$c|xyz/i : chr(221) : u_str = 0 u_pat = 0; Bug 36207
+ok 2211 - $c =~ /$c/i : chr (221) : u_str = 0 u_pat = 1; Bug 36207
+ok 2212 - $c=~/$c|xyz/i : chr(221) : u_str = 0 u_pat = 1; Bug 36207
+ok 2213 - $c =~ /$c/i : chr (221) : u_str = 1 u_pat = 0; Bug 36207
+ok 2214 - $c=~/$c|xyz/i : chr(221) : u_str = 1 u_pat = 0; Bug 36207
+ok 2215 - $c =~ /$c/i : chr (221) : u_str = 1 u_pat = 1; Bug 36207
+ok 2216 - $c=~/$c|xyz/i : chr(221) : u_str = 1 u_pat = 1; Bug 36207
+ok 2217 - $c =~ /$c/i : chr (222) : u_str = 0 u_pat = 0; Bug 36207
+ok 2218 - $c=~/$c|xyz/i : chr(222) : u_str = 0 u_pat = 0; Bug 36207
+ok 2219 - $c =~ /$c/i : chr (222) : u_str = 0 u_pat = 1; Bug 36207
+ok 2220 - $c=~/$c|xyz/i : chr(222) : u_str = 0 u_pat = 1; Bug 36207
+ok 2221 - $c =~ /$c/i : chr (222) : u_str = 1 u_pat = 0; Bug 36207
+ok 2222 - $c=~/$c|xyz/i : chr(222) : u_str = 1 u_pat = 0; Bug 36207
+ok 2223 - $c =~ /$c/i : chr (222) : u_str = 1 u_pat = 1; Bug 36207
+ok 2224 - $c=~/$c|xyz/i : chr(222) : u_str = 1 u_pat = 1; Bug 36207
+ok 2225 - $c =~ /$c/i : chr (223) : u_str = 0 u_pat = 0; Bug 36207
+ok 2226 - $c=~/$c|xyz/i : chr(223) : u_str = 0 u_pat = 0; Bug 36207
+ok 2227 - $c =~ /$c/i : chr (223) : u_str = 0 u_pat = 1; Bug 36207
+ok 2228 - $c=~/$c|xyz/i : chr(223) : u_str = 0 u_pat = 1; Bug 36207
+ok 2229 - $c =~ /$c/i : chr (223) : u_str = 1 u_pat = 0; Bug 36207
+ok 2230 - $c=~/$c|xyz/i : chr(223) : u_str = 1 u_pat = 0; Bug 36207
+ok 2231 - $c =~ /$c/i : chr (223) : u_str = 1 u_pat = 1; Bug 36207
+ok 2232 - $c=~/$c|xyz/i : chr(223) : u_str = 1 u_pat = 1; Bug 36207
+ok 2233 - $c =~ /$c/i : chr (224) : u_str = 0 u_pat = 0; Bug 36207
+ok 2234 - $c=~/$c|xyz/i : chr(224) : u_str = 0 u_pat = 0; Bug 36207
+ok 2235 - $c =~ /$c/i : chr (224) : u_str = 0 u_pat = 1; Bug 36207
+ok 2236 - $c=~/$c|xyz/i : chr(224) : u_str = 0 u_pat = 1; Bug 36207
+ok 2237 - $c =~ /$c/i : chr (224) : u_str = 1 u_pat = 0; Bug 36207
+ok 2238 - $c=~/$c|xyz/i : chr(224) : u_str = 1 u_pat = 0; Bug 36207
+ok 2239 - $c =~ /$c/i : chr (224) : u_str = 1 u_pat = 1; Bug 36207
+ok 2240 - $c=~/$c|xyz/i : chr(224) : u_str = 1 u_pat = 1; Bug 36207
+ok 2241 - $c =~ /$c/i : chr (225) : u_str = 0 u_pat = 0; Bug 36207
+ok 2242 - $c=~/$c|xyz/i : chr(225) : u_str = 0 u_pat = 0; Bug 36207
+ok 2243 - $c =~ /$c/i : chr (225) : u_str = 0 u_pat = 1; Bug 36207
+ok 2244 - $c=~/$c|xyz/i : chr(225) : u_str = 0 u_pat = 1; Bug 36207
+ok 2245 - $c =~ /$c/i : chr (225) : u_str = 1 u_pat = 0; Bug 36207
+ok 2246 - $c=~/$c|xyz/i : chr(225) : u_str = 1 u_pat = 0; Bug 36207
+ok 2247 - $c =~ /$c/i : chr (225) : u_str = 1 u_pat = 1; Bug 36207
+ok 2248 - $c=~/$c|xyz/i : chr(225) : u_str = 1 u_pat = 1; Bug 36207
+ok 2249 - $c =~ /$c/i : chr (226) : u_str = 0 u_pat = 0; Bug 36207
+ok 2250 - $c=~/$c|xyz/i : chr(226) : u_str = 0 u_pat = 0; Bug 36207
+ok 2251 - $c =~ /$c/i : chr (226) : u_str = 0 u_pat = 1; Bug 36207
+ok 2252 - $c=~/$c|xyz/i : chr(226) : u_str = 0 u_pat = 1; Bug 36207
+ok 2253 - $c =~ /$c/i : chr (226) : u_str = 1 u_pat = 0; Bug 36207
+ok 2254 - $c=~/$c|xyz/i : chr(226) : u_str = 1 u_pat = 0; Bug 36207
+ok 2255 - $c =~ /$c/i : chr (226) : u_str = 1 u_pat = 1; Bug 36207
+ok 2256 - $c=~/$c|xyz/i : chr(226) : u_str = 1 u_pat = 1; Bug 36207
+ok 2257 - $c =~ /$c/i : chr (227) : u_str = 0 u_pat = 0; Bug 36207
+ok 2258 - $c=~/$c|xyz/i : chr(227) : u_str = 0 u_pat = 0; Bug 36207
+ok 2259 - $c =~ /$c/i : chr (227) : u_str = 0 u_pat = 1; Bug 36207
+ok 2260 - $c=~/$c|xyz/i : chr(227) : u_str = 0 u_pat = 1; Bug 36207
+ok 2261 - $c =~ /$c/i : chr (227) : u_str = 1 u_pat = 0; Bug 36207
+ok 2262 - $c=~/$c|xyz/i : chr(227) : u_str = 1 u_pat = 0; Bug 36207
+ok 2263 - $c =~ /$c/i : chr (227) : u_str = 1 u_pat = 1; Bug 36207
+ok 2264 - $c=~/$c|xyz/i : chr(227) : u_str = 1 u_pat = 1; Bug 36207
+ok 2265 - $c =~ /$c/i : chr (228) : u_str = 0 u_pat = 0; Bug 36207
+ok 2266 - $c=~/$c|xyz/i : chr(228) : u_str = 0 u_pat = 0; Bug 36207
+ok 2267 - $c =~ /$c/i : chr (228) : u_str = 0 u_pat = 1; Bug 36207
+ok 2268 - $c=~/$c|xyz/i : chr(228) : u_str = 0 u_pat = 1; Bug 36207
+ok 2269 - $c =~ /$c/i : chr (228) : u_str = 1 u_pat = 0; Bug 36207
+ok 2270 - $c=~/$c|xyz/i : chr(228) : u_str = 1 u_pat = 0; Bug 36207
+ok 2271 - $c =~ /$c/i : chr (228) : u_str = 1 u_pat = 1; Bug 36207
+ok 2272 - $c=~/$c|xyz/i : chr(228) : u_str = 1 u_pat = 1; Bug 36207
+ok 2273 - $c =~ /$c/i : chr (229) : u_str = 0 u_pat = 0; Bug 36207
+ok 2274 - $c=~/$c|xyz/i : chr(229) : u_str = 0 u_pat = 0; Bug 36207
+ok 2275 - $c =~ /$c/i : chr (229) : u_str = 0 u_pat = 1; Bug 36207
+ok 2276 - $c=~/$c|xyz/i : chr(229) : u_str = 0 u_pat = 1; Bug 36207
+ok 2277 - $c =~ /$c/i : chr (229) : u_str = 1 u_pat = 0; Bug 36207
+ok 2278 - $c=~/$c|xyz/i : chr(229) : u_str = 1 u_pat = 0; Bug 36207
+ok 2279 - $c =~ /$c/i : chr (229) : u_str = 1 u_pat = 1; Bug 36207
+ok 2280 - $c=~/$c|xyz/i : chr(229) : u_str = 1 u_pat = 1; Bug 36207
+ok 2281 - $c =~ /$c/i : chr (230) : u_str = 0 u_pat = 0; Bug 36207
+ok 2282 - $c=~/$c|xyz/i : chr(230) : u_str = 0 u_pat = 0; Bug 36207
+ok 2283 - $c =~ /$c/i : chr (230) : u_str = 0 u_pat = 1; Bug 36207
+ok 2284 - $c=~/$c|xyz/i : chr(230) : u_str = 0 u_pat = 1; Bug 36207
+ok 2285 - $c =~ /$c/i : chr (230) : u_str = 1 u_pat = 0; Bug 36207
+ok 2286 - $c=~/$c|xyz/i : chr(230) : u_str = 1 u_pat = 0; Bug 36207
+ok 2287 - $c =~ /$c/i : chr (230) : u_str = 1 u_pat = 1; Bug 36207
+ok 2288 - $c=~/$c|xyz/i : chr(230) : u_str = 1 u_pat = 1; Bug 36207
+ok 2289 - $c =~ /$c/i : chr (231) : u_str = 0 u_pat = 0; Bug 36207
+ok 2290 - $c=~/$c|xyz/i : chr(231) : u_str = 0 u_pat = 0; Bug 36207
+ok 2291 - $c =~ /$c/i : chr (231) : u_str = 0 u_pat = 1; Bug 36207
+ok 2292 - $c=~/$c|xyz/i : chr(231) : u_str = 0 u_pat = 1; Bug 36207
+ok 2293 - $c =~ /$c/i : chr (231) : u_str = 1 u_pat = 0; Bug 36207
+ok 2294 - $c=~/$c|xyz/i : chr(231) : u_str = 1 u_pat = 0; Bug 36207
+ok 2295 - $c =~ /$c/i : chr (231) : u_str = 1 u_pat = 1; Bug 36207
+ok 2296 - $c=~/$c|xyz/i : chr(231) : u_str = 1 u_pat = 1; Bug 36207
+ok 2297 - $c =~ /$c/i : chr (232) : u_str = 0 u_pat = 0; Bug 36207
+ok 2298 - $c=~/$c|xyz/i : chr(232) : u_str = 0 u_pat = 0; Bug 36207
+ok 2299 - $c =~ /$c/i : chr (232) : u_str = 0 u_pat = 1; Bug 36207
+ok 2300 - $c=~/$c|xyz/i : chr(232) : u_str = 0 u_pat = 1; Bug 36207
+ok 2301 - $c =~ /$c/i : chr (232) : u_str = 1 u_pat = 0; Bug 36207
+ok 2302 - $c=~/$c|xyz/i : chr(232) : u_str = 1 u_pat = 0; Bug 36207
+ok 2303 - $c =~ /$c/i : chr (232) : u_str = 1 u_pat = 1; Bug 36207
+ok 2304 - $c=~/$c|xyz/i : chr(232) : u_str = 1 u_pat = 1; Bug 36207
+ok 2305 - $c =~ /$c/i : chr (233) : u_str = 0 u_pat = 0; Bug 36207
+ok 2306 - $c=~/$c|xyz/i : chr(233) : u_str = 0 u_pat = 0; Bug 36207
+ok 2307 - $c =~ /$c/i : chr (233) : u_str = 0 u_pat = 1; Bug 36207
+ok 2308 - $c=~/$c|xyz/i : chr(233) : u_str = 0 u_pat = 1; Bug 36207
+ok 2309 - $c =~ /$c/i : chr (233) : u_str = 1 u_pat = 0; Bug 36207
+ok 2310 - $c=~/$c|xyz/i : chr(233) : u_str = 1 u_pat = 0; Bug 36207
+ok 2311 - $c =~ /$c/i : chr (233) : u_str = 1 u_pat = 1; Bug 36207
+ok 2312 - $c=~/$c|xyz/i : chr(233) : u_str = 1 u_pat = 1; Bug 36207
+ok 2313 - $c =~ /$c/i : chr (234) : u_str = 0 u_pat = 0; Bug 36207
+ok 2314 - $c=~/$c|xyz/i : chr(234) : u_str = 0 u_pat = 0; Bug 36207
+ok 2315 - $c =~ /$c/i : chr (234) : u_str = 0 u_pat = 1; Bug 36207
+ok 2316 - $c=~/$c|xyz/i : chr(234) : u_str = 0 u_pat = 1; Bug 36207
+ok 2317 - $c =~ /$c/i : chr (234) : u_str = 1 u_pat = 0; Bug 36207
+ok 2318 - $c=~/$c|xyz/i : chr(234) : u_str = 1 u_pat = 0; Bug 36207
+ok 2319 - $c =~ /$c/i : chr (234) : u_str = 1 u_pat = 1; Bug 36207
+ok 2320 - $c=~/$c|xyz/i : chr(234) : u_str = 1 u_pat = 1; Bug 36207
+ok 2321 - $c =~ /$c/i : chr (235) : u_str = 0 u_pat = 0; Bug 36207
+ok 2322 - $c=~/$c|xyz/i : chr(235) : u_str = 0 u_pat = 0; Bug 36207
+ok 2323 - $c =~ /$c/i : chr (235) : u_str = 0 u_pat = 1; Bug 36207
+ok 2324 - $c=~/$c|xyz/i : chr(235) : u_str = 0 u_pat = 1; Bug 36207
+ok 2325 - $c =~ /$c/i : chr (235) : u_str = 1 u_pat = 0; Bug 36207
+ok 2326 - $c=~/$c|xyz/i : chr(235) : u_str = 1 u_pat = 0; Bug 36207
+ok 2327 - $c =~ /$c/i : chr (235) : u_str = 1 u_pat = 1; Bug 36207
+ok 2328 - $c=~/$c|xyz/i : chr(235) : u_str = 1 u_pat = 1; Bug 36207
+ok 2329 - $c =~ /$c/i : chr (236) : u_str = 0 u_pat = 0; Bug 36207
+ok 2330 - $c=~/$c|xyz/i : chr(236) : u_str = 0 u_pat = 0; Bug 36207
+ok 2331 - $c =~ /$c/i : chr (236) : u_str = 0 u_pat = 1; Bug 36207
+ok 2332 - $c=~/$c|xyz/i : chr(236) : u_str = 0 u_pat = 1; Bug 36207
+ok 2333 - $c =~ /$c/i : chr (236) : u_str = 1 u_pat = 0; Bug 36207
+ok 2334 - $c=~/$c|xyz/i : chr(236) : u_str = 1 u_pat = 0; Bug 36207
+ok 2335 - $c =~ /$c/i : chr (236) : u_str = 1 u_pat = 1; Bug 36207
+ok 2336 - $c=~/$c|xyz/i : chr(236) : u_str = 1 u_pat = 1; Bug 36207
+ok 2337 - $c =~ /$c/i : chr (237) : u_str = 0 u_pat = 0; Bug 36207
+ok 2338 - $c=~/$c|xyz/i : chr(237) : u_str = 0 u_pat = 0; Bug 36207
+ok 2339 - $c =~ /$c/i : chr (237) : u_str = 0 u_pat = 1; Bug 36207
+ok 2340 - $c=~/$c|xyz/i : chr(237) : u_str = 0 u_pat = 1; Bug 36207
+ok 2341 - $c =~ /$c/i : chr (237) : u_str = 1 u_pat = 0; Bug 36207
+ok 2342 - $c=~/$c|xyz/i : chr(237) : u_str = 1 u_pat = 0; Bug 36207
+ok 2343 - $c =~ /$c/i : chr (237) : u_str = 1 u_pat = 1; Bug 36207
+ok 2344 - $c=~/$c|xyz/i : chr(237) : u_str = 1 u_pat = 1; Bug 36207
+ok 2345 - $c =~ /$c/i : chr (238) : u_str = 0 u_pat = 0; Bug 36207
+ok 2346 - $c=~/$c|xyz/i : chr(238) : u_str = 0 u_pat = 0; Bug 36207
+ok 2347 - $c =~ /$c/i : chr (238) : u_str = 0 u_pat = 1; Bug 36207
+ok 2348 - $c=~/$c|xyz/i : chr(238) : u_str = 0 u_pat = 1; Bug 36207
+ok 2349 - $c =~ /$c/i : chr (238) : u_str = 1 u_pat = 0; Bug 36207
+ok 2350 - $c=~/$c|xyz/i : chr(238) : u_str = 1 u_pat = 0; Bug 36207
+ok 2351 - $c =~ /$c/i : chr (238) : u_str = 1 u_pat = 1; Bug 36207
+ok 2352 - $c=~/$c|xyz/i : chr(238) : u_str = 1 u_pat = 1; Bug 36207
+ok 2353 - $c =~ /$c/i : chr (239) : u_str = 0 u_pat = 0; Bug 36207
+ok 2354 - $c=~/$c|xyz/i : chr(239) : u_str = 0 u_pat = 0; Bug 36207
+ok 2355 - $c =~ /$c/i : chr (239) : u_str = 0 u_pat = 1; Bug 36207
+ok 2356 - $c=~/$c|xyz/i : chr(239) : u_str = 0 u_pat = 1; Bug 36207
+ok 2357 - $c =~ /$c/i : chr (239) : u_str = 1 u_pat = 0; Bug 36207
+ok 2358 - $c=~/$c|xyz/i : chr(239) : u_str = 1 u_pat = 0; Bug 36207
+ok 2359 - $c =~ /$c/i : chr (239) : u_str = 1 u_pat = 1; Bug 36207
+ok 2360 - $c=~/$c|xyz/i : chr(239) : u_str = 1 u_pat = 1; Bug 36207
+ok 2361 - $c =~ /$c/i : chr (240) : u_str = 0 u_pat = 0; Bug 36207
+ok 2362 - $c=~/$c|xyz/i : chr(240) : u_str = 0 u_pat = 0; Bug 36207
+ok 2363 - $c =~ /$c/i : chr (240) : u_str = 0 u_pat = 1; Bug 36207
+ok 2364 - $c=~/$c|xyz/i : chr(240) : u_str = 0 u_pat = 1; Bug 36207
+ok 2365 - $c =~ /$c/i : chr (240) : u_str = 1 u_pat = 0; Bug 36207
+ok 2366 - $c=~/$c|xyz/i : chr(240) : u_str = 1 u_pat = 0; Bug 36207
+ok 2367 - $c =~ /$c/i : chr (240) : u_str = 1 u_pat = 1; Bug 36207
+ok 2368 - $c=~/$c|xyz/i : chr(240) : u_str = 1 u_pat = 1; Bug 36207
+ok 2369 - $c =~ /$c/i : chr (241) : u_str = 0 u_pat = 0; Bug 36207
+ok 2370 - $c=~/$c|xyz/i : chr(241) : u_str = 0 u_pat = 0; Bug 36207
+ok 2371 - $c =~ /$c/i : chr (241) : u_str = 0 u_pat = 1; Bug 36207
+ok 2372 - $c=~/$c|xyz/i : chr(241) : u_str = 0 u_pat = 1; Bug 36207
+ok 2373 - $c =~ /$c/i : chr (241) : u_str = 1 u_pat = 0; Bug 36207
+ok 2374 - $c=~/$c|xyz/i : chr(241) : u_str = 1 u_pat = 0; Bug 36207
+ok 2375 - $c =~ /$c/i : chr (241) : u_str = 1 u_pat = 1; Bug 36207
+ok 2376 - $c=~/$c|xyz/i : chr(241) : u_str = 1 u_pat = 1; Bug 36207
+ok 2377 - $c =~ /$c/i : chr (242) : u_str = 0 u_pat = 0; Bug 36207
+ok 2378 - $c=~/$c|xyz/i : chr(242) : u_str = 0 u_pat = 0; Bug 36207
+ok 2379 - $c =~ /$c/i : chr (242) : u_str = 0 u_pat = 1; Bug 36207
+ok 2380 - $c=~/$c|xyz/i : chr(242) : u_str = 0 u_pat = 1; Bug 36207
+ok 2381 - $c =~ /$c/i : chr (242) : u_str = 1 u_pat = 0; Bug 36207
+ok 2382 - $c=~/$c|xyz/i : chr(242) : u_str = 1 u_pat = 0; Bug 36207
+ok 2383 - $c =~ /$c/i : chr (242) : u_str = 1 u_pat = 1; Bug 36207
+ok 2384 - $c=~/$c|xyz/i : chr(242) : u_str = 1 u_pat = 1; Bug 36207
+ok 2385 - $c =~ /$c/i : chr (243) : u_str = 0 u_pat = 0; Bug 36207
+ok 2386 - $c=~/$c|xyz/i : chr(243) : u_str = 0 u_pat = 0; Bug 36207
+ok 2387 - $c =~ /$c/i : chr (243) : u_str = 0 u_pat = 1; Bug 36207
+ok 2388 - $c=~/$c|xyz/i : chr(243) : u_str = 0 u_pat = 1; Bug 36207
+ok 2389 - $c =~ /$c/i : chr (243) : u_str = 1 u_pat = 0; Bug 36207
+ok 2390 - $c=~/$c|xyz/i : chr(243) : u_str = 1 u_pat = 0; Bug 36207
+ok 2391 - $c =~ /$c/i : chr (243) : u_str = 1 u_pat = 1; Bug 36207
+ok 2392 - $c=~/$c|xyz/i : chr(243) : u_str = 1 u_pat = 1; Bug 36207
+ok 2393 - $c =~ /$c/i : chr (244) : u_str = 0 u_pat = 0; Bug 36207
+ok 2394 - $c=~/$c|xyz/i : chr(244) : u_str = 0 u_pat = 0; Bug 36207
+ok 2395 - $c =~ /$c/i : chr (244) : u_str = 0 u_pat = 1; Bug 36207
+ok 2396 - $c=~/$c|xyz/i : chr(244) : u_str = 0 u_pat = 1; Bug 36207
+ok 2397 - $c =~ /$c/i : chr (244) : u_str = 1 u_pat = 0; Bug 36207
+ok 2398 - $c=~/$c|xyz/i : chr(244) : u_str = 1 u_pat = 0; Bug 36207
+ok 2399 - $c =~ /$c/i : chr (244) : u_str = 1 u_pat = 1; Bug 36207
+ok 2400 - $c=~/$c|xyz/i : chr(244) : u_str = 1 u_pat = 1; Bug 36207
+ok 2401 - $c =~ /$c/i : chr (245) : u_str = 0 u_pat = 0; Bug 36207
+ok 2402 - $c=~/$c|xyz/i : chr(245) : u_str = 0 u_pat = 0; Bug 36207
+ok 2403 - $c =~ /$c/i : chr (245) : u_str = 0 u_pat = 1; Bug 36207
+ok 2404 - $c=~/$c|xyz/i : chr(245) : u_str = 0 u_pat = 1; Bug 36207
+ok 2405 - $c =~ /$c/i : chr (245) : u_str = 1 u_pat = 0; Bug 36207
+ok 2406 - $c=~/$c|xyz/i : chr(245) : u_str = 1 u_pat = 0; Bug 36207
+ok 2407 - $c =~ /$c/i : chr (245) : u_str = 1 u_pat = 1; Bug 36207
+ok 2408 - $c=~/$c|xyz/i : chr(245) : u_str = 1 u_pat = 1; Bug 36207
+ok 2409 - $c =~ /$c/i : chr (246) : u_str = 0 u_pat = 0; Bug 36207
+ok 2410 - $c=~/$c|xyz/i : chr(246) : u_str = 0 u_pat = 0; Bug 36207
+ok 2411 - $c =~ /$c/i : chr (246) : u_str = 0 u_pat = 1; Bug 36207
+ok 2412 - $c=~/$c|xyz/i : chr(246) : u_str = 0 u_pat = 1; Bug 36207
+ok 2413 - $c =~ /$c/i : chr (246) : u_str = 1 u_pat = 0; Bug 36207
+ok 2414 - $c=~/$c|xyz/i : chr(246) : u_str = 1 u_pat = 0; Bug 36207
+ok 2415 - $c =~ /$c/i : chr (246) : u_str = 1 u_pat = 1; Bug 36207
+ok 2416 - $c=~/$c|xyz/i : chr(246) : u_str = 1 u_pat = 1; Bug 36207
+ok 2417 - $c =~ /$c/i : chr (247) : u_str = 0 u_pat = 0; Bug 36207
+ok 2418 - $c=~/$c|xyz/i : chr(247) : u_str = 0 u_pat = 0; Bug 36207
+ok 2419 - $c =~ /$c/i : chr (247) : u_str = 0 u_pat = 1; Bug 36207
+ok 2420 - $c=~/$c|xyz/i : chr(247) : u_str = 0 u_pat = 1; Bug 36207
+ok 2421 - $c =~ /$c/i : chr (247) : u_str = 1 u_pat = 0; Bug 36207
+ok 2422 - $c=~/$c|xyz/i : chr(247) : u_str = 1 u_pat = 0; Bug 36207
+ok 2423 - $c =~ /$c/i : chr (247) : u_str = 1 u_pat = 1; Bug 36207
+ok 2424 - $c=~/$c|xyz/i : chr(247) : u_str = 1 u_pat = 1; Bug 36207
+ok 2425 - $c =~ /$c/i : chr (248) : u_str = 0 u_pat = 0; Bug 36207
+ok 2426 - $c=~/$c|xyz/i : chr(248) : u_str = 0 u_pat = 0; Bug 36207
+ok 2427 - $c =~ /$c/i : chr (248) : u_str = 0 u_pat = 1; Bug 36207
+ok 2428 - $c=~/$c|xyz/i : chr(248) : u_str = 0 u_pat = 1; Bug 36207
+ok 2429 - $c =~ /$c/i : chr (248) : u_str = 1 u_pat = 0; Bug 36207
+ok 2430 - $c=~/$c|xyz/i : chr(248) : u_str = 1 u_pat = 0; Bug 36207
+ok 2431 - $c =~ /$c/i : chr (248) : u_str = 1 u_pat = 1; Bug 36207
+ok 2432 - $c=~/$c|xyz/i : chr(248) : u_str = 1 u_pat = 1; Bug 36207
+ok 2433 - $c =~ /$c/i : chr (249) : u_str = 0 u_pat = 0; Bug 36207
+ok 2434 - $c=~/$c|xyz/i : chr(249) : u_str = 0 u_pat = 0; Bug 36207
+ok 2435 - $c =~ /$c/i : chr (249) : u_str = 0 u_pat = 1; Bug 36207
+ok 2436 - $c=~/$c|xyz/i : chr(249) : u_str = 0 u_pat = 1; Bug 36207
+ok 2437 - $c =~ /$c/i : chr (249) : u_str = 1 u_pat = 0; Bug 36207
+ok 2438 - $c=~/$c|xyz/i : chr(249) : u_str = 1 u_pat = 0; Bug 36207
+ok 2439 - $c =~ /$c/i : chr (249) : u_str = 1 u_pat = 1; Bug 36207
+ok 2440 - $c=~/$c|xyz/i : chr(249) : u_str = 1 u_pat = 1; Bug 36207
+ok 2441 - $c =~ /$c/i : chr (250) : u_str = 0 u_pat = 0; Bug 36207
+ok 2442 - $c=~/$c|xyz/i : chr(250) : u_str = 0 u_pat = 0; Bug 36207
+ok 2443 - $c =~ /$c/i : chr (250) : u_str = 0 u_pat = 1; Bug 36207
+ok 2444 - $c=~/$c|xyz/i : chr(250) : u_str = 0 u_pat = 1; Bug 36207
+ok 2445 - $c =~ /$c/i : chr (250) : u_str = 1 u_pat = 0; Bug 36207
+ok 2446 - $c=~/$c|xyz/i : chr(250) : u_str = 1 u_pat = 0; Bug 36207
+ok 2447 - $c =~ /$c/i : chr (250) : u_str = 1 u_pat = 1; Bug 36207
+ok 2448 - $c=~/$c|xyz/i : chr(250) : u_str = 1 u_pat = 1; Bug 36207
+ok 2449 - $c =~ /$c/i : chr (251) : u_str = 0 u_pat = 0; Bug 36207
+ok 2450 - $c=~/$c|xyz/i : chr(251) : u_str = 0 u_pat = 0; Bug 36207
+ok 2451 - $c =~ /$c/i : chr (251) : u_str = 0 u_pat = 1; Bug 36207
+ok 2452 - $c=~/$c|xyz/i : chr(251) : u_str = 0 u_pat = 1; Bug 36207
+ok 2453 - $c =~ /$c/i : chr (251) : u_str = 1 u_pat = 0; Bug 36207
+ok 2454 - $c=~/$c|xyz/i : chr(251) : u_str = 1 u_pat = 0; Bug 36207
+ok 2455 - $c =~ /$c/i : chr (251) : u_str = 1 u_pat = 1; Bug 36207
+ok 2456 - $c=~/$c|xyz/i : chr(251) : u_str = 1 u_pat = 1; Bug 36207
+ok 2457 - $c =~ /$c/i : chr (252) : u_str = 0 u_pat = 0; Bug 36207
+ok 2458 - $c=~/$c|xyz/i : chr(252) : u_str = 0 u_pat = 0; Bug 36207
+ok 2459 - $c =~ /$c/i : chr (252) : u_str = 0 u_pat = 1; Bug 36207
+ok 2460 - $c=~/$c|xyz/i : chr(252) : u_str = 0 u_pat = 1; Bug 36207
+ok 2461 - $c =~ /$c/i : chr (252) : u_str = 1 u_pat = 0; Bug 36207
+ok 2462 - $c=~/$c|xyz/i : chr(252) : u_str = 1 u_pat = 0; Bug 36207
+ok 2463 - $c =~ /$c/i : chr (252) : u_str = 1 u_pat = 1; Bug 36207
+ok 2464 - $c=~/$c|xyz/i : chr(252) : u_str = 1 u_pat = 1; Bug 36207
+ok 2465 - $c =~ /$c/i : chr (253) : u_str = 0 u_pat = 0; Bug 36207
+ok 2466 - $c=~/$c|xyz/i : chr(253) : u_str = 0 u_pat = 0; Bug 36207
+ok 2467 - $c =~ /$c/i : chr (253) : u_str = 0 u_pat = 1; Bug 36207
+ok 2468 - $c=~/$c|xyz/i : chr(253) : u_str = 0 u_pat = 1; Bug 36207
+ok 2469 - $c =~ /$c/i : chr (253) : u_str = 1 u_pat = 0; Bug 36207
+ok 2470 - $c=~/$c|xyz/i : chr(253) : u_str = 1 u_pat = 0; Bug 36207
+ok 2471 - $c =~ /$c/i : chr (253) : u_str = 1 u_pat = 1; Bug 36207
+ok 2472 - $c=~/$c|xyz/i : chr(253) : u_str = 1 u_pat = 1; Bug 36207
+ok 2473 - $c =~ /$c/i : chr (254) : u_str = 0 u_pat = 0; Bug 36207
+ok 2474 - $c=~/$c|xyz/i : chr(254) : u_str = 0 u_pat = 0; Bug 36207
+ok 2475 - $c =~ /$c/i : chr (254) : u_str = 0 u_pat = 1; Bug 36207
+ok 2476 - $c=~/$c|xyz/i : chr(254) : u_str = 0 u_pat = 1; Bug 36207
+ok 2477 - $c =~ /$c/i : chr (254) : u_str = 1 u_pat = 0; Bug 36207
+ok 2478 - $c=~/$c|xyz/i : chr(254) : u_str = 1 u_pat = 0; Bug 36207
+ok 2479 - $c =~ /$c/i : chr (254) : u_str = 1 u_pat = 1; Bug 36207
+ok 2480 - $c=~/$c|xyz/i : chr(254) : u_str = 1 u_pat = 1; Bug 36207
+ok 2481 - $c =~ /$c/i : chr (255) : u_str = 0 u_pat = 0; Bug 36207
+ok 2482 - $c=~/$c|xyz/i : chr(255) : u_str = 0 u_pat = 0; Bug 36207
+ok 2483 - $c =~ /$c/i : chr (255) : u_str = 0 u_pat = 1; Bug 36207
+ok 2484 - $c=~/$c|xyz/i : chr(255) : u_str = 0 u_pat = 1; Bug 36207
+ok 2485 - $c =~ /$c/i : chr (255) : u_str = 1 u_pat = 0; Bug 36207
+ok 2486 - $c=~/$c|xyz/i : chr(255) : u_str = 1 u_pat = 0; Bug 36207
+ok 2487 - $c =~ /$c/i : chr (255) : u_str = 1 u_pat = 1; Bug 36207
+ok 2488 - $c=~/$c|xyz/i : chr(255) : u_str = 1 u_pat = 1; Bug 36207
+ok 2489 - $REGMARK in replacement; Bug 49190
+ok 2490 - $REGMARK in replacement; Bug 49190
+ok 2491 - $REGMARK in replacement; Bug 49190
+ok 2492 - $REGMARK in replacement; Bug 49190
+ok 2493 - $REGMARK in replacement; Bug 49190
+ok 2494 - $REGMARK in replacement; Bug 49190
+ok 2495 - Substitution evaluation in list context; Bug 52658
+ok 2496 - Substitution evaluation in list context; Bug 52658
+ok 2497 - (?>) does not cause wrongness on long string; Bug 60034
+ok 2498 - Bug 60034
+ok 2499 - (?>) does not cause wrongness on long string with UTF-8; Bug 60034
+# Tests that follow may crash perl
+ok 2500 - Pattern in a loop, failure should not affect previous success; Bug 19049/38869
+ok 2501 - Pattern in a loop, failure should not affect previous success; Bug 19049/38869
+ok 2502 - Recursive stack cracker; Bug 24274
+ok 2503 - Regexp /^(??{'(.)'x 100})/ crashes older perls; Bug 24274
+ok 2504 - Shouldn't panic; Bug 45337
+ok 2505 - Check if tree logic breaks $^R; Bug 57042
+ok 2506
+ok 2507
+ok 2508
+ok 2509 - utf8::SWASHNEW doesn't cause capture leaks; Bug 60508
+ok 2510 - (?^:a(x|y)*b); Bug 65372
+ok 2511 - (?^:a(x|y)*?b); Bug 65372
+ok 2512 - (?^:a([wx]|[yz])*b); Bug 65372
+ok 2513 - (?^:a([wx]|[yz])*?b); Bug 65372
+not ok 2514 # TODO [perl #38133]
+# Failed test 2514 - at re/pat_rt_report.t line 1053
+#      got undef
+# expected "A"
+ok 2515 - utf8 =~ /trie/ where trie matches a continuation octet; Bug 70998
+ok 2516 - stclass optimisation does not break + inside (?=); Bug 68564
+ok 2517 - my $r1 = qr/\N{THAI CHARACTER SARA I}/; my $s1 = "\x{E34}\x{E34}\x{E34}\x{E34}; $s1 =~ /$r1+/
+ok 2518 - "${s1}A" =~ m/$s1\N{LATIN CAPITAL LETTER A}/
+ok 2519 - "abbbbc" =~ m/\N{1}/ && $& eq "a"
+ok 2520 - "abbbbc" =~ m/\N{3,4}/ && $& eq "abbb"
+ok 2521 - [perl \#74982] Period coming after \N{}
+ok 2522 - [perl \#74982] Period coming after \N{}
+ok 2523 - use Encode;
+ok 2524 - [perl \#115050] repeated nothings in a trie can cause panic
+ok 2525 - [perl \#115050] repeated nothings in a trie can cause panic
+ok 2526 - [perl \#115050] repeated nothings in a trie can cause panic
+ok 2527 - [perl \#115050] repeated nothings in a trie can cause panic
+not ok 2528 - $& first mentioned after match # TODO these tests fail without Copy-on-Write enabled
+# Failed test 2528 - $& first mentioned after match at ./test.pl line 925
+#      got "e"
+# expected "b"
+# PROG: 
+# $_ = "abc"; /b/g; $_ = "hello"; print eval q|$&|, "\n"
+# STATUS: 0
+not ok 2529 - $` first mentioned after match # TODO these tests fail without Copy-on-Write enabled
+# Failed test 2529 - $` first mentioned after match at ./test.pl line 925
+#      got "h"
+# expected "a"
+# PROG: 
+# $_ = "abc"; /b/g; $_ = "hello"; print eval q|$`|, "\n"
+# STATUS: 0
+not ok 2530 - $' first mentioned after match # TODO these tests fail without Copy-on-Write enabled
+# Failed test 2530 - $' first mentioned after match at ./test.pl line 925
+#      got "l"
+# expected "c"
+# PROG: 
+# $_ = "abc"; /b/g; $_ = "hello"; print eval q|$'|,"\n"
+# STATUS: 0
+Failed 3/2530 subtests 
+
+Test Summary Report
+-------------------
+re/pat_rt_report_thr.t (Wstat: 0 Tests: 2530 Failed: 3)
+  Failed tests:  55, 57, 59
+Files=1, Tests=2530,  1 wallclock secs ( 0.22 usr  0.00 sys +  0.35 cusr  0.02 csys =  0.59 CPU)
+Result: FAIL
