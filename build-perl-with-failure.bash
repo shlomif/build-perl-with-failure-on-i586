@@ -14,8 +14,6 @@
 
 sh Configure -des \
   -Doptimize='-O2' -DDEBUGGING=-g \
-  -Dperllibs='-lnsl -ldl -lm -lcrypt -lutil -lc -pthread'   \
-  -Ud_csh \
   -Duseshrplib \
   -Duseithreads \
 
