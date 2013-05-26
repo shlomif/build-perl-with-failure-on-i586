@@ -13,8 +13,6 @@
 # Based on the Mageia's perl-5.18.0-1's .src.rpm's .spec.
 
 sh Configure -des \
-  -Doptimize='-O2' -DDEBUGGING=-g \
-  -Duseshrplib \
   -Duseithreads \
 
 
