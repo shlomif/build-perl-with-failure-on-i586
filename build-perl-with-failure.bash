@@ -25,5 +25,6 @@ sh Configure -des \
   -Di_db \
   -Di_ndbm \
   -Di_gdbm \
+  -Dprefix="$HOME/apps/perl/mageia-perl-5.18.0-bug" \
 
 
