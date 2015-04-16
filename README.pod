@@ -1,0 +1,8 @@
+=encoding utf8
+
+=head1 Reproduce an old failure with Mageia i586 perl
+
+This reproduces an old failure with Mageia i586 perl due to a stray patch
+there.
+
+=cut
